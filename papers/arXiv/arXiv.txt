@@ -1,4 +1,4 @@
 arXiv2020_Learning Decomposed Representation for Counterfactual Inference_Wu et al.pdf
-arXiv2021_Auto IV Counterfactual Prediction with Instrumental Variable Decomposition_Yuan et al.pdf
+arXiv2021_Auto IV Counterfactual Prediction via Automatic Instrumental Variable Decomposition_Yuan et al.pdf
 arXiv2021-Domain Specific Bias Filtering for Single Labeled Domain Generalization_Yuan et al.pdf
 arXiv2021-Learning Domain Invariant Relationship with Instrumental Variable for Domain Generalization_Yuan et al
