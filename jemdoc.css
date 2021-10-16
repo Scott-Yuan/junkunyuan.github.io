@@ -136,23 +136,24 @@ strong {
 
 
 h1, h2, h3 {
-    color: #527bbd;
+    color: #426bbd;
     margin-top: 0.7em;
     margin-bottom: 0.5em;
     padding-bottom: 0.2em;
     line-height: 1.0;
     padding-top: 0.5em;
     border-bottom: 1px solid #aaaaaa;
+    font-family: "times";
 }
 
 h1 {
-    font-size: 165%;
+    font-size: 180%;
     padding-bottom: 0.3em;
 }
 
 h2 {
     padding-top: 0.8em;
-    font-size: 150%;
+    font-size: 160%;
 }
 
 h2 + h3 {
