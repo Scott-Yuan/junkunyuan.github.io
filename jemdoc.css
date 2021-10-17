@@ -30,6 +30,7 @@ body {
   padding-top: 10px;
   padding-bottom: 30px;
   max-width: 960px;
+  /* max-width: 1060px; */
 }
 
 #layout-menu {
