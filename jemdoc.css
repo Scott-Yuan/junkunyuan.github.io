@@ -136,8 +136,19 @@ strong {
 }
 
 
-h1, h2, h3 {
+h1, h2 {
     color: #426bbd;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.2em;
+    line-height: 1.0;
+    padding-top: 0.5em;
+    border-bottom: 1px solid #aaaaaa;
+    font-family: "times";
+}
+
+h3 {
+    color: #CC6600;
     margin-top: 0.7em;
     margin-bottom: 0.5em;
     padding-bottom: 0.2em;
