@@ -29,8 +29,8 @@ body {
   padding-right: 50px;
   padding-top: 10px;
   padding-bottom: 30px;
-  max-width: 960px;
-  /* max-width: 1060px; */
+  /* max-width: 960px; */
+  max-width: 1160px;
 }
 
 #layout-menu {
