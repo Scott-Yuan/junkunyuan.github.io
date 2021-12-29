@@ -50,9 +50,34 @@
     font-weight: bolder;
 }
 
+.title-normal {
+    color: #0E40CD;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+.title-small {
+    color: #0E40CD;
+    font-size: 15px;
+    font-weight:bold;
+}
+
+.author-normal{
+    font-size: 16px;
+}
+
+.author-small{
+    font-size: 15px;
+}
+
 .papertext {
     color: #D93053;
     font-weight: bolder;
+}
+
+.abstext {
+    color: #666666;
+    font-size: 15px;
 }
 
 .pub-img-box {
@@ -82,9 +107,8 @@
     [<a href="https://github.com/junkunyuan"><img src="github.png" width="80px" style="margin-bottom:-5px" alt=''></a>] [<a href="cv.pdf"><img src="cv.jpg" width="160px" style="margin-bottom:-5px" alt=''></a>]
     </small></h2>
 <p>
-  I am currently a third-year Ph.D. student at the College of Computer Science and Technology, <a href="http://www.zju.edu.cn/">Zhejiang University</a>, supervised by Prof. <a href="https://kunkuang.github.io/">Kun Kuang</a>, Prof. <a href="https://person.zju.edu.cn/0096005">Lanfen Lin</a>, and Prof. <a href="https://person.zju.edu.cn/wufei">Fei Wu</a>.<br><br>
-    <!-- I received my B.S. degree from the College of Information Engineering at Zhejiang University of Technology in 2019. </li> -->
-  <!-- <li>I am working with Associate Professor <a href="https://kunkuang.github.io/">Kun Kuang</a> now, and we are focusing on developing generalizable machine learning approaches. My tutor is Professor <a href="https://person.zju.edu.cn/0096005">Lanfen Lin</a>, and we worked on adversarial learning previously. Before that, I also worked with Professor <a href="http://www.xuanqi-net.com/">Qi Xuan</a> on network science.</li> -->
+  I am currently a third-year Ph.D. student at the College of Computer Science and Technology, <a href="http://www.zju.edu.cn/">Zhejiang University</a>, supervised by Prof. <a href="https://kunkuang.github.io/">Kun Kuang</a>, Prof. <a href="https://person.zju.edu.cn/0096005">Lanfen Lin</a>, and Prof. <a href="https://person.zju.edu.cn/wufei">Fei Wu</a>.
+  <br><br>
   I am focusing on improving the stability and generalization of machine learning in the dynamic, open, and non-stationary real world. My current research interests include domain generalization, domain adaptation, and causal inference.
 </p>
 
@@ -102,26 +126,37 @@
 
 <div class="pubs">
     <div class="pub-img-box">
-        <img class="pub-img" src="papers/arXiv/arXiv2021-SeparatedDG/arXiv2021-SeparatedDG.jpg" width="280px" height="215px"/>
+        <img class="pub-img" src="papers/arXiv/arXiv2021-SeparatedDG/arXiv2021-SeparatedDG.jpg" width="280px" height="225px"/>
     </div>
     <div class="pub-text-box"><div class="pub-text">
-        <b><FONT size=3 color="0E40CD">Collaborative Semantic Aggregation and Calibration for Separated Domain Generalization.</FONT></b> <br><br>
-        <b>Junkun Yuan</b>, Xu Ma, Defang Chen, Kun Kuang<sup>*</sup>, Fei Wu, Lanfen Lin. <br><br>
+        <p class="title-normal">Collaborative Semantic Aggregation and Calibration for Separated Domain Generalization.</p>
+        <p class="author-normal"><b>Junkun Yuan</b>, Xu Ma, Defang Chen, Kun Kuang<sup>*</sup>, Fei Wu, Lanfen Lin.<p>
         <i><b>arXiv preprint</b></i>, 2021 (under review) <br><br>
-        <i>Abstract: We investigate separated domain generalization task where the source datasets are separated and can only be used locally for privacy protection. To address this challenging task, we propose a novel solution with privacy preserving Collaborative Semantic Aggregation and Calibration (CSAC), which is composed of local semantic acquisition, data-free semantic aggregation, and cross-layer semantic calibration. </i><br><br>
+        <i class="abstext">
+            <b>Abstract:</b> We investigate separated domain generalization where source datasets are separated and can only be used locally for privacy protection. To address this task, we propose Collaborative Semantic Aggregation and Calibration (CSAC) with local semantic acquisition, data-free semantic aggregation, and cross-layer semantic calibration.
+            <br>
+            <b>Keywords:</b> Separated domain generalization; Semantic learning and calibration; Privacy protection.
+        </i>
+        <br>
+        <br>
         [<a href="https://arxiv.org/abs/2110.06736"><span class="papertext">arXiv</span></a>] 
     </div></div>
 </div>
 
 <div class="pubs">
     <div class="pub-img-box">
-        <img class="pub-img" src="papers/arXiv/arXiv2021-DSBF/arXiv2021-DSBF.jpg" width="280px" height="210px"/>
+        <img class="pub-img" src="papers/arXiv/arXiv2021-DSBF/arXiv2021-DSBF.jpg" width="280px" height="205px"/>
     </div>
     <div class="pub-text-box"><div class="pub-text">
-        <b><FONT size=3 color="0E40CD">Domain-Specific Bias Filtering for Single Labeled Domain Generalization.</FONT></b> <br><br>
-        <b>Junkun Yuan</b><sup>#</sup>, Xu Ma<sup>#</sup>, Defang Chen, Kun Kuang<sup>*</sup>, Fei Wu, Lanfen Lin. <br><br>
+        <p class="title-normal">Domain-Specific Bias Filtering for Single Labeled Domain Generalization.</p>
+        <p class="author-normal"><b>Junkun Yuan</b><sup>#</sup>, Xu Ma<sup>#</sup>, Defang Chen, Kun Kuang<sup>*</sup>, Fei Wu, Lanfen Lin.</p>
         <i><b>arXiv preprint</b></i>, 2021 (under review) <br><br>
-        <i>Abstract: To reduce reliance on data annotation, we investigate Single Labeled Domain Generalization (SLDG) task. We propose Domain-Specific Bias Filtering (DSBF) for this task, which initializes a discriminative model with labeled source data and then filters out its domain-specific bias with unlabeled source data.  </i><br><br>
+        <i class="abstext">
+            <b>Abstract:</b> To reduce reliance on data annotation, we introduce Single Labeled Domain Generalization (SLDG) task with one source dataset being labeled. We propose Domain-Specific Bias Filtering (DSBF) for this task, which initializes a discriminative model with labeled source data and then filters out its bias with unlabeled source data.
+            <br>
+            <b>Keywords:</b> Single labeled domain generalization; Bias filtering; Semantic feature projection.
+        </i>
+        <br><br>
         [<a href="https://arxiv.org/abs/2110.00726"><span class="papertext">arXiv</span></a>]
         [<a href="https://github.com/junkunyuan/DSBF"><span class="papertext">Code</span></a>]
     </div></div>
@@ -132,10 +167,15 @@
         <img class="pub-img" src="papers/arXiv/arXiv2021-DRIVE/arXiv2021-DRIVE.jpg" width="280px" height="160px" alt="" />
     </span>
     <div class="pub-text-box"><div class="pub-text">
-        <b><FONT size=3 color="0E40CD">Learning Domain-Invariant Relationship with Instrumental Variable for Domain Generalization.</FONT></b> <br><br>
-        <b>Junkun Yuan</b>, Xu Ma, Kun Kuang<sup>*</sup>, Ruoxuan Xiong, Mingming Gong, Lanfen Lin. <br><br>
+        <p class="title-normal">Learning Domain-Invariant Relationship with Instrumental Variable for Domain Generalization.</p>
+        <p class="author-normal"><b>Junkun Yuan</b>, Xu Ma, Kun Kuang<sup>*</sup>, Ruoxuan Xiong, Mingming Gong, Lanfen Lin.</p>
         <i><b>arXiv preprint</b></i>, 2021 (under review) <br><br>
-        <i>Abstract: We provide a causal view on domain generalization (DG), and propose an instrumental variable-inspired method to learn domain-invariant relationship between input features and labeles for the DG task.  </i><br><br>
+        <i class="abstext">
+            <b>Abstract:</b> We provide a causal view on domain generalization (DG), and propose an instrumental variable-inspired method to learn latent domain-invariant relationship between input features and labeles for the DG task.
+            <br>
+            <b>Keywords:</b> Domain generalization; Causality; Instrumental variable.
+        </i>
+        <br><br>
         [<a href="https://arxiv.org/abs/2110.01438"><span class="papertext">arXiv</span></a>] 
         [<a href="papers/arXiv/arXiv2021-DRIVE/talk on Learning Domain-Invariant Relationship with Instrumental Variable for Domain Generalization.pdf"><span class="papertext">Slides</span></a>] 
     </div></div>
@@ -144,26 +184,36 @@
 
 <div class="pubs">
     <span class="pub-img-box">
-        <img class="pub-img" src="papers/arXiv/arXiv2021-AutoIV/arXiv2021-AutoIV.jpg" width="280px" height="220px" alt="" />
+        <img class="pub-img" src="papers/arXiv/arXiv2021-AutoIV/arXiv2021-AutoIV.jpg" width="280px" height="210px" alt="" />
     </span>
     <div class="pub-text-box"><div class="pub-text">
-        <b><FONT size=3 color="0E40CD">Auto IV: Counterfactual Prediction via Automatic Instrumental Variable Decomposition.</FONT></b> <br><br>
-        <b>Junkun Yuan</b>, Anpeng Wu, Kun Kuang<sup>*</sup>, Bo Li, Runze Wu, Fei Wu, Lanfen Lin. <br><br>
+        <p class="title-normal">Auto IV: Counterfactual Prediction via Automatic Instrumental Variable Decomposition.</p>
+        <p class="author-normal"><b>Junkun Yuan</b><sup>#</sup>, Anpeng Wu<sup>#</sup>, Kun Kuang<sup>*</sup>, Bo Li, Runze Wu, Fei Wu, Lanfen Lin.</p>
         <i>ACM Transactions on Knowledge Discovery from Data (<b>TKDD</b>)</i>, 2021 <span class="pubtext">(CCF-B, IF: 2.713)</span><br><br>
-        <i>Abstract: Instrumental Variable (IV) is a powerful tool for causal inference, but it is hard to find/pre-define valid IVs. Inspired by recent progress in mutual information estimation, we propose a novel Automatic Instrumental Variable decomposition (AutoIV) algorithm to generate representations serving the role of IVs from observed variables (IV candidates) through mutual information constraints under an adversarial game.  </i><br><br>
+        <i class="abstext">
+            <b>Abstract:</b> Instrumental Variable (IV) is a powerful tool for causal inference, but it is hard to find/pre-define valid IVs. We propose an Automatic Instrumental Variable decomposition (AutoIV) algorithm to generate IV representations from observed variables through mutual information constraints for IV-based counterfactual prediction.
+            <br>
+            <b>Keywords:</b> Instrumental variable; Counterfactual prediction; Mutual information; Causality. 
+        </i>
+        <br><br>
         [<a href="https://arxiv.org/abs/2107.05884"><span class="papertext">arXiv</span></a>] 
     </div></div>
 </div>
 
 <div class="pubs">
     <div class="pub-img-box">
-        <img class="pub-img" src="papers/TKDE/TKDE2021/TKDE2021-SGN.jpg" width="280px" height="225px"/>
+        <img class="pub-img" src="papers/TKDE/TKDE2021/TKDE2021-SGN.jpg" width="280px" height="215px"/>
     </div>
     <div class="pub-text-box"><div class="pub-text">
-        <b><FONT size=3 color="0E40CD">Subgraph Networks with Application to Structural Feature Space Expansion.</FONT></b> <br><br>
-        Qi Xuan<sup>*</sup>, Jinhuan Wang, Minghao Zhao, <b>Junkun Yuan</b>, Chenbo Fu, Zhongyuan Ruan<sup>*</sup>, Guanrong Chen. <br><br>
+        <p class="title-normal">Subgraph Networks with Application to Structural Feature Space Expansion.</p>
+        <p class="author-normal">Qi Xuan<sup>*</sup>, Jinhuan Wang, Minghao Zhao, <b>Junkun Yuan</b>, Chenbo Fu, Zhongyuan Ruan<sup>*</sup>, Guanrong Chen.</p>
         <i>IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>) </i>, 2021 <span class="pubtext">(CCF-A, IF: 6.977)</span> <br><br>
-        <i>Abstract: We introduce a new concept of subgraph network (SGN) and design algorithms to construct 1st-order and 2nd-order SGNs, which can be easily extended to higher-order ones. SGNs are used to obtain a series of handcrafted structural features which, together with the features extracted by advanced methods, provide complementary features to the extracted features, improving network classification performance.  </i><br><br>
+        <i class="abstext">
+            <b>Abstract:</b> We introduce a new concept of subgraph network (SGN) and construct 1st-order and 2nd-order SGNs, which can be easily extended to higher-order ones. SGNs provide complementary structural features for the features extracted by advanced network-embedding methods, significantly improving network classification performance.
+            <br>
+            <b>Keywords:</b> Subgraph; Network classification; Structual feature; Biological network; Social network. 
+        </i>
+        <br><br>
         [<a href="papers/TKDE/TKDE2021/TKDE2021_Subgraph Networks with Application to Structural Feature Space Expansion_Xuan et al.pdf"><span class="papertext">PDF</span></a>]
         [<a href="https://arxiv.org/abs/1903.09022"><span class="papertext">arXiv</span></a>] 
         [<a href="https://github.com/GalateaWang/SGNs-master"><span class="papertext">Code</span></a>]
@@ -177,23 +227,33 @@
         <img class="pub-img" src="papers/arXiv/arXiv2020-DeRCFR/arXiv2020-DeRCFR2.jpg" width="280px" height="200px"/>
     </span>
     <div class="pub-text-box"><div class="pub-text">
-        <b><FONT size=3 color="0E40CD">Learning Decomposed Representations for Treatment Effect Estimation.</FONT></b> <br><br>
-        Anpeng Wu<sup>#</sup>, <b>Junkun Yuan</b><sup>#</sup>, Kun Kuang<sup>*</sup>, Bo Li, Pan Zhou, Jianrong Tao, Qiang Zhu, Yueting Zhuang, Fei Wu. <br><br>
+        <p class="title-normal">Learning Decomposed Representations for Treatment Effect Estimation.</p>
+        <p class="author-small">Anpeng Wu<sup>#</sup>, <b>Junkun Yuan</b><sup>#</sup>, Kun Kuang<sup>*</sup>, Bo Li, Pan Zhou, Jianrong Tao, Qiang Zhu, Yueting Zhuang, Fei Wu.</p>
         <i><b>arXiv preprint</b></i>, 2020 (under review) <br><br>
-        <i>Abstract: We propose to i) separate confounders by learning decomposed representations of confounders and non-confounders, ii) balance confounders with sample re-weighting, and iii) estimate the treatment effect.  </i><br><br>
+        <i class="abstext">
+            <b>Abstract:</b> We propose to i) separate confounders by learning decomposed representations of confounders and non-confounders, ii) balance confounders with sample re-weighting, and iii) estimate the treatment effect.
+            <br>
+            <b>Keywords:</b> Treatment effect; Decomposed representation; Counterfactual Inference. 
+        </i>
+        <br><br>
         [<a href="https://arxiv.org/abs/2006.07040"><span class="papertext">arXiv</span></a>] 
     </div></div>
 </div>
 
 <div class="pubs">
     <div class="pub-img-box">
-        <img class="pub-img" src="papers/ECAI/ECAI2020-GAPGAN/ECAI2020-GAPGAN.jpg" width="280px" height="240px">
+        <img class="pub-img" src="papers/ECAI/ECAI2020-GAPGAN/ECAI2020-GAPGAN.jpg" width="280px" height="230px">
     </div>
     <div class="pub-text-box"><div class="pub-text">
-        <b><FONT size=3 color="0E40CD">Black-box Adversarial Attacks Against Deep Learning Based Malware Binaries Detection with GAN.</FONT></b> <br><br>
-        <b>Junkun Yuan</b>, Shaofang Zhou, Lanfen Lin<sup>*</sup>, Feng Wang, Jia Cui. <br><br>
+        <p class="title-small">Black-box Adversarial Attacks Against Deep Learning Based Malware Binaries Detection with GAN.</p>
+        <p class="author-normal"><b>Junkun Yuan</b>, Shaofang Zhou, Lanfen Lin<sup>*</sup>, Feng Wang, Jia Cui.</p>
         <i>European Conference on Artificial Intelligence (<b>ECAI</b>) </i>, 2020 <span class="pubtext">(CCF-B)</span> <br><br>
-        <i>Abstract: To attack malware detector, we propose a black-box attack framework called GAPGAN to Generate Adversarial Payloads (padding bytes) with generative adversarial networks (GANs). We map discrete malware binaries to continuous space, and then feed it to a generator to generate adversarial payloads. The payloads are appended to the original binaries to craft adversarial samples while preserving its functionality. </i><br><br>
+        <i class="abstext">
+            <b>Abstract:</b> To attack malware detector, we propose a black-box attack framework called GAPGAN to Generate Adversarial Payloads (padding bytes) with generative adversarial networks (GANs). We map discrete malware binaries to continuous space, and then feed it to a generator to generate adversarial payloads. The payloads are appended to the original binaries to craft effective adversarial samples while preserving its functionality.
+            <br>
+            <b>Keywords:</b> Black-box adversarial attacks; Malware detection; Generative adversarial networks.
+        </i>
+        <br><br>
         [<a href="papers/ECAI/ECAI2020-GAPGAN/ECAI2020-Black-box Adversarial Attacks Against Deep Learning Based Malware Binaries_Yuan et al.pdf"><span class="papertext">PDF</span></a>]
         [<a href="papers/ECAI/ECAI2020-GAPGAN/ECAI2020-GAPGAN-slides.pdf"><span class="papertext">Slides</span></a>]
     </div></div>
@@ -203,13 +263,18 @@
 
 <div class="pubs">
     <div class="pub-img-box">
-        <img class="pub-img" src="papers/ISI/ISI2019/ISI2019-DGA.jpg" width="280px" height="205px">
+        <img class="pub-img" src="papers/ISI/ISI2019/ISI2019-DGA.jpg" width="280px" height="195px">
     </div>
     <div class="pub-text-box"><div class="pub-text">
-        <b><FONT size=3 color="0E40CD">CNN-based DGA Detection with High Coverage.</FONT></b> <br><br>
-        Shaofang Zhou, Lanfen Lin<sup>*</sup>, <b>Junkun Yuan</b>, Feng Wang, Zhaoting Ling, Jia Cui. <br><br>
+        <p class="title-normal">CNN-based DGA Detection with High Coverage.</p>
+        <p class="author-normal">Shaofang Zhou, Lanfen Lin<sup>*</sup>, <b>Junkun Yuan</b>, Feng Wang, Zhaoting Ling, Jia Cui.</p>
         <i>IEEE International Conference on Intelligence and Security Informatics (<b>ISI</b>) </i>, 2019 <br><br>
-        <i>Abstract: Attackers often use algorithms to create pseudorandom domains and use them to connect with command and control servers, therefore it is important to detect the algorithmically generated domains. We propose a temporal convolutional network based detection method with high accuracy and high coverage.</i><br><br>
+        <i class="abstext">
+            <b>Abstract:</b> Attackers often use algorithms to dynamically create pseudo-random domains for attacks. We propose a temporal convolutional network based generated domain detection method with high accuracy and high coverage.
+            <br>
+            <b>Keywords:</b> Domain generation algorithm; Malicious domain name; Temporal convolution network.
+        </i>
+        <br><br>
         [<a href="papers/ISI/ISI2019/ISI2019_CNN-based DGA Detection with High Coverage_Zhou et al.pdf"><span class="papertext">PDF</span></a>] 
     </div></div>
 </div>
@@ -230,5 +295,5 @@
 
 
 
-Last updated on December 27, 2021. <!--This page is still under construction.-->
+Last updated on December 29, 2021. <!--This page is still under construction.-->
 </body>
