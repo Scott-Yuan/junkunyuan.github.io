@@ -48,6 +48,7 @@
     /* color: #3E9B57; */
     color: #13A913;
     font-weight: bolder;
+    font-size: 13px;
 }
 
 .title-normal {
@@ -62,6 +63,12 @@
     font-weight:bold;
 }
 
+.title-tiny {
+    color: #0E40CD;
+    font-size: 13px;
+    font-weight:bold;
+}
+
 .author-pub-normal{
     font-size: 15px;
 }
@@ -73,7 +80,7 @@
 .papertext {
     color: #D93053;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .abstext {
@@ -124,10 +131,34 @@
     [<a href="https://dblp.uni-trier.de/pid/238/0171.html"><img src="dblp.png" width="120px" style="margin-bottom:-15px" alt=''></a>]</small>
 </h2>
 <br>
-(# Equal Contribution; * Corresponding Author.)
-<br><br>
+<p class="author-pub-normal"> (# Equal Contribution; * Corresponding Author.) </p>
 
-<h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp------------------------------------------------------------&nbsp&nbsp&nbsp&nbsp&nbsp 2021 &nbsp&nbsp&nbsp&nbsp&nbsp------------------------------------------------------------&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
+<h3 align="center">
+    --------------------------------------------------&nbsp&nbsp&nbsp&nbsp&nbsp 2022 &nbsp&nbsp&nbsp&nbsp&nbsp--------------------------------------------------
+</h3>
+
+<div class="pubs">
+    <span class="pub-img-box">
+        <img class="pub-img" src="papers/TKDD/TKDD2022-autoiv/autoiv2.png" width="220px" height="185px" alt="" />
+    </span>
+    <div class="pub-text-box"><div class="pub-text">
+        <p class="title-normal">Auto IV: Counterfactual Prediction via Automatic Instrumental Variable Decomposition.</p>
+        <p class="author-pub-normal"><b>Junkun Yuan</b><sup>#</sup>, Anpeng Wu<sup>#</sup>, Kun Kuang<sup>*</sup>, Bo Li, Runze Wu, Fei Wu, Lanfen Lin.</p>
+        <i class="author-pub-normal">ACM Transactions on Knowledge Discovery from Data (<b>TKDD</b>), 2022</i> <span class="pubtext">(CCF-B, IF: 2.713)</span><br><br>
+        <i class="abstext">
+            <b>Abstract:</b> Instrumental Variable (IV) is a powerful tool for causal inference, but it is hard to find valid IVs. We propose an Automatic Instrumental Variable decomposition (AutoIV) algorithm to generate IV representations from observed variables through mutual information constraints for IV-based counterfactual prediction.
+            <!-- <br>
+            <b>Keywords:</b> Instrumental variable; Counterfactual prediction; Mutual information; Causality.  -->
+        </i>
+        <br><br>
+        [<a href="https://arxiv.org/abs/2107.05884"><span class="papertext">arXiv</span></a>]
+        [<a href="papers/TKDD/TKDD2022-autoiv/Auto IV Counterfactual Prediction via Automatic Instrumental Variable Decomposition.pdf"><span class="papertext">PDF</span></a>]
+    </div></div>
+</div>
+
+<h3 align="center">
+    --------------------------------------------------&nbsp&nbsp&nbsp&nbsp&nbsp 2021 &nbsp&nbsp&nbsp&nbsp&nbsp--------------------------------------------------
+</h3>
 
 <div class="pubs">
     <div class="pub-img-box">
@@ -138,9 +169,9 @@
         <p class="author-pub-normal"><b>Junkun Yuan</b>, Xu Ma, Defang Chen, Kun Kuang<sup>*</sup>, Fei Wu, Lanfen Lin.</p>
         <i class="author-pub-normal"><b>arXiv preprint</b>, 2021 (under review)</i> <br><br>
         <i class="abstext">
-            <b>Abstract:</b> To protect data privacy, we introduce separated domain generalization task and propose a Collaborative Semantic Aggregation and Calibration (CSAC) learning framework.
-            <br>
-            <b>Keywords:</b> Separated domain generalization; Semantic aggregation and calibration; Privacy protection.
+            <b>Abstract:</b> We introduce a separated domain generalization task where source data are separated for privacy protection. To address this task, we propose Collaborative Semantic Aggregation and Calibration (CSAC) with local semantic acquisition, data-free semantic aggregation, and cross-layer semantic calibration.
+            <!-- <br>
+            <b>Keywords:</b> Separated domain generalization; Semantic aggregation and calibration; Privacy protection. -->
         </i>
         <br>
         <br>
@@ -151,16 +182,16 @@
 
 <div class="pubs">
     <div class="pub-img-box">
-        <img class="pub-img" src="papers/arXiv/arXiv2021-DSBF/arXiv2021-DSBF.jpg" width="280px" height="205px"/>
+        <img class="pub-img" src="papers/arXiv/arXiv2021-DSBF/arXiv2021-DSBF.jpg" width="220px" height="170px"/>
     </div>
     <div class="pub-text-box"><div class="pub-text">
         <p class="title-normal">Domain-Specific Bias Filtering for Single Labeled Domain Generalization.</p>
         <p class="author-pub-normal"><b>Junkun Yuan</b><sup>#</sup>, Xu Ma<sup>#</sup>, Defang Chen, Kun Kuang<sup>*</sup>, Fei Wu, Lanfen Lin.</p>
-        <i><b>arXiv preprint</b></i>, 2021 (under review) <br><br>
+        <i class="author-pub-normal"><b>arXiv preprint</b>, 2021 (under review)</i> <br><br>
         <i class="abstext">
-            <b>Abstract:</b> To reduce reliance on data annotation, we introduce Single Labeled Domain Generalization (SLDG) task with one source dataset being labeled. We propose Domain-Specific Bias Filtering (DSBF) for this task, which initializes a discriminative model with labeled source data and then filters out its bias with unlabeled source data.
-            <br>
-            <b>Keywords:</b> Single labeled domain generalization; Bias filtering; Semantic feature projection.
+            <b>Abstract:</b> To reduce reliance on data annotation, we introduce Single Labeled Domain Generalization with one source dataset being labeled, and propose a  Domain-Specific Bias Filtering (DSBF) framework for this task.
+            <!-- <br>
+            <b>Keywords:</b> Single labeled domain generalization; Bias filtering; Semantic feature projection. -->
         </i>
         <br><br>
         [<a href="https://arxiv.org/abs/2110.00726"><span class="papertext">arXiv</span></a>]
@@ -170,16 +201,16 @@
 
 <div class="pubs">
     <span class="pub-img-box">
-        <img class="pub-img" src="papers/arXiv/arXiv2021-DRIVE/arXiv2021-DRIVE.jpg" width="280px" height="160px" alt="" />
+        <img class="pub-img" src="papers/arXiv/arXiv2021-DRIVE/arXiv2021-DRIVE.jpg" width="220px" height="125px" alt="" />
     </span>
     <div class="pub-text-box"><div class="pub-text">
-        <p class="title-normal">Learning Domain-Invariant Relationship with Instrumental Variable for Domain Generalization.</p>
+        <p class="title-small">Learning Domain-Invariant Relationship with Instrumental Variable for Domain Generalization.</p>
         <p class="author-pub-normal"><b>Junkun Yuan</b>, Xu Ma, Kun Kuang<sup>*</sup>, Ruoxuan Xiong, Mingming Gong, Lanfen Lin.</p>
-        <i><b>arXiv preprint</b></i>, 2021 (under review) <br><br>
+        <i class="author-pub-normal"><b>arXiv preprint</b>, 2021 (under review)</i> <br><br>
         <i class="abstext">
-            <b>Abstract:</b> We provide a causal view on domain generalization (DG), and propose an instrumental variable-inspired method to learn latent domain-invariant relationship between input features and labeles for the DG task.
-            <br>
-            <b>Keywords:</b> Domain generalization; Causality; Instrumental variable.
+            <b>Abstract:</b> We give a causal view on domain generalization, and propose an instrumental variable-inspired method to learn latent domain-invariant relationship between input features and labeles for this task.
+            <!-- <br>
+            <b>Keywords:</b> Domain generalization; Causality; Instrumental variable. -->
         </i>
         <br><br>
         [<a href="https://arxiv.org/abs/2110.01438"><span class="papertext">arXiv</span></a>] 
@@ -187,38 +218,18 @@
     </div></div>
 </div>
 
-
-<div class="pubs">
-    <span class="pub-img-box">
-        <img class="pub-img" src="papers/TKDD/TKDD2022-autoiv/autoiv.png" width="280px" height="205px" alt="" />
-    </span>
-    <div class="pub-text-box"><div class="pub-text">
-        <p class="title-normal">Auto IV: Counterfactual Prediction via Automatic Instrumental Variable Decomposition.</p>
-        <p class="author-pub-normal"><b>Junkun Yuan</b><sup>#</sup>, Anpeng Wu<sup>#</sup>, Kun Kuang<sup>*</sup>, Bo Li, Runze Wu, Fei Wu, Lanfen Lin.</p>
-        <i>ACM Transactions on Knowledge Discovery from Data (<b>TKDD</b>)</i>, 2021 <span class="pubtext">(CCF-B, IF: 2.713)</span><br><br>
-        <i class="abstext">
-            <b>Abstract:</b> Instrumental Variable (IV) is a powerful tool for causal inference, but it is hard to find/pre-define valid IVs. We propose an Automatic Instrumental Variable decomposition (AutoIV) algorithm to generate IV representations from observed variables through mutual information constraints for IV-based counterfactual prediction.
-            <br>
-            <b>Keywords:</b> Instrumental variable; Counterfactual prediction; Mutual information; Causality. 
-        </i>
-        <br><br>
-        [<a href="https://arxiv.org/abs/2107.05884"><span class="papertext">arXiv</span></a>]
-        [<a href="papers/TKDD/TKDD2022-autoiv/Auto IV Counterfactual Prediction via Automatic Instrumental Variable Decomposition.pdf"><span class="papertext">PDF</span></a>]
-    </div></div>
-</div>
-
 <div class="pubs">
     <div class="pub-img-box">
-        <img class="pub-img" src="papers/TKDE/TKDE2021/TKDE2021-SGN.jpg" width="280px" height="215px"/>
+        <img class="pub-img" src="papers/TKDE/TKDE2021/TKDE2021-SGN.jpg" width="220px" height="180px"/>
     </div>
     <div class="pub-text-box"><div class="pub-text">
         <p class="title-normal">Subgraph Networks with Application to Structural Feature Space Expansion.</p>
         <p class="author-pub-normal">Qi Xuan<sup>*</sup>, Jinhuan Wang, Minghao Zhao, <b>Junkun Yuan</b>, Chenbo Fu, Zhongyuan Ruan<sup>*</sup>, Guanrong Chen.</p>
-        <i>IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>) </i>, 2021 <span class="pubtext">(CCF-A, IF: 6.977)</span> <br><br>
+        <i class="author-pub-normal">IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>), 2021 </i> <span class="pubtext">(CCF-A, IF: 6.977)</span> <br><br>
         <i class="abstext">
-            <b>Abstract:</b> We introduce a new concept of subgraph network (SGN) and construct 1st-order and 2nd-order SGNs, which can be easily extended to higher-order ones. SGNs provide complementary structural features for the features extracted by advanced network-embedding methods, significantly improving network classification performance.
-            <br>
-            <b>Keywords:</b> Subgraph; Network classification; Structual feature; Biological network; Social network. 
+            <b>Abstract:</b> We introduce a new concept of subgraph network (SGN) and construct 1st-order and 2nd-order SGNs, which can be easily extended to higher-order ones. SGNs provide complementary structural features for the features extracted by network-embedding methods, improving network classification performance.
+            <!-- <br>
+            <b>Keywords:</b> Subgraph; Network classification; Structual feature; Biological network; Social network.  -->
         </i>
         <br><br>
         [<a href="https://arxiv.org/abs/1903.09022"><span class="papertext">arXiv</span></a>] 
@@ -227,20 +238,22 @@
     </div></div>
 </div>
 
-<h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp------------------------------------------------------------&nbsp&nbsp&nbsp&nbsp&nbsp 2020 &nbsp&nbsp&nbsp&nbsp&nbsp------------------------------------------------------------&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
+<h3 align="center">
+    --------------------------------------------------&nbsp&nbsp&nbsp&nbsp&nbsp 2020 &nbsp&nbsp&nbsp&nbsp&nbsp--------------------------------------------------
+</h3>
 
 <div class="pubs">
     <span class="pub-img-box">
-        <img class="pub-img" src="papers/arXiv/arXiv2020-DeRCFR/arXiv2020-DeRCFR2.jpg" width="280px" height="200px"/>
+        <img class="pub-img" src="papers/arXiv/arXiv2020-DeRCFR/arXiv2020-DeRCFR2.jpg" width="220px" height="165px"/>
     </span>
     <div class="pub-text-box"><div class="pub-text">
         <p class="title-normal">Learning Decomposed Representations for Treatment Effect Estimation.</p>
         <p class="author-pub-small">Anpeng Wu<sup>#</sup>, <b>Junkun Yuan</b><sup>#</sup>, Kun Kuang<sup>*</sup>, Bo Li, Pan Zhou, Jianrong Tao, Qiang Zhu, Yueting Zhuang, Fei Wu.</p>
-        <i><b>arXiv preprint</b></i>, 2020 (under review) <br><br>
+        <i class="author-pub-normal"><b>arXiv preprint</b>, 2020 (under review)</i> <br><br>
         <i class="abstext">
             <b>Abstract:</b> We propose to i) separate confounders by learning decomposed representations of confounders and non-confounders, ii) balance confounders with sample re-weighting, and iii) estimate the treatment effect.
-            <br>
-            <b>Keywords:</b> Treatment effect; Decomposed representation; Counterfactual Inference. 
+            <!-- <br> -->
+            <!-- <b>Keywords:</b> Treatment effect; Decomposed representation; Counterfactual Inference.  -->
         </i>
         <br><br>
         [<a href="https://arxiv.org/abs/2006.07040"><span class="papertext">arXiv</span></a>] 
@@ -249,16 +262,16 @@
 
 <div class="pubs">
     <div class="pub-img-box">
-        <img class="pub-img" src="papers/ECAI/ECAI2020-GAPGAN/ECAI2020-GAPGAN.jpg" width="280px" height="230px">
+        <img class="pub-img" src="papers/ECAI/ECAI2020-GAPGAN/ECAI2020-GAPGAN.jpg" width="220px" height="180px">
     </div>
     <div class="pub-text-box"><div class="pub-text">
-        <p class="title-small">Black-box Adversarial Attacks Against Deep Learning Based Malware Binaries Detection with GAN.</p>
+        <p class="title-tiny">Black-box Adversarial Attacks Against Deep Learning Based Malware Binaries Detection with GAN.</p>
         <p class="author-pub-normal"><b>Junkun Yuan</b>, Shaofang Zhou, Lanfen Lin<sup>*</sup>, Feng Wang, Jia Cui.</p>
-        <i>European Conference on Artificial Intelligence (<b>ECAI</b>) </i>, 2020 <span class="pubtext">(CCF-B)</span> <br><br>
+        <i class="author-pub-normal">European Conference on Artificial Intelligence (<b>ECAI</b>), 2020 </i> <span class="pubtext">(CCF-B)</span> <br><br>
         <i class="abstext">
-            <b>Abstract:</b> To attack malware detector, we propose a black-box attack framework called GAPGAN to Generate Adversarial Payloads (padding bytes) with generative adversarial networks (GANs). We map discrete malware binaries to continuous space, and then feed it to a generator to generate adversarial payloads. The payloads are appended to the original binaries to craft effective adversarial samples while preserving its functionality.
-            <br>
-            <b>Keywords:</b> Black-box adversarial attacks; Malware detection; Generative adversarial networks.
+            <b>Abstract:</b> To attack malware detector, we propose a black-box attack framework called GAPGAN to Generate Adversarial Payloads with GAN. We feed malware binaries to a generator to generate adversarial payloads, and append them to the original binaries to craft adversarial samples while preserving their functionality.
+            <!-- <br>
+            <b>Keywords:</b> Black-box adversarial attacks; Malware detection; Generative adversarial networks. -->
         </i>
         <br><br>
         [<a href="papers/ECAI/ECAI2020-GAPGAN/ECAI2020-Black-box Adversarial Attacks Against Deep Learning Based Malware Binaries_Yuan et al.pdf"><span class="papertext">PDF</span></a>]
@@ -266,20 +279,22 @@
     </div></div>
 </div>
 
-<h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp------------------------------------------------------------&nbsp&nbsp&nbsp&nbsp&nbsp 2019 &nbsp&nbsp&nbsp&nbsp&nbsp------------------------------------------------------------&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
+<h3 align="center">
+    --------------------------------------------------&nbsp&nbsp&nbsp&nbsp&nbsp 2019 &nbsp&nbsp&nbsp&nbsp&nbsp--------------------------------------------------
+</h3>
 
 <div class="pubs">
     <div class="pub-img-box">
-        <img class="pub-img" src="papers/ISI/ISI2019/ISI2019-DGA.jpg" width="280px" height="195px">
+        <img class="pub-img" src="papers/ISI/ISI2019/ISI2019-DGA.jpg" width="220px" height="170px">
     </div>
     <div class="pub-text-box"><div class="pub-text">
         <p class="title-normal">CNN-based DGA Detection with High Coverage.</p>
         <p class="author-pub-normal">Shaofang Zhou, Lanfen Lin<sup>*</sup>, <b>Junkun Yuan</b>, Feng Wang, Zhaoting Ling, Jia Cui.</p>
-        <i>IEEE International Conference on Intelligence and Security Informatics (<b>ISI</b>) </i>, 2019 <br><br>
+        <i class="author-pub-normal">IEEE International Conference on Intelligence and Security Informatics (<b>ISI</b>), 2019</i> <br><br>
         <i class="abstext">
-            <b>Abstract:</b> Attackers often use algorithms to dynamically create pseudo-random domains for attacks. We propose a temporal convolutional network based generated domain detection method with high accuracy and high coverage.
-            <br>
-            <b>Keywords:</b> Domain generation algorithm; Malicious domain name; Temporal convolution network.
+            <b>Abstract:</b> Attackers often use algorithms to create pseudo-random domains for attacks. We propose a temporal convolutional network based generated domain detection method with high accuracy and high coverage.
+            <!-- <br>
+            <b>Keywords:</b> Domain generation algorithm; Malicious domain name; Temporal convolution network. -->
         </i>
         <br><br>
         [<a href="papers/ISI/ISI2019/ISI2019_CNN-based DGA Detection with High Coverage_Zhou et al.pdf"><span class="papertext">PDF</span></a>] 
@@ -292,7 +307,7 @@
 <br><br>
 <span>Help to review for conferences: ICML 2021; KDD 2021; ICCV 2021; CIKM 2021; NeurIPS 2021; AAAI 2021, 2022; CVPR 2021, 2022.</span>
 <br><br>
-<span>Help to review for journals: TNNLS.</span>
+<span>Help to review for journals: TNNLS 2022.</span>
 
 
 <div id="footer">
@@ -303,5 +318,5 @@
 
 
 
-Last updated on January 9, 2022. <!--This page is still under construction.-->
+Last updated on January 11, 2022. <!--This page is still under construction.-->
 </body>
