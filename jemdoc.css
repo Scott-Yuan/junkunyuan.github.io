@@ -27,8 +27,8 @@ body {
   margin-right: auto;
   padding-left:  30px;
   padding-right: 30px;
-  /* padding-left:  50px;
-  padding-right: 50px; */
+  padding-left:  50px;
+  padding-right: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
   max-width: 960px;
@@ -175,7 +175,7 @@ h2 + h3 {
 }
 
 h3 {
-    font-size: 130%;
+    font-size: 120%;
     border-bottom: none;
 }
 
