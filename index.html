@@ -1,7 +1,7 @@
 <meta name="description" content="Junkun Yuan&#39;s home page">
 <link rel="stylesheet" href="jemdoc.css" type="text/css">
 <link rel="shortcut icon" href="resource/zju.png">
-<title>JunkunYuan's Homepage @ Zhejiang University</title>
+<title>JunkunYuan's Homepage</title>
 
 <body>
 <div id="layout-content" style="margin-top:25px">
@@ -100,7 +100,6 @@
 }
 
 .pub-img-box {
-    /* width: 200px; */
     width: 200px;
     text-align: center;
     margin-right: 20px;
@@ -112,13 +111,8 @@
 }
 
 .pub-text-box {
-    /* width: 730px; */
-    /* width: 800px; */
     width: 660px;
     display: flex;
-    /* overflow: hidden;
-    text-overflow: ellipsis;
-    word-break: break-all; */
 }
 
 .pub-text {
@@ -136,7 +130,7 @@
   Junkun Yuan is currently a fourth-year Ph.D. student at the College of Computer Science and Technology, <a href="http://www.zju.edu.cn/">Zhejiang University</a>, supervised by Prof. <a href="https://kunkuang.github.io/">Kun Kuang</a>, Prof. <a href="https://person.zju.edu.cn/0096005">Lanfen Lin</a>, and Prof. <a href="https://person.zju.edu.cn/wufei">Fei Wu</a>.
   <br><br>
 
-  Currently, he is working as a research intern at <a href="http://vis.baidu.com/#/"> Baidu computer vision group (VIS)</a>, mentored by <a href="https://jingdongwang2017.github.io/"> Jingdong Wang </a>.
+  Since July 2022, he has been working as a research intern at <a href="http://vis.baidu.com/#/"> Baidu Computer Vision Group (VIS)</a>, mentored by <a href="https://jingdongwang2017.github.io/"> Jingdong Wang </a>.
   <br><br>
 
   He is mainly focusing on improving the generalization and stability of machine learning systems in the open, dynamic, and uncertain real world. His current research interests include self-supervised learning, transfer learning, and causal inference.
@@ -151,22 +145,41 @@
 <br>
 <p class="author-pub-normal"> (# Equal Contribution; * Corresponding Author.) </p>
 
-<h3 align="center">2022</h3>
+<h3 align="center">2023</h3>
 
-<!-- ArXiv 2022 CAEv2 -->
+<!-- arXiv 2023 CTP-TFT -->
 <div class="pubs">
     <div class="pub-img-box">
-        <img class="pub-img" src="papers/arXiv/arXiv2022-CAEv2/ArXiv2022-CAEv2-framework.png" width="200px" height="200px"/>
+        <img class="pub-img" src="papers/arXiv/arXiv2023-CTP-TFT/arXiv2023-CTP-TFT-framework3.png" width="200px" height="220px"/>
+    </div>
+    <div class="pub-text-box"><div class="pub-text">
+        <p class="title-normal">Task-Oriented Multi-Modal Mutual Leaning for Vision-Language Models.</p>
+        <p class="author-pub-normal">Sifan Long<sup>#</sup>, Zhen Zhao<sup>#</sup>, <b>Junkun Yuan</b><sup>#</sup>, Zichang Tan, Jiangjiang Liu, Luping Zhou, Shengsheng Wang, Jingdong Wang<sup>*</sup>.</p>
+        <i class="author-pub-normal">Under review</i> <br><br>
+        <i class="abstext">
+            <b>(multi-modal learning)</b> It presents a class-aware text prompt to enrich generated prompts with label-related image information, and makes the image branch attend to class-related representations. The text and image branches mutually promote to enhance the adaptation of vision-language models. 
+        </i>
+        <br><br>
+        [<a href="https://arxiv.org/abs/2303.17169"><span class="papertext">arXiv</span></a>]
+    </div></div>
+</div>
+
+<h3 align="center">2022</h3>
+
+<!-- arXiv 2022 CAEv2 -->
+<div class="pubs">
+    <div class="pub-img-box">
+        <img class="pub-img" src="papers/arXiv/arXiv2022-CAEv2/arXiv2022-CAEv2-framework.png" width="200px" height="200px"/>
     </div>
     <div class="pub-text-box"><div class="pub-text">
         <p class="title-normal">CAE v2: Context Autoencoder with CLIP Target.</p>
-        <p class="author-pub-normal">Xinyu Zhang, Jiahui Chen, <b>Junkun Yuan</b>, Qiang Chen, Jian Wang, Xiaodi Wang, Shumin Han, Xiaokang Chen, Jimin Pi, Kun Yao, Junyu Han, Errui Ding, Jingdong Wang<sup>*</sup>.</p>
+        <p class="author-pub-normal">Xinyu Zhang<sup>#</sup>, Jiahui Chen<sup>#</sup>, <b>Junkun Yuan</b>, Qiang Chen, Jian Wang, Xiaodi Wang, Shumin Han, Xiaokang Chen, Jimin Pi, Kun Yao, Junyu Han, Errui Ding, Jingdong Wang<sup>*</sup>.</p>
         <i class="author-pub-normal">Under review</i> <br><br>
         <i class="abstext">
-            <b>(Self-supervised Learning)</b> It proposes CAE v2, a new CLIP-guided masked image modeling method, which (i) uses both masked and visible tokens as the distillation target, and (ii) employs a mask ratio proportional to the model size, achieving superior performance on a series of downstream vision tasks.
+            <b>(self-supervised learning)</b> It proposes CAE v2, a new CLIP-guided masked image modeling method, which (i) uses both masked and visible tokens as the distillation target, and (ii) employs a masking ratio proportional to the model size, achieving superior performance on many downstream vision tasks.
         </i>
         <br><br>
-        [<a href="https://arxiv.org/pdf/2211.09799"><span class="papertext">arXiv</span></a>]
+        [<a href="https://arxiv.org/abs/2211.09799"><span class="papertext">arXiv</span></a>]
     </div></div>
 </div>
 
@@ -174,20 +187,18 @@
 <!-- IJCV 2022 DSBF -->
 <div class="pubs">
     <div class="pub-img-box">
-        <img class="pub-img" src="papers/arXiv/arXiv2021-DSBF/arXiv2021-DSBF.jpg" width="200px" height="160px"/>
+        <img class="pub-img" src="papers/IJCV/IJCV2022-DSBF/IJCV2022-DSBF-framework.jpg" width="200px" height="160px"/>
     </div>
     <div class="pub-text-box"><div class="pub-text">
         <p class="title-normal">Domain-Specific Bias Filtering for Single Labeled Domain Generalization.</p>
         <p class="author-pub-normal"><b>Junkun Yuan</b><sup>#</sup>, Xu Ma<sup>#</sup>, Defang Chen, Kun Kuang<sup>*</sup>, Fei Wu, Lanfen Lin.</p>
         <i class="author-pub-normal">International Journal of Computer Vision (<b>IJCV</b>), 2022</i> <br><br>
         <i class="abstext">
-            <b>(Domain Generalization)</b> It introduces Single Labeled Domain Generalization (SLDG) task with only one source dataset being labeled, and proposes Domain-Specific Bias Filtering (DSBF) method.
-            <!-- <br>
-            <b>Keywords:</b> Single labeled domain generalization; Bias filtering; Semantic feature projection. -->
+            <b>(domain generalization)</b> It introduces a new task called single labeled domain generalization where only one source dataset being labeled, and proposes a method named domain-specific bias filtering.
         </i>
         <br><br>
         [<a href="https://arxiv.org/abs/2110.00726"><span class="papertext">arXiv</span></a>]
-        [<a href="papers/IJCV/IJCV2022-DSBF/IJCV2022-DSBF-Domain-Specific Bias Filtering for Single Labeled Domain.pdf"><span class="papertext">PDF</span></a>]
+        [<a href="papers/IJCV/IJCV2022-DSBF/IJCV2022-DSBF.pdf"><span class="papertext">PDF</span></a>]
         [<a href="https://github.com/junkunyuan/DSBF"><span class="papertext">Code</span></a>]
     </div></div>
 </div>
@@ -202,11 +213,11 @@
         <p class="author-pub-normal"><b>Junkun Yuan</b><sup>#</sup>, Xu Ma<sup>#</sup>, Defang Chen, Kun Kuang<sup>*</sup>, Fei Wu, Lanfen Lin.</p>
         <i class="author-pub-normal">International Conference on Multimedia (<b>MM</b>), 2022</i> <br><br>
         <i class="abstext">
-            <b>(Domain Generalization)</b> To enable generalization learning with limited annotation, it proposes a framework called Collaborative Exploration and Generalization (CEG) which jointly optimizes active exploration and semi-supervised generalization for Label-Efficient Domain Generalization (LEDG).
+            <b>(domain generalization)</b> To enable generalization learning with limited annotation, it proposes a framework called collaborative exploration and generalization, which jointly optimizes active exploration and semi-supervised generalization for the label-efficient domain generalization task.
         </i>
         <br><br>
         [<a href="https://arxiv.org/abs/2208.03644"><span class="papertext">arXiv</span></a>]
-        [<a href="papers/MM/MM2022-CEG/Label-Efficient Domain Generalization via Collaborative Exploration and Generalization.pdf"><span class="papertext">PDF</span></a>]
+        [<a href="papers/MM/MM2022-CEG/MM2022-CEG.pdf"><span class="papertext">PDF</span></a>]
         [<a href="https://github.com/junkunyuan/CEG"><span class="papertext">Code</span></a>]
     </div></div>
 </div>
@@ -221,13 +232,11 @@
         <p class="author-pub-tiny">Anpeng Wu<sup>#</sup>, <b>Junkun Yuan</b><sup>#</sup>, Kun Kuang<sup>*</sup>, Bo Li, Pan Zhou, Jianrong Tao, Qiang Zhu, Yueting Zhuang, Fei Wu.</p>
         <i class="author-pub-normal">IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>), 2022</i> <br><br>
         <i class="abstext">
-            <b>(Causal Inference)</b> It proposes to separate confounders by learning representations of confounders and non-confounders, balance confounders with sample re-weighting, and estimate treatment effect.
-            <!-- <br> -->
-            <!-- <b>Keywords:</b> Treatment effect; Decomposed representation; Counterfactual Inference.  -->
+            <b>(causal learning)</b> It separates confounders by learning representations of confounders and non-confounders, balancing confounders with sample re-weighting, and estimating treatment effect.
         </i>
         <br><br>
         [<a href="https://arxiv.org/abs/2006.07040"><span class="papertext">arXiv</span></a>]
-        [<a href="papers/TKDE/TKDE2022-DeR-CFR/Learning_Decomposed_Representations_for_Treatment_Effect_Estimation.pdf"><span class="papertext">PDF</span></a>]
+        [<a href="papers/TKDE/TKDE2022-DeR-CFR/TKDE2022-DeRCFR.pdf"><span class="papertext">PDF</span></a>]
         [<a href="https://github.com/anpwu/DeR-CFR"><span class="papertext">Code</span></a>]
     </div></div>
 </div>
@@ -235,24 +244,21 @@
 <!-- TKDD 2022 AutoIV -->
 <div class="pubs">
     <span class="pub-img-box">
-        <img class="pub-img" src="papers/TKDD/TKDD2022-autoiv/autoiv2.png" width="200px" height="185px" alt="" />
+        <img class="pub-img" src="papers/TKDD/TKDD2022-autoiv/TKDD-2022-autoiv-framework.png" width="200px" height="185px" alt="" />
     </span>
     <div class="pub-text-box"><div class="pub-text">
         <p class="title-small">Auto IV: Counterfactual Prediction via Automatic Instrumental Variable Decomposition.</p>
         <p class="author-pub-normal"><b>Junkun Yuan</b><sup>#</sup>, Anpeng Wu<sup>#</sup>, Kun Kuang<sup>*</sup>, Bo Li, Runze Wu, Fei Wu, Lanfen Lin.</p>
         <i class="author-pub-normal">ACM Transactions on Knowledge Discovery from Data (<b>TKDD</b>), 2022</i> 
-        <!-- <span class="pubtext">(CCF-B, IF: 2.713)</span> -->
         <br><br>
         <i class="abstext">
-            <b>(Causal Inference)</b> 
+            <b>(causal learning)</b> 
             Instrumental Variable (IV) is a powerful tool for causal inference, but it is hard to pre-define valid IVs. 
-            It proposes an Automatic Instrumental Variable decomposition (AutoIV) algorithm to generate effective IV representations from observed variables for IV-based counterfactual prediction.
-            <!-- <br>
-            <b>Keywords:</b> Instrumental variable; Counterfactual prediction; Mutual information; Causality.  -->
+            It proposes an automatic instrumental variable decomposition algorithm to generate effective IV representations from observed variables for IV-based counterfactual prediction.
         </i>
         <br><br>
         [<a href="https://arxiv.org/abs/2107.05884"><span class="papertext">arXiv</span></a>]
-        [<a href="papers/TKDD/TKDD2022-autoiv/Auto IV Counterfactual Prediction via Automatic Instrumental Variable Decomposition.pdf"><span class="papertext">PDF</span></a>]
+        [<a href="papers/TKDD/TKDD2022-autoiv/TKDD-2022-autoiv.pdf"><span class="papertext">PDF</span></a>]
         [<a href="https://github.com/junkunyuan/AutoIV"><span class="papertext">Code</span></a>]
     </div></div>
 </div>
@@ -260,23 +266,20 @@
 <!-- Neurcomputing 2022 ACDA -->
 <div class="pubs">
     <span class="pub-img-box">
-        <img class="pub-img" src="papers/Neurocomputing/Neurocomputing2022-ACDA/ACDA.jpg" width="200px" height="185px" alt="" />
+        <img class="pub-img" src="papers/Neurocomputing/Neurocomputing2022-ACDA/Neurocomputing2022-ACDA-framework.jpg" width="200px" height="185px" alt="" />
     </span>
     <div class="pub-text-box"><div class="pub-text">
         <p class="title-small">Attention-based Cross-Layer Domain Alignment for Unsupervised Domain Adaptation.</p>
         <p class="author-pub-normal">Xu Ma, <b>Junkun Yuan</b>, Yen-wei Chen, Ruofeng Tong, Lanfen Lin<sup>*</sup>.</p>
         <i class="author-pub-normal"><b>Neurocomputing</b>, 2022</i> 
-        <!-- <span class="pubtext">(CCF-B, IF: 2.713)</span> -->
         <br><br>
         <i class="abstext">
-            <b>(Domain Adaptation)</b> 
-            It proposes Attention-based Cross-layer Domain Alignment (ACDA), which captures the semantic relationship between the source and target domains across model layers and calibrates each level of semantic information automatically through a dynamic attention mechanism.
-            <!-- <br>
-            <b>Keywords:</b> Instrumental variable; Counterfactual prediction; Mutual information; Causality.  -->
+            <b>(domain adaptation)</b> 
+            It proposes attention-based cross-layer domain alignment, which captures the semantic relationship between the source domain and the target domain across model layers and calibrates each level of semantic information automatically through a dynamic attention mechanism.
         </i>
         <br><br>
         [<a href="https://arxiv.org/abs/2202.13310"><span class="papertext">arXiv</span></a>]
-        [<a href="papers/Neurocomputing/Neurocomputing2022-ACDA/Attention-based cross-layer domain alignment for unsupervised domain adaptation.pdf"><span class="papertext">PDF</span></a>]
+        [<a href="papers/Neurocomputing/Neurocomputing2022-ACDA/Neurocomputing2022-ACDA.pdf"><span class="papertext">PDF</span></a>]
         [<a href="https://github.com/MaXuSun/ACDA"><span class="papertext">Code</span></a>]
     </div></div>
 </div>
@@ -284,14 +287,14 @@
 <!-- ArXiv 2022 CCM -->
 <div class="pubs">
     <div class="pub-img-box">
-        <img class="pub-img" src="papers/arXiv/arXiv2022-CCM/arXiv2022-CCM.jpg" width="200px" height="160px"/>
+        <img class="pub-img" src="papers/arXiv/arXiv2022-CCM/arXiv2022-CCM-framework.jpg" width="200px" height="160px"/>
     </div>
     <div class="pub-text-box"><div class="pub-text">
         <p class="title-normal">Domain Generalization via Contrastive Causal Learning.</p>
         <p class="author-pub-normal">Qiaowei Miao, <b>Junkun Yuan</b>, Kun Kuang.</p>
         <i class="author-pub-normal">Under review</i> <br><br>
         <i class="abstext">
-            <b>(Domain Generalization)</b> It proposes a Contrastive Causal Model (CCM) for domain generalization by controlling the unstable domain factor and quantifying the causal effects with front-door criterion.
+            <b>(domain generalization, causal learning)</b> It proposes a generalizable contrastive causal model by controlling the unstable domain factor and quantifying the causal effects with front-door criterion.
         </i>
         <br><br>
         [<a href="https://arxiv.org/abs/2210.02655"><span class="papertext">arXiv</span></a>]
@@ -304,16 +307,14 @@
 <!-- arXiv 2021 CSAC -->
 <div class="pubs">
     <div class="pub-img-box">
-        <img class="pub-img" src="papers/arXiv/arXiv2021-SeparatedDG/arXiv2021-SeparatedDG.jpg" width="200px" height="175px"/>
+        <img class="pub-img" src="papers/arXiv/arXiv2021-CSAC/arXiv2021-CSAC-framework.jpg" width="200px" height="175px"/>
     </div>
     <div class="pub-text-box"><div class="pub-text">
         <p class="title-small">Collaborative Semantic Aggregation and Calibration for Separated Domain Generalization.</p>
         <p class="author-pub-normal"><b>Junkun Yuan</b>, Xu Ma, Defang Chen, Kun Kuang<sup>*</sup>, Fei Wu, Lanfen Lin.</p>
         <i class="author-pub-normal"> Under review</i> <br><br>
         <i class="abstext">
-            <b>(Domain Generalization)</b> To protect data privacy, it introduces separated domain generalization with separated source data, and proposes Collaborative Semantic Aggregation and Calibration (CSAC) with local semantic acquisition, data-free semantic aggregation, and cross-layer semantic calibration.
-            <!-- <br>
-            <b>Keywords:</b> Separated domain generalization; Semantic aggregation and calibration; Privacy protection. -->
+            <b>(domain generalization)</b> To protect data privacy, it introduces separated domain generalization with separated source data, and proposes Collaborative Semantic Aggregation and Calibration (CSAC) with local semantic acquisition, data-free semantic aggregation, and cross-layer semantic calibration.
         </i>
         <br>
         <br>
@@ -332,35 +333,30 @@
         <p class="author-pub-normal"><b>Junkun Yuan</b>, Xu Ma, Kun Kuang<sup>*</sup>, Ruoxuan Xiong, Mingming Gong, Lanfen Lin.</p>
         <i class="author-pub-normal"> Under review</i> <br><br>
         <i class="abstext">
-            <b>(Domain Generalization, Causal Inference)</b> It provides a causal view on domain generalization that separates domain-invariant and domain-specific parts in data. It then proposes to learn the domain-invariant relationship between the input features and the labels through instrumental variable method. It allows us to remove unobserved confounders and hence obtain a more generalizable model.
-            <!-- <br>
-            <b>Keywords:</b> Domain generalization; Causality; Instrumental variable. -->
+            <b>(domain generalization, causal learning)</b> It provides a causal view on domain generalization that separates domain-invariant and domain-specific parts in data. It then proposes to learn the domain-invariant relationship between the input features and the labels through instrumental variable method. It allows us to remove unobserved confounders and hence obtain a more generalizable model.
         </i>
         <br><br>
         [<a href="https://arxiv.org/abs/2110.01438"><span class="papertext">arXiv</span></a>] 
-        [<a href="papers/arXiv/arXiv2021-DRIVE/talk on Learning Domain-Invariant Relationship with Instrumental Variable for Domain Generalization.pdf"><span class="papertext">Slides</span></a>] 
+        [<a href="papers/arXiv/arXiv2021-DRIVE/arXiv-2021-DRIVE-talk.pdf"><span class="papertext">Slides</span></a>] 
     </div></div>
 </div>
 
 <!-- TKDE 2021 SGN -->
 <div class="pubs">
     <div class="pub-img-box">
-        <img class="pub-img" src="papers/TKDE/TKDE2021-SGN/TKDE2021-SGN.jpg" width="200px" height="175px"/>
+        <img class="pub-img" src="papers/TKDE/TKDE2021-SGN/TKDE2021-SGN-framwork.jpg" width="200px" height="175px"/>
     </div>
     <div class="pub-text-box"><div class="pub-text">
         <p class="title-normal">Subgraph Networks with Application to Structural Feature Space Expansion.</p>
         <p class="author-pub-small">Qi Xuan<sup>*</sup>, Jinhuan Wang, Minghao Zhao, <b>Junkun Yuan</b>, Chenbo Fu, Zhongyuan Ruan<sup>*</sup>, Guanrong Chen.</p>
         <i class="author-pub-normal">IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>), 2021 </i> 
-        <!-- <span class="pubtext">(CCF-A, IF: 6.977)</span> -->
         <br><br>
         <i class="abstext">
-            <b>(Network Embedding)</b> It introduces a new concept of subgraph network (SGN) and constructs 1st/2nd-order SGNs. SGNs provide complementary structural features for the features extracted by advanced network-embedding methods, significantly improving performance of network classification.
-            <!-- <br>
-            <b>Keywords:</b> Subgraph; Network classification; Structual feature; Biological network; Social network.  -->
+            <b>(network embedding)</b> It introduces a new concept of subgraph network and constructs 1st/2nd-order SGNs. SGNs provide complementary structural features for the features that extracted by advanced network-embedding methods, significantly improving performance of network classification.
         </i>
         <br><br>
         [<a href="https://arxiv.org/abs/1903.09022"><span class="papertext">arXiv</span></a>] 
-        [<a href="papers/TKDE/TKDE2021-SGN/TKDE2021_Subgraph Networks with Application to Structural Feature Space Expansion_Xuan et al.pdf"><span class="papertext">PDF</span></a>]
+        [<a href="papers/TKDE/TKDE2021-SGN/TKDE-2021-SGN.pdf"><span class="papertext">PDF</span></a>]
         [<a href="https://github.com/GalateaWang/SGNs-master"><span class="papertext">Code</span></a>]
     </div></div>
 </div>
@@ -371,21 +367,18 @@
 <!-- ECAI 2020 GAPGAN -->
 <div class="pubs">
     <div class="pub-img-box">
-        <img class="pub-img" src="papers/ECAI/ECAI2020-GAPGAN/ECAI2020-GAPGAN.jpg" width="200px" height="175px">
+        <img class="pub-img" src="papers/ECAI/ECAI2020-GAPGAN/ECAI2020-GAPGAN-framework.jpg" width="200px" height="175px">
     </div>
     <div class="pub-text-box"><div class="pub-text">
         <p class="title-tinyy">Black-box Adversarial Attacks Against Deep Learning Based Malware Binaries Detection with GAN.</p>
         <p class="author-pub-normal"><b>Junkun Yuan</b>, Shaofang Zhou, Lanfen Lin<sup>*</sup>, Feng Wang, Jia Cui.</p>
         <i class="author-pub-normal">European Conference on Artificial Intelligence (<b>ECAI</b>), 2020 </i> 
-        <!-- <span class="pubtext">(CCF-B)</span>  -->
         <br><br>
         <i class="abstext">
-            <b>(Adversarial Attack)</b> To attack malware detector, it proposes a black-box attack framework called GAPGAN to Generate Adversarial Payloads with GAN. It generates payloads with malware binaries, and appends them to the binaries to craft adversarial samples while preserving original functionality.
-            <!-- <br>
-            <b>Keywords:</b> Black-box adversarial attacks; Malware detection; Generative adversarial networks. -->
+            <b>(adversarial attack)</b> To attack malware detector, it proposes a black-box attack framework called GAPGAN to generate adversarial payloads with GAN. It generates payloads with malware binaries, and appends them to the binaries to craft adversarial samples while preserving the original functionality.
         </i>
         <br><br>
-        [<a href="papers/ECAI/ECAI2020-GAPGAN/ECAI2020-Black-box Adversarial Attacks Against Deep Learning Based Malware Binaries_Yuan et al.pdf"><span class="papertext">PDF</span></a>]
+        [<a href="papers/ECAI/ECAI2020-GAPGAN/ECAI2020-GAPGAN.pdf"><span class="papertext">PDF</span></a>]
         [<a href="papers/ECAI/ECAI2020-GAPGAN/ECAI2020-GAPGAN-slides.pdf"><span class="papertext">Slides</span></a>]
     </div></div>
 </div>
@@ -395,19 +388,17 @@
 <!-- ISI 2019 CNN -->
 <div class="pubs">
     <div class="pub-img-box">
-        <img class="pub-img" src="papers/ISI/ISI2019/ISI2019-DGA.jpg" width="200px" height="160px">
+        <img class="pub-img" src="papers/ISI/ISI2019/ISI2019-DGA-framework.jpg" width="200px" height="160px">
     </div>
     <div class="pub-text-box"><div class="pub-text">
         <p class="title-normal">CNN-based DGA Detection with High Coverage.</p>
         <p class="author-pub-normal">Shaofang Zhou, Lanfen Lin<sup>*</sup>, <b>Junkun Yuan</b>, Feng Wang, Zhaoting Ling, Jia Cui.</p>
         <i class="author-pub-normal">International Conference on Intelligence and Security Informatics (<b>ISI</b>), 2019</i> <br><br>
         <i class="abstext">
-            <b>(Adversarial Attack)</b> Attackers use algorithms to create domains for attacks. It presents a temporal convolutional network-based generated domain detection method with high accuracy and coverage.
-            <!-- <br>
-            <b>Keywords:</b> Domain generation algorithm; Malicious domain name; Temporal convolution network. -->
+            <b>(adversarial attack)</b> Attackers use algorithms to create domains for attacks. It presents a temporal convolutional network-based generated domain detection method with high accuracy and coverage.
         </i>
         <br><br>
-        [<a href="papers/ISI/ISI2019/ISI2019_CNN-based DGA Detection with High Coverage_Zhou et al.pdf"><span class="papertext">PDF</span></a>] 
+        [<a href="papers/ISI/ISI2019/ISI2019-DGA.pdf"><span class="papertext">PDF</span></a>] 
     </div></div>
 </div>
 
@@ -428,5 +419,5 @@
 
 </div>
 
-Last updated on November 10, 2022. <!--This page is still under construction.-->
+Last updated on April 5, 2023.
 </body>
