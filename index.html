@@ -127,13 +127,15 @@
     </small>
 </h2>
 <p>
-  Junkun Yuan is currently a fourth-year Ph.D. student at the College of Computer Science and Technology, <a href="http://www.zju.edu.cn/">Zhejiang University</a>, supervised by Prof. <a href="https://kunkuang.github.io/">Kun Kuang</a>, Prof. <a href="https://person.zju.edu.cn/0096005">Lanfen Lin</a>, and Prof. <a href="https://person.zju.edu.cn/wufei">Fei Wu</a>.
+  Junkun Yuan is currently a fifth-year Ph.D. student at the College of Computer Science and Technology, <a href="http://www.zju.edu.cn/">Zhejiang University</a>, Hangzhou, China, supervised by Prof. <a href="https://kunkuang.github.io/">Kun Kuang</a>, Prof. <a href="https://person.zju.edu.cn/0096005">Lanfen Lin</a>, and Prof. <a href="https://person.zju.edu.cn/wufei">Fei Wu</a>.
   <br><br>
 
-  Since July 2022, he has been working as a research intern at <a href="http://vis.baidu.com/#/"> Baidu Computer Vision Group (VIS)</a>, mentored by <a href="https://jingdongwang2017.github.io/"> Jingdong Wang </a>.
+  During July 2022 - July 2023, he was a research intern at <a href="http://vis.baidu.com/#/"> Baidu Computer Vision Group (VIS)</a>, mentored by <a href="https://jingdongwang2017.github.io/"> Jingdong Wang </a>.
   <br><br>
 
-  He is mainly focusing on improving the generalization and stability of machine learning systems in the open, dynamic, and uncertain real world. His current research interests include self-supervised learning, transfer learning, and causal learning.
+  His primary focus lies in computer vision and multi-modal learning, with ongoing research pursuits encompassing visual and multi-modal self-supervised pre-training, model adaptation and out-of-distribution generalization, causal learning and reasoning.
+
+  <!-- He is mainly focusing on improving the generalization and stability of machine learning systems in the open, dynamic, and uncertain real world. His current research interests include self-supervised learning, transfer learning, and causal learning. -->
 </p>
 
 
@@ -157,7 +159,7 @@
         <p class="author-pub-normal"><b>Junkun Yuan</b><sup>#</sup>, Xu Ma<sup>#</sup>, Defang Chen, Fei Wu, Lanfen Lin, Kun Kuang<sup>*</sup>.</p>
         <i class="author-pub-normal"> IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>), 2023</i> <br><br>
         <i class="abstext">
-            <b>(domain generalization)</b> To protect data privacy, it introduces federated domain generalization with separated source data, and proposes a collaborative semantic aggregation and calibration method with local semantic acquisition, data-free semantic aggregation, and cross-layer semantic calibration.
+            <b>(out-of-distribution generalization)</b> To protect data privacy, it solves the federated domain generalization task by proposing a collaborative semantic aggregation and calibration method with local semantic acquisition, data-free semantic aggregation, and cross-layer semantic calibration.
         </i>
         <br>
         <br>
@@ -173,15 +175,66 @@
         <img class="pub-img" src="papers/TKDD/TKDE-2023-iv-dg/TKDD2023-IV-DG-framework.jpg" width="200px" height="200px" alt="" />
     </span>
     <div class="pub-text-box"><div class="pub-text">
-        <p class="title-tiny">Instrumental Variable-Driven Domain Generalization with Unobserved Confounders.</p>
+        <p class="title-small">Instrumental Variable-Driven Domain Generalization with Unobserved Confounders.</p>
         <p class="author-pub-small"><b>Junkun Yuan</b>, Xu Ma, Ruoxuan Xiong, Mingming Gong, Xiangyu Liu, Fei Wu, Lanfen Lin, Kun Kuang<sup>*</sup>.</p>
         <i class="author-pub-normal"> ACM Transactions on Knowledge Discovery from Data (<b>TKDD</b>), 2023</i> <br><br>
         <i class="abstext">
-            <b>(domain generalization, causal learning)</b> It provides a causal view on domain generalization that separates domain-invariant and domain-specific parts in data. It then proposes to learn the domain-invariant relationship between the input features and the labels through instrumental variable method. It allows us to remove unobserved confounders and hence obtain a more generalizable model.
+            <b>(out-of-distribution generalization, causal learning)</b> It provides a causal view on domain generalization that separates domain-invariant and domain-specific parts in data. It then proposes to learn the domain-invariant relationship between the input features and the labels through instrumental variable method. It allows us to remove unobserved confounders and obtain a generalizable model.
         </i>
         <br><br>
         [<a href="https://arxiv.org/abs/2110.01438"><span class="papertext">arXiv</span></a>] 
         [<a href="papers/TKDD/TKDE-2023-iv-dg/TKDE2023-IV-DG-slides.pdf"><span class="papertext">Slides</span></a>] 
+    </div></div>
+</div>
+
+<!-- ICCV 2023 MAP -->
+<div class="pubs">
+    <div class="pub-img-box">
+        <img class="pub-img" src="papers/ICCV/ICCV2023-MAP/ICCV2023-MAP-framework.jpg" width="200px" height="200px"/>
+    </div>
+    <div class="pub-text-box"><div class="pub-text">
+        <p class="title-small">MAP: Towards Balanced Generalization of IID and OOD through Model-Agnostic Adapters.</p>
+        <p class="author-pub-normal">Min Zhang<sup>#</sup>, <b>Junkun Yuan</b><sup>#</sup>, Yue He, Wenbin Li, Zhengyu Chen, Kun Kuang<sup>*</sup>.</p>
+        <i class="author-pub-normal">International Conference on Computer Vision (<b>ICCV</b>), 2023</i> <br><br>
+        <i class="abstext">
+            <b>(out-of-distribution)</b> It presents empirical evidence that existing OOD methods exhibit subpar performance when faced with minor distribution shifts, and proposes a bilevel optimization strategy, leveraging model-agnostic adapters to strike a balance between IID and OOD generalization.
+        </i>
+        <br><br>
+        Update soon
+    </div></div>
+</div>
+
+<!-- ICCV 2023 CAM -->
+<div class="pubs">
+    <div class="pub-img-box">
+        <img class="pub-img" src="papers/ICCV/ICCV2023-CAM/ICCV2023-CAM-framework.jpg" width="200px" height="160px"/>
+    </div>
+    <div class="pub-text-box"><div class="pub-text">
+        <p class="title-normal">Universal Domain Adaptation via Compressive Attention Matching.</p>
+        <p class="author-pub-normal">Didi Zhu, Yinchuan Li, <b>Junkun Yuan</b>, Zexi Li, Kun Kuang, Chao Wu.</p>
+        <i class="author-pub-normal">International Conference on Computer Vision (<b>ICCV</b>), 2023</i> <br><br>
+        <i class="abstext">
+            <b>(domain adaptation)</b> To better align common features and separate target classes for universal domain adaptation, it makes attempts of leveraging attention maps in ViTs to perform prediction. 
+        </i>
+        <br><br>
+        [<a href="https://arxiv.org/abs/2304.11862"><span class="papertext">arXiv</span></a>]
+    </div></div>
+</div>
+
+<!-- ICCV 2023 CTP-TFT -->
+<div class="pubs">
+    <div class="pub-img-box">
+        <img class="pub-img" src="papers/arXiv/arXiv2023-CTP-TFT/arXiv2023-CTP-TFT-framework.png" width="200px" height="220px"/>
+    </div>
+    <div class="pub-text-box"><div class="pub-text">
+        <p class="title-normal">Task-Oriented Multi-Modal Mutual Prompt Leaning for Vision-Language Models.</p>
+        <p class="author-pub-normal">Sifan Long<sup>#</sup>, Zhen Zhao<sup>#</sup>, <b>Junkun Yuan</b><sup>#</sup>, Zichang Tan, Jiangjiang Liu, Luping Zhou, Shengsheng Wang<sup>*</sup>, Jingdong Wang<sup>*</sup>.</p>
+        <i class="author-pub-normal">International Conference on Computer Vision (<b>ICCV</b>), 2023</i> <br><br>
+        <i class="abstext">
+            <b>(multi-modal learning)</b> It presents a class-aware text prompt to enrich generated prompts with label-related image information, and makes the image branch attend to class-related representations. The text and image branches mutually promote to enhance the adaptation of vision-language models. 
+        </i>
+        <br><br>
+        [<a href="https://arxiv.org/abs/2303.17169"><span class="papertext">arXiv</span></a>]
     </div></div>
 </div>
 
@@ -192,15 +245,13 @@
     </span>
     <div class="pub-text-box"><div class="pub-text">
         <p class="title-tiny">Quantitatively Measuring and Contrastively Exploring Heterogeneity for Domain Generalization.</p>
-        <p class="author-pub-small">Yunze Tong<sup>#</sup>, <b>Junkun Yuan</b><sup>#</sup>, Min Zhang, Didi Zhu, Keli Zhang, Fei Wu, Kun Kuang<sup>*</sup>.</p>
+        <p class="author-pub-normal">Yunze Tong<sup>#</sup>, <b>Junkun Yuan</b><sup>#</sup>, Min Zhang, Didi Zhu, Keli Zhang, Fei Wu, Kun Kuang<sup>*</sup>.</p>
         <i class="author-pub-normal">ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<b>KDD</b>), 2023</i> <br><br>
         <i class="abstext">
-            <b>(domain generalization)</b> It tackles the label heterogeneity problem in domain generalization, i.e., the ground-truth labels could be sub-optimal, and proposes to quantitatively measure and address it.
+            <b>(out-of-distribution generalization)</b> It tackles the label heterogeneity problem, i.e., the ground-truth labels could be sub-optimal, and proposes a method to quantitatively measure and address it.
         </i>
         <br><br>
-        <!-- [<a href="https://arxiv.org/abs/2110.01438"><span class="papertext">arXiv</span></a>]  -->
-        <!-- [<a href="papers/TKDD/TKDE-2023-iv-dg/TKDE2023-IV-DG-slides.pdf"><span class="papertext">Slides</span></a>]  -->
-        Appear soon
+        [<a href="https://arxiv.org/abs/2305.15889"><span class="papertext">arXiv</span></a>] 
     </div></div>
 </div>
 
@@ -214,44 +265,10 @@
         <p class="author-pub-small">Ziwei Niu, <b>Junkun Yuan</b>, Xu Ma, Yingying Xu, Jing Liu, Yen-Wei Chen, Ruofeng Tong, Lanfen Lin<sup>*</sup>.</p>
         <i class="author-pub-normal">IEEE Transactions on Multimedia (<b>TMM</b>), 2023</i> <br><br>
         <i class="abstext">
-            <b>(domain generalization)</b> Inspired by online knowledge distillation, it performs two-stage distillation with multiple students, where each student is trained on a source dataset, and one leader student. 
+            <b>(out-of-distribution generalization)</b> Inspired by knowledge distillation, it performs two-stage distillation with multiple students, where each student is trained on one dataset, and one leader student. 
         </i>
         <br><br>
         [<a href="papers/TMM/TMM-2023-/TMM-2023-KDDRL.pdf"><span class="papertext">PDF</span></a>]
-    </div></div>
-</div>
-
-<!-- arXiv 2023 CTP-TFT -->
-<div class="pubs">
-    <div class="pub-img-box">
-        <img class="pub-img" src="papers/arXiv/arXiv2023-CTP-TFT/arXiv2023-CTP-TFT-framework.png" width="200px" height="220px"/>
-    </div>
-    <div class="pub-text-box"><div class="pub-text">
-        <p class="title-normal">Task-Oriented Multi-Modal Mutual Leaning for Vision-Language Models.</p>
-        <p class="author-pub-small">Sifan Long<sup>#</sup>, Zhen Zhao<sup>#</sup>, <b>Junkun Yuan</b><sup>#</sup>, Zichang Tan, Jiangjiang Liu, Luping Zhou, Shengsheng Wang<sup>*</sup>, Jingdong Wang<sup>*</sup>.</p>
-        <i class="author-pub-normal">Under review</i> <br><br>
-        <i class="abstext">
-            <b>(multi-modal learning)</b> It presents a class-aware text prompt to enrich generated prompts with label-related image information, and makes the image branch attend to class-related representations. The text and image branches mutually promote to enhance the adaptation of vision-language models. 
-        </i>
-        <br><br>
-        [<a href="https://arxiv.org/abs/2303.17169"><span class="papertext">arXiv</span></a>]
-    </div></div>
-</div>
-
-<!-- arXiv 2023 CAM -->
-<div class="pubs">
-    <div class="pub-img-box">
-        <img class="pub-img" src="papers/arXiv/arXiv2023-CAM/arXiv2023-CAM-framework.jpg" width="200px" height="160px"/>
-    </div>
-    <div class="pub-text-box"><div class="pub-text">
-        <p class="title-normal">Universal Domain Adaptation via Compressive Attention Matching.</p>
-        <p class="author-pub-small">Didi Zhu, Yinchuan Li, <b>Junkun Yuan</b>, Zexi Li, Kun Kuang, Chao Wu.</p>
-        <i class="author-pub-normal">Under review</i> <br><br>
-        <i class="abstext">
-            <b>(domain adaptation)</b> To better align common features and separate target classes for universal domain adaptation, it makes attempts of directly using attention in ViTs to perform prediction. 
-        </i>
-        <br><br>
-        [<a href="https://arxiv.org/abs/2304.11862"><span class="papertext">arXiv</span></a>]
     </div></div>
 </div>
 
@@ -267,7 +284,7 @@
         <p class="author-pub-normal">Xinyu Zhang<sup>#</sup>, Jiahui Chen<sup>#</sup>, <b>Junkun Yuan</b>, Qiang Chen, Jian Wang, Xiaodi Wang, Shumin Han, Xiaokang Chen, Jimin Pi, Kun Yao, Junyu Han, Errui Ding, Jingdong Wang<sup>*</sup>.</p>
         <i class="author-pub-normal">Under review</i> <br><br>
         <i class="abstext">
-            <b>(self-supervised learning)</b> It proposes CAE v2, a new CLIP-guided masked image modeling method, which (i) uses both masked and visible tokens as the distillation target, and (ii) employs a masking ratio proportional to the model size, achieving superior performance on many downstream vision tasks.
+            <b>(visual self-supervised learning)</b> It proposes CAE v2, a new CLIP-guided masked image modeling method, which (i) uses both masked and visible tokens as the distillation target, and (ii) employs a masking ratio proportional to the model size, achieving superior performance on downstream tasks.
         </i>
         <br><br>
         [<a href="https://arxiv.org/abs/2211.09799"><span class="papertext">arXiv</span></a>]
@@ -284,7 +301,7 @@
         <p class="author-pub-normal"><b>Junkun Yuan</b><sup>#</sup>, Xu Ma<sup>#</sup>, Defang Chen, Kun Kuang<sup>*</sup>, Fei Wu, Lanfen Lin.</p>
         <i class="author-pub-normal">International Journal of Computer Vision (<b>IJCV</b>), 2022</i> <br><br>
         <i class="abstext">
-            <b>(domain generalization)</b> It introduces a new task called single labeled domain generalization where only one source dataset being labeled, and proposes a method named domain-specific bias filtering.
+            <b>(out-of-distribution generalization)</b> It proposes a task called single labeled domain generalization where only one source dataset being labeled, and a novel method named domain-specific bias filtering.
         </i>
         <br><br>
         [<a href="https://arxiv.org/abs/2110.00726"><span class="papertext">arXiv</span></a>]
@@ -303,7 +320,7 @@
         <p class="author-pub-normal"><b>Junkun Yuan</b><sup>#</sup>, Xu Ma<sup>#</sup>, Defang Chen, Kun Kuang<sup>*</sup>, Fei Wu, Lanfen Lin.</p>
         <i class="author-pub-normal">International Conference on Multimedia (<b>MM</b>), 2022</i> <br><br>
         <i class="abstext">
-            <b>(domain generalization)</b> To enable generalization learning with limited annotation, it proposes a framework called collaborative exploration and generalization, which jointly optimizes active exploration and semi-supervised generalization for the label-efficient domain generalization task.
+            <b>(out-of-distribution generalization)</b> To enable generalization learning with limited annotation, it proposes a framework called collaborative exploration and generalization, which jointly optimizes active exploration and semi-supervised generalization for the label-efficient domain generalization task.
         </i>
         <br><br>
         [<a href="https://arxiv.org/abs/2208.03644"><span class="papertext">arXiv</span></a>]
@@ -322,7 +339,7 @@
         <p class="author-pub-tiny">Anpeng Wu<sup>#</sup>, <b>Junkun Yuan</b><sup>#</sup>, Kun Kuang<sup>*</sup>, Bo Li, Pan Zhou, Jianrong Tao, Qiang Zhu, Yueting Zhuang, Fei Wu.</p>
         <i class="author-pub-normal">IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>), 2022</i> <br><br>
         <i class="abstext">
-            <b>(causal learning)</b> It separates confounders by learning representations of confounders and non-confounders, balancing confounders with sample re-weighting, and estimating treatment effect.
+            <b>(causal reasoning)</b> It separates confounders by learning representations of confounders and non-confounders, balancing confounders with sample re-weighting, and estimating treatment effect.
         </i>
         <br><br>
         [<a href="https://arxiv.org/abs/2006.07040"><span class="papertext">arXiv</span></a>]
@@ -342,7 +359,7 @@
         <i class="author-pub-normal"> ACM Transactions on Knowledge Discovery from Data (<b>TKDD</b>), 2022</i> 
         <br><br>
         <i class="abstext">
-            <b>(causal learning)</b> 
+            <b>(causal reasoning)</b> 
             Instrumental Variable (IV) is a powerful tool for causal inference, but it is hard to pre-define valid IVs. 
             It proposes an automatic instrumental variable decomposition algorithm to generate effective IV representations from observed variables for IV-based counterfactual prediction.
         </i>
@@ -472,5 +489,5 @@
 
 </div>
 
-Last updated on June 15, 2023.
+Last updated on July 23, 2023.
 </body>
