@@ -1,0 +1,199 @@
+<meta name="description" content="Junkun Yuan&#39;s Reading Papers">
+<link rel="stylesheet" href="jemdoc_reading_papers.css" type="text/css">
+<link rel="shortcut icon" href="resource/citations.jpg">
+
+<title>JunkunYuan's Reading Papers</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML example</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse; /* 合并边框 */
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #adadad; /* 设置单元格边框 */
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #e2e2e2; /* 表头背景颜色 */
+        }
+
+        .image-container {
+            display: flex; /* 使用flexbox布局 */
+            justify-content: center; /* 居中对齐 */
+            margin: 20px; /* 设置外边距 */
+        }
+        figure {
+            margin: 0 10px; /* 设置每个figure的左右外边距 */
+            text-align: center; /* 使说明居中 */
+        }
+        img {
+            max-width: 100%; /* 使图片自适应容器宽度 */
+            height: auto; /* 保持图片比例 */
+        }
+        figcaption {
+            font-size: 14px; /* 设置说明文字大小 */
+            color: #555; /* 设置说明文字颜色 */
+        }
+    </style>
+
+<style>
+    .papertext {
+        color: #D93053;
+        font-weight: bolder;
+        font-size: 14px;
+    }
+    </style>
+
+</head>
+
+<body>
+<div id="layout-content" style="margin-top:25px">
+
+<h1 id="top">Junkun Yuan's Reading Papers</h1>
+
+<br>
+<b><font size=4>Organized by Junkun Yuan (yuanjk0921@outlook.com)</font></b>
+
+<br><br>
+Some interesting papers I've read on Artificial Intelligence. 
+
+<table>
+    <colgroup>
+        <col style="width: 50%;">
+        <col style="width: 50%;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Modality</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#large-language-model">Large Language Model</a></td>
+            <td>Text -> Text</td>
+        </tr>
+        <tr>
+            <td><a href="#multimodal-large-language-model">Multimodal Large Language Model</a></td>
+            <td>Multimodality -> Text</td>
+        </tr>
+        <tr>
+            <td><a href="#visual-generative-model">Visual Generative Model</a></td>
+            <td>Multimodality -> Vision</td>
+        </tr>
+        <tr>
+            <td><a href="#native-large-multimodal-model">Native Large Multimodal Model</a></td>
+            <td>Multimodality -> Multimodality</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="large-language-model">Large Language Model</h2>
+
+<p><a href="#top">[back to top]</a></p>
+
+<h2 id="multimodal-large-language-model">Multimodal Large Language Model</h2>
+
+<p><a href="#top">[back to top]</a></p>
+
+<h2 id="visual-generative-model">Visual Generative Model</h2>
+
+<p><a href="#top">[back to top]</a></p>
+
+<b>Contents:</b>
+<ul>
+    <li><a href="#vgm-inference-time-improvement">Inference-Time Improvement</a></li>
+</ul>
+
+<h3 id="vgm-inference-time-improvement">Inference-Time Improvement</h3>
+
+<table>
+    <colgroup>
+        <col style="width: 5%;">
+        <col style="width: 10%;">
+        <col style="width: 40%;">
+        <col style="width: 45%;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Model</th>
+            <th>Paper & Publication & Project</th>
+            <th>Summary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2025-01-16</td>
+            <td><a href="#20250116-scaling-analysis">Scaling Analysis</a></td>
+            <td><a href="https://arxiv.org/pdf/2501.09732"><span class="papertext">Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps</span></a> <i>(arXiv 2015)</i></td>
+            <td>Analysis on inference-time scaling with <b>verifiers</b> and <b>algorithms</b>, beyond denoising steps.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="native-large-multimodal-model">Native Large Multimodal Model</h2>
+
+<p><a href="#top">[back to top]</a></p>
+
+
+<!-- 所有papers -->
+<h2>Papers</h2>
+
+<p><a href="#top">[back to top]</a></p>
+
+<b><font size=4>List of all papers (in chronological order).</font></b>
+
+<h4 id="20250116-scaling-analysis">
+    [2025-01-16] Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps <i>(arXiv 2025)</i>
+</h4>
+
+<p><a href="#top">[back to top]</a></p>
+
+<p>
+    <b>Authors:</b> Ma, Shangyuan Tong, Haolin Jia, Hexiang Hu, Yu-Chuan Su, Mingda Zhang, Xuan Yang, Yandong Li, Tommi Jaakkola, Xuhui Jia, <u>Saining Xie</u>
+</p>
+
+<p>
+    <b>Organizations:</b> NYU, MIT, Google
+</p>
+
+<p>
+    <b>Summary:</b> Analysis on inference-time scaling of diffusion models with <u>verifiers</u> and <u>algorithms</u>, beyond denoising steps.
+</p>
+<ul>
+    <li>Use some <u>verifiers</u> to provide <u>feedback</u>: FID, IS, CLIP, DINO; Aesthetic Score Predictor, CLIPScore, ImageReward, Ensemble.</li>
+    <li>Use some <u>algorithms</u> to find <u>better noise</u>: <u>Random Search (the best performance)</u>, Zero-Order Search, Search Over Paths.</li>
+    <li>No single verifier-algorithm configuration is universally optimal.</li>
+    <li>Inference-time search further improves performance of the model which has already been fine-tuned.</li>
+    <li>Smaller search/iter ratio enables efficient convergence but lower final performance.</li>
+    <li>With a fixed inference compute budget, <u>performing search on small models can outperform larger models without search</u>.</li>
+</ul>
+
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src='figs/2025arXiv fig1 Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps.png' width=300>
+                <figcaption>Scale with search is more effective than with denoising steps.</figcaption>
+            </figure>
+        </td>
+        <td>
+            <figure>
+                <img src='figs/2025arXiv fig2 Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps.png' width=600>
+        <figcaption>Random Search performs the best because it converges fastest.</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+
+</div>
+
+Last updated on Feb. 8, 2025.
+</body>
