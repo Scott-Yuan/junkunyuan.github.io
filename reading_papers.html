@@ -1,13 +1,16 @@
-<meta name="description" content="Junkun Yuan&#39;s Reading Papers">
-<link rel="stylesheet" href="jemdoc_reading_papers.css" type="text/css">
-<link rel="shortcut icon" href="resource/citations.jpg">
-
-<title>JunkunYuan's Reading Papers</title>
+<!DOCTYPE html>
+<html>
 
 <head>
+    <link rel="stylesheet" href="jemdoc_reading_papers.css" type="text/css">
+    <link rel="shortcut icon" href="resource/citations.jpg">
+    <title>JunkunYuan's Reading Papers</title>
+    <meta name="description" content="Junkun Yuan&#39;s Reading Papers">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML example</title>
+    
+    <div id="layout-content" style="margin-top:25px"></div>
+
     <style>
         table {
             width: 100%;
@@ -42,18 +45,16 @@
         }
     </style>
 
-<style>
-    .papertext {
-        color: #D93053;
-        font-weight: bolder;
-        font-size: 14px;
-    }
+    <style>
+        .papertext {
+            color: #D93053;
+            font-weight: bolder;
+            font-size: 14px;
+        }
     </style>
-
 </head>
 
 <body>
-<div id="layout-content" style="margin-top:25px">
 
 <h1 id="top">Junkun Yuan's Reading Papers</h1>
 
@@ -76,40 +77,68 @@ Some interesting papers I've read on Artificial Intelligence.
     </thead>
     <tbody>
         <tr>
-            <td><a href="#large-language-model">Large Language Model</a></td>
+            <td><a href="#large-language-models">Large Language Models</a></td>
             <td>Text -> Text</td>
         </tr>
         <tr>
-            <td><a href="#multimodal-large-language-model">Multimodal Large Language Model</a></td>
+            <td><a href="#multimodal-large-language-models">Multimodal Large Language Models</a></td>
             <td>Multimodality -> Text</td>
         </tr>
         <tr>
-            <td><a href="#visual-generative-model">Visual Generative Model</a></td>
+            <td><a href="#visual-generative-models">Visual Generative Models</a></td>
             <td>Multimodality -> Vision</td>
         </tr>
         <tr>
-            <td><a href="#native-large-multimodal-model">Native Large Multimodal Model</a></td>
+            <td><a href="#native-large-multimodal-models">Native Large Multimodal Models</a></td>
             <td>Multimodality -> Multimodality</td>
         </tr>
     </tbody>
 </table>
 
-<h2 id="large-language-model">Large Language Model</h2>
+<h2 id="large-language-models">Large Language Models</h2>
 
 <p><a href="#top">[back to top]</a></p>
 
-<h2 id="multimodal-large-language-model">Multimodal Large Language Model</h2>
+<h2 id="multimodal-large-language-models">Multimodal Large Language Models</h2>
 
 <p><a href="#top">[back to top]</a></p>
 
-<h2 id="visual-generative-model">Visual Generative Model</h2>
+<h2 id="visual-generative-models">Visual Generative Models</h2>
 
 <p><a href="#top">[back to top]</a></p>
 
 <b>Contents:</b>
 <ul>
+    <li><a href="#vgm-foundation-model">Foundation Models and Algorithms</a></li>
     <li><a href="#vgm-inference-time-improvement">Inference-Time Improvement</a></li>
 </ul>
+
+<h3 id="vgm-foundation-model">Foundation Models and Algorithms</h3>
+
+<table>
+    <colgroup>
+        <col style="width: 5%;">
+        <col style="width: 10%;">
+        <col style="width: 40%;">
+        <col style="width: 45%;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Model</th>
+            <th>Paper & Publication & Project</th>
+            <th>Summary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2020-12-16</td>
+            <td><a href="#20201216-ddpm"><b>DDPM</b></a></td>
+            <td><a href="https://arxiv.org/pdf/2006.11239"><span class="papertext">Denoising Diffusion Probabilistic Models</span></a> <i>(NeurIPS 2020)</i></td>
+            <td>Introduce the <b>DDPM</b> algorithm that iteratively denoise data from random noise.</td>
+        </tr>
+    </tbody>
+</table>
 
 <h3 id="vgm-inference-time-improvement">Inference-Time Improvement</h3>
 
@@ -131,39 +160,77 @@ Some interesting papers I've read on Artificial Intelligence.
     <tbody>
         <tr>
             <td>2025-01-16</td>
-            <td><a href="#20250116-scaling-analysis">Scaling Analysis</a></td>
-            <td><a href="https://arxiv.org/pdf/2501.09732"><span class="papertext">Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps</span></a> <i>(arXiv 2015)</i></td>
+            <td><a href="#20250116-scaling-analysis"><b>Scaling Analysis</b></a></td>
+            <td><a href="https://arxiv.org/pdf/2501.09732"><span class="papertext">Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps</span></a> <i>(arXiv 2025)</i></td>
             <td>Analysis on inference-time scaling with <b>verifiers</b> and <b>algorithms</b>, beyond denoising steps.</td>
         </tr>
     </tbody>
 </table>
 
-<h2 id="native-large-multimodal-model">Native Large Multimodal Model</h2>
+<h2 id="native-large-multimodal-models">Native Large Multimodal Models</h2>
 
 <p><a href="#top">[back to top]</a></p>
 
 
-<!-- 所有papers -->
+<!-- list all papers and notes -->
 <h2>Papers</h2>
+
+<!-- Beginning of a paper -->
+<!-- <h4 id="20201216-ddpm">
+    [2020-12-16] Denoising <i>(NeurIPS 2020)</i>
+</h4>
+<p><a href="#top">[back to top]</a></p>
+<p>
+    <b>Paper: </b><a href="https://arxiv.org/pdf/2501.09732">arXiv 2015</a>
+</p>
+<p>
+    <b>Authors:</b>
+</p>
+<p>
+    <b>Organizations:</b>
+</p>
+<p>
+    <b>Summary:</b> 
+</p>
+<ul>
+    <li>
+</ul> -->
+<!-- <table>
+    <tr>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2025arXiv fig1 Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps.png' width=300>
+                <figcaption>Scale with search is more effective than with denoising steps.</figcaption>
+            </figure>
+        </td>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2025arXiv fig2 Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps.png' width=600>
+        <figcaption>Random Search performs the best because it converges fastest.</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table> -->
+<!-- End of a paper -->
 
 <p><a href="#top">[back to top]</a></p>
 
 <b><font size=4>List of all papers (in chronological order).</font></b>
 
+<!-- Beginning of a paper -->
 <h4 id="20250116-scaling-analysis">
-    [2025-01-16] Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps <i>(arXiv 2025)</i>
+    [2025-01-16] Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps
 </h4>
-
 <p><a href="#top">[back to top]</a></p>
-
+<p>
+    <b>Paper: </b><a href="https://arxiv.org/pdf/2501.09732">arXiv 2025</a>
+</p>
 <p>
     <b>Authors:</b> Ma, Shangyuan Tong, Haolin Jia, Hexiang Hu, Yu-Chuan Su, Mingda Zhang, Xuan Yang, Yandong Li, Tommi Jaakkola, Xuhui Jia, <u>Saining Xie</u>
 </p>
-
 <p>
     <b>Organizations:</b> NYU, MIT, Google
 </p>
-
 <p>
     <b>Summary:</b> Analysis on inference-time scaling of diffusion models with <u>verifiers</u> and <u>algorithms</u>, beyond denoising steps.
 </p>
@@ -175,7 +242,6 @@ Some interesting papers I've read on Artificial Intelligence.
     <li>Smaller search/iter ratio enables efficient convergence but lower final performance.</li>
     <li>With a fixed inference compute budget, <u>performing search on small models can outperform larger models without search</u>.</li>
 </ul>
-
 <table>
     <tr>
         <td>
@@ -192,8 +258,43 @@ Some interesting papers I've read on Artificial Intelligence.
         </td>
     </tr>
 </table>
+<!-- End of a paper -->
 
-</div>
+<!-- Beginning of a paper -->
+<h4 id="20201216-ddpm">
+    [2020-12-16] Denoising Diffusion Probabilistic Models
+</h4>
+<p><a href="#top">[back to top]</a></p>
+<p>
+    <b>Paper: </b><a href="https://arxiv.org/pdf/2006.11239">NeurIPS 2020</a>
+</p>
+<p>
+    <b>Authors:</b> Jonathan Ho, Ajay Jain, <u>Pieter Abbeel</u>
+</p>
+<p>
+    <b>Organizations:</b> UC Berkeley
+</p>
+<p>
+    <b>Summary:</b> Introduce the <b>DDPM</b> algorithm that iteratively denoise data from random noise.
+</p>
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/20201216-ddpm-fig1.png' width=400>
+                <figcaption>Graphic model of DDPM.</figcaption>
+            </figure>
+        </td>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/20201216-ddpm-fig2.png' width=500>
+        <figcaption>Training and sampling algorithms of DDPM.</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+<!-- End of a paper -->
 
 Last updated on Feb. 8, 2025.
 </body>
+</html>
