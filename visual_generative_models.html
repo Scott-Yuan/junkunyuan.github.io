@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="jemdoc_reading_papers.css" type="text/css">
+    <link rel="shortcut icon" href="resource/citations.jpg">
+    <title>JunkunYuan's Reading Papers</title>
+    <meta name="description" content="Junkun Yuan&#39;s Reading Papers">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <div id="layout-content" style="margin-top:25px"></div>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse; /* 合并边框 */
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #adadad; /* 设置单元格边框 */
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #e2e2e2; /* 表头背景颜色 */
+        }
+
+        .image-container {
+            display: flex; /* 使用flexbox布局 */
+            justify-content: center; /* 居中对齐 */
+            margin: 20px; /* 设置外边距 */
+        }
+        figure {
+            margin: 0 10px; /*设置每个figure的左右外边距*/
+            text-align: center; /* 使说明居中 */
+        }
+        img {
+            max-width: 100%; /* 使图片自适应容器宽度 */
+            height: auto; /* 保持图片比例 */
+        }
+        figcaption {
+            font-size: 14px; /* 设置说明文字大小 */
+            color: #426bbd; /* 设置说明文字颜色 */
+        }
+    </style>
+
+    <style>
+        .papertext {
+            color: #D93053;
+            /* font-weight: bolder; */
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1 id="top">Visual Generative Models</h1>
+
+<b><font size=4>Organized by Junkun Yuan (yuanjk0921@outlook.com)</font></b>
+
+<br><br>
+Some interesting papers I've read on Visual Generative Models.
+
+<br><br>
+<b>Contents:</b>
+<ul>
+    <li><a href="#vgm-foundation-model">Foundation Models and Algorithms</a></li>
+    <li><a href="#vgm-inference-time-improvement">Inference-Time Improvement</a></li>
+</ul>
+
+<br>
+<a href="reading_papers.html">[back to main contents]</a>
+
+
+
+<!-- Foundation Models and Algorithms -->
+<h2 id="vgm-foundation-model">Foundation Models and Algorithms</h2>
+
+Foundation models and algorithms on visual generative models.
+
+<table>
+    <colgroup>
+        <col style="width: 5%;">
+        <col style="width: 10%;">
+        <col style="width: 45%;">
+        <col style="width: 40%;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Model</th>
+            <th>Paper & Publication & Project</th>
+            <th>Summary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2022-05-29</td>
+            <td><a href="#2022-05-29-cogvideo">CogVideo</a></td>
+            <td><a href="https://arxiv.org/pdf/2205.15868"><span class="papertext">CogVideo: Large-scale Pretraining for Text-to-Video Generation via Transformers <i>(ICLR 2023)</i></span></a> <img src="https://img.shields.io/github/stars/THUDM/CogVideo.svg?style=social&label=Star" alt="Star" /></td>
+            <td>An <u>open-sourced transformer-based text-to-video</u> generation model with 9B parameters.</td>
+        </tr>
+        <tr>
+            <td>2021-12-20</td>
+            <td><a href="#2021-12-20-ldm"><b>LDM</b></a></td>
+            <td><a href="https://arxiv.org/pdf/2112.10752"><span class="papertext">High-Resolution Image Synthesis with Latent Diffusion Models <i>(CVPR 2022)</i></span></a> <img src="https://img.shields.io/github/stars/CompVis/latent-diffusion.svg?style=social&label=Star" alt="Star" /></td>
+            <td>Generate high-quality images by applying diffusion models in the <u>compressed latent space of VAE</u>.</td>
+        </tr>
+        <tr>
+            <td>2020-12-16</td>
+            <td><a href="#2020-12-16-ddpm"><b>DDPM</b></a></td>
+            <td><a href="https://arxiv.org/pdf/2006.11239"><span class="papertext">Denoising Diffusion Probabilistic Models <i>(NeurIPS 2020)</i></span></a> <img src="https://img.shields.io/github/stars/hojonathanho/diffusion.svg?style=social&label=Star" alt="Star" /></td>
+            <td>Introduce the <u>DDPM</u> algorithm that iteratively denoises data from random noise.</td>
+        </tr>
+    </tbody>
+</table>
+
+<a href="#top">[back to top]</a>
+
+
+
+<!-- Inference-Time Improvement -->
+<h2 id="vgm-inference-time-improvement">Inference-Time Improvement</h2>
+
+Improve inference-time performance of visual generative models, inspired by progress in large language models like <a href="https://arxiv.org/pdf/2501.12948">DeepSeek-R1</a>.
+
+<table>
+    <colgroup>
+        <col style="width: 5%;">
+        <col style="width: 10%;">
+        <col style="width: 40%;">
+        <col style="width: 45%;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Model</th>
+            <th>Paper & Publication & Project</th>
+            <th>Summary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2025-01-16</td>
+            <td><a href="#2025-01-16-scaling-analysis">Scaling Analysis</a></td>
+            <td><a href="https://arxiv.org/pdf/2501.09732"><span class="papertext">Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps <i>(arXiv 2025)</i></span></a></td>
+            <td>Analysis on inference-time scaling of diffusion models with <u>verifiers</u> and <u>algorithms</u>, beyond denoising steps.</td>
+        </tr>
+    </tbody>
+</table>
+
+<a href="#top">[back to top]</a>
+
+<!-- list all papers and notes -->
+<h2>Papers</h2>
+
+<b><font size=4>4 papers (in chronological order).</font></b>
+
+<!-- Beginning of a paper -->
+<!-- <h4 id="template">
+    [2020-12-16] Template
+</h4>
+<p>
+    <b>Paper: </b><a href="https://arxiv.org/pdf/2501.09732">arXiv 2015</a>
+</p>
+<p>
+    <b>Authors:</b>
+</p>
+<p>
+    <b>Organizations:</b>
+</p>
+<p>
+    <b>Summary:</b> 
+</p>
+<ul>
+    <li>
+</ul>
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src='temp1.png' width=300>
+                <figcaption>caption1.</figcaption>
+            </figure>
+        </td>
+        <td>
+            <figure>
+                <img src='temp2.png' width=600>
+        <figcaption>caption2.</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+<p><a href="#top">[back to top]</a></p> -->
+<!-- End of a paper -->
+
+<!-- Beginning of a paper -->
+<h4 id="2022-05-29-cogvideo">
+    [2022-05-29] CogVideo: Large-scale Pretraining for Text-to-Video Generation via Transformers <i>(ICLR 2023)</i>
+</h4>
+<p>
+    <b>Authors:</b> Wenyi Hong, Ming Ding, Wendi Zheng, Xinghan Liu, Jie Tang
+</p>
+<p>
+    <b>Organizations:</b> Tsinghua University, BAAI
+</p>
+<p>
+    <b>Summary:</b> An <u>open-sourced transformer-based text-to-video</u> generation model with 9B parameters.
+</p>
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2022-05-29-cogvideo-fig1.png' width=400>
+                <figcaption>It is trained on CogView2. In stage 1, it generates frames sequentially. In stage 2, it recursively interpolates frames.</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
+<!-- Beginning of a paper -->
+<h4 id="2025-01-16-scaling-analysis">
+    [2025-01-16] Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps <i>(arXiv 2025)</i>
+</h4>
+<p>
+    <b>Authors:</b> Ma, Shangyuan Tong, Haolin Jia, Hexiang Hu, Yu-Chuan Su, Mingda Zhang, Xuan Yang, Yandong Li, Tommi Jaakkola, Xuhui Jia, Saining Xie
+</p>
+<p>
+    <b>Organizations:</b> NYU, MIT, Google
+</p>
+<p>
+    <b>Summary:</b> Analysis on inference-time scaling of diffusion models with <u>verifiers</u> and <u>algorithms</u>, beyond denoising steps.
+</p>
+<ul>
+    <li>Use some <u>verifiers</u> to provide <u>feedback</u>: FID, IS, CLIP, DINO; Aesthetic Score Predictor, CLIPScore, ImageReward, Ensemble.</li>
+    <li>Use some <u>algorithms</u> to find <u>better noise</u>: <u>Random Search (the best performance)</u>, Zero-Order Search, Search Over Paths.</li>
+    <li>No single verifier-algorithm configuration is universally optimal.</li>
+    <li>Inference-time search further improves performance of the model which has already been fine-tuned.</li>
+    <li>Smaller search/iter ratio enables efficient convergence but lower final performance.</li>
+    <li>With a fixed inference compute budget, <u>performing search on small models can outperform larger models without search</u>.</li>
+</ul>
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2025-01-16-scaling-analysis fig1.png' width=400>
+                <figcaption>Scale with search is more effective than with denoising steps.</figcaption>
+            </figure>
+        </td>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2025-01-16-scaling-analysis fig2.png' width=500>
+        <figcaption>Random Search performs the best because it converges fastest.</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
+<!-- Beginning of a paper -->
+<h4 id="2021-12-20-ldm">
+    [2020-12-16] High-Resolution Image Synthesis with Latent Diffusion Models <i>(CVPR 2022)</i>
+</h4>
+<p>
+    <b>Authors:</b> Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, Björn Ommer
+</p>
+<p>
+    <b>Organizations:</b> Heidelberg University, Runway ML
+</p>
+<p>
+    <b>Summary:</b> Generate high-quality images by applying diffusion models in the <u>compressed latent space of VAE</u>.
+</p>
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2021-12-20-ldm-fig1.png' width=400>
+                <figcaption>LDM performs the diffusion process in the latent space of VAE.</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+ 
+<!-- Beginning of a paper -->
+<h4 id="2020-12-16-ddpm">
+    [2020-12-16] Denoising Diffusion Probabilistic Models <i>(NeurIPS 2020)</i>
+</h4>
+<p>
+    <b>Authors:</b> Jonathan Ho, Ajay Jain, Pieter Abbeel
+</p>
+<p>
+    <b>Organizations:</b> UC Berkeley
+</p>
+<p>
+    <b>Summary:</b> Introduce the <u>DDPM</u> algorithm that iteratively denoises data from random noise.
+</p>
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2020-12-16-ddpm-fig1.png' width=400>
+                <figcaption>Forward and reverse processes of DDPM.</figcaption>
+            </figure>
+        </td>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2020-12-16-ddpm-fig2.png' width=500>
+        <figcaption>Training and sampling algorithms of DDPM.</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
+Last updated on Feb. 9, 2025.
+</body>
+</html>
