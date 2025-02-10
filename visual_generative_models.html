@@ -25,7 +25,7 @@
         th {
             background-color: #e2e2e2; /* 表头背景颜色 */
         }
-
+        
         .image-container {
             display: flex; /* 使用flexbox布局 */
             justify-content: center; /* 居中对齐 */
@@ -43,11 +43,21 @@
             font-size: 14px; /* 设置说明文字大小 */
             color: #CC6600; /* 设置说明文字颜色 */
         }
-    </style>
-
-    <style>
+        
         .papertext {
             color: #D93053;
+            /* font-weight: bolder; */
+            font-size: 15px;
+        }
+
+        .summarytext {
+            color: #000000;
+            /* font-weight: bolder; */
+            font-size: 15px;
+        }
+
+        .datetext {
+            color: #888888;
             /* font-weight: bolder; */
             font-size: 15px;
         }
@@ -67,6 +77,7 @@ Some interesting papers I've read on Visual Generative Models.
 <b>Contents:</b>
 <ul>
     <li><a href="#foundation-model-and-algorithms">Foundation Models and Algorithms</a></li>
+    <li><a href="#reinforcement-learning">Reinforcement Learning</a></li>
     <li><a href="#inference-time-improvement">Inference-Time Improvement</a></li>
     <li><a href="#papers">Papers</a></li>
 </ul>
@@ -83,37 +94,68 @@ Foundation models and algorithms on visual generative models.
 
 <table>
     <colgroup>
-        <col style="width: 5%;">
-        <col style="width: 10%;">
-        <col style="width: 45%;">
-        <col style="width: 40%;">
+        <col style="width: 14%;">
+        <col style="width: 43%;">
+        <col style="width: 43%;">
     </colgroup>
     <thead>
         <tr>
-            <th>Date</th>
-            <th>Model</th>
+            <th>Date & Model</th>
             <th>Paper & Publication & Project</th>
             <th>Summary</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>2022-05-29</td>
-            <td><a href="#2022-05-29-cogvideo">CogVideo</a></td>
-            <td><a href="https://arxiv.org/pdf/2205.15868"><span class="papertext">CogVideo: Large-scale Pretraining for Text-to-Video Generation via Transformers <i>(ICLR 2023)</i></span></a> <img src="https://img.shields.io/github/stars/THUDM/CogVideo.svg?style=social&label=Star" alt="Star" /></td>
-            <td>An <u>open-sourced transformer-based text-to-video</u> generation model with 9B parameters.</td>
+            <td><span class="datetext">2022-05-29</span><br><a href="#2022-05-29-cogvideo">CogVideo</a></td>
+            <td><a href="https://arxiv.org/pdf/2205.15868"><span class="papertext">CogVideo: Large-scale Pretraining for Text-to-Video Generation via Transformers <i>(ICLR 2023)</i></span></a> <img src="https://img.shields.io/github/stars/THUDM/CogVideo.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></td>
+            <td><span class="summarytext">An <u>open-sourced transformer-based text-to-video</u> generation model with 9B parameters.</span></td>
         </tr>
         <tr>
-            <td>2021-12-20</td>
-            <td><a href="#2021-12-20-ldm"><b>LDM</b></a></td>
-            <td><a href="https://arxiv.org/pdf/2112.10752"><span class="papertext">High-Resolution Image Synthesis with Latent Diffusion Models <i>(CVPR 2022)</i></span></a> <img src="https://img.shields.io/github/stars/CompVis/latent-diffusion.svg?style=social&label=Star" alt="Star" /></td>
-            <td>Generate high-quality images by applying diffusion models in the <u>compressed latent space of VAE</u>.</td>
+            <td><span class="datetext">2021-12-20</span><br><a href="#2021-12-20-ldm"><b>LDM</b></a></td>
+            <td><a href="https://arxiv.org/pdf/2112.10752"><span class="papertext">High-Resolution Image Synthesis with Latent Diffusion Models <i>(CVPR 2022)</i></span></a> <img src="https://img.shields.io/github/stars/CompVis/latent-diffusion.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></td>
+            <td><span class="summarytext">Generate high-quality images by applying diffusion models in the <u>compressed latent space of VAE</u>.</span></td>
         </tr>
         <tr>
-            <td>2020-12-16</td>
-            <td><a href="#2020-12-16-ddpm"><b>DDPM</b></a></td>
-            <td><a href="https://arxiv.org/pdf/2006.11239"><span class="papertext">Denoising Diffusion Probabilistic Models <i>(NeurIPS 2020)</i></span></a> <img src="https://img.shields.io/github/stars/hojonathanho/diffusion.svg?style=social&label=Star" alt="Star" /></td>
-            <td>Introduce the <u>DDPM</u> algorithm that iteratively denoises data from random noise.</td>
+            <td><span class="datetext">2020-12-16</span><br><a href="#2020-12-16-ddpm"><b>DDPM</b></a></td>
+            <td><a href="https://arxiv.org/pdf/2006.11239"><span class="papertext">Denoising Diffusion Probabilistic Models <i>(NeurIPS 2020)</i></span></a> <img src="https://img.shields.io/github/stars/hojonathanho/diffusion.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></td>
+            <td><span class="summarytext">Introduce the <u>DDPM</u> algorithm that iteratively denoises data from random noise.</span></td>
+        </tr>
+    </tbody>
+</table>
+
+<a href="#top">[back to top]</a>
+
+
+
+<!-- Reinforcement Learning -->
+<h2 id="reinforcement-learning">Reinforcement Learning</h2>
+
+Post-training by employing reinforcement learning.
+
+<table>
+    <colgroup>
+        <col style="width: 14%;">
+        <col style="width: 43%;">
+        <col style="width: 43%;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Date & Model</th>
+            <th>Paper & Publication & Project</th>
+            <th>Summary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="datetext">2025-01-23</span><br><a href="#2025-01-23-cot">PARM</a></td>
+            <td><a href="https://arxiv.org/pdf/2501.13926"><span class="papertext">Can We Generate Images with CoT? Let's Verify and Reinforce Image Generation Step by Step <i>(arXiv 2025)</i></span></a> <img src="https://img.shields.io/github/stars/ZiyuGuo99/Image-Generation-CoT.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></td>
+            <td><span class="summarytext">The first to apply <u>Chain-of-Thought</u> into image generation and combine it with reinforcement learning.</span></td>
+        </tr>
+        <tr>
+            <td><span class="datetext">2025-01-23</span><br><a href="#2025-01-23-flowrar">Flow-RWR Flow-DPO</a></td>
+            <td><a href="https://arxiv.org/pdf/2501.13918"><span class="papertext">Improving Video Generation with Human Feedback <i>(arXiv 2025)</i></span></a></td>
+            <td><span class="summarytext">A large-scale <u>human preference video dataset</u>; Adapt diffusion-based reinforcement learning to flow-based.</span></td>
         </tr>
     </tbody>
 </table>
@@ -125,47 +167,47 @@ Foundation models and algorithms on visual generative models.
 <!-- Inference-Time Improvement -->
 <h2 id="inference-time-improvement">Inference-Time Improvement</h2>
 
-Improve inference-time performance of visual generative models, inspired by progress in large language models like <a href="https://arxiv.org/pdf/2501.12948">DeepSeek-R1</a>.
+Improve inference-time visual generation performance, inspired by progress in large language models like <a href="https://openai.com/index/learning-to-reason-with-llms/">OpenAI o1</a> and <a href="https://arxiv.org/pdf/2501.12948">DeepSeek-R1</a>.
 
 <table>
     <colgroup>
-        <col style="width: 5%;">
-        <col style="width: 10%;">
-        <col style="width: 40%;">
-        <col style="width: 45%;">
+        <col style="width: 14%;">
+        <col style="width: 43%;">
+        <col style="width: 43%;">
     </colgroup>
     <thead>
         <tr>
-            <th>Date</th>
-            <th>Model</th>
+            <th>Date & Model</th>
             <th>Paper & Publication & Project</th>
             <th>Summary</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>2025-01-16</td>
-            <td><a href="#2025-01-16-scaling-analysis">Scaling Analysis</a></td>
+            <td><span class="datetext">2025-01-23</span><br><a href="#2025-01-23-cot">PARM</a></td>
+            <td><a href="https://arxiv.org/pdf/2501.13926"><span class="papertext">Can We Generate Images with CoT? Let's Verify and Reinforce Image Generation Step by Step <i>(arXiv 2025)</i></span></a> <img src="https://img.shields.io/github/stars/ZiyuGuo99/Image-Generation-CoT.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></td>
+            <td><span class="summarytext">The first to apply <u>Chain-of-Thought</u> into image generation and combine it with reinforcement learning.</span></td>
+        </tr>
+        <tr>
+            <td><span class="datetext">2025-01-16</span><br><a href="#2025-01-16-scaling-analysis">Scaling Analysis</a></td>
             <td><a href="https://arxiv.org/pdf/2501.09732"><span class="papertext">Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps <i>(arXiv 2025)</i></span></a></td>
-            <td>Analysis on inference-time scaling of diffusion models with <u>verifiers</u> and <u>algorithms</u>, beyond denoising steps.</td>
+            <td><span class="summarytext">Analysis on inference-time scaling of diffusion models with <u>verifiers</u> and <u>algorithms</u>, beyond denoising steps.</span></td>
         </tr>
     </tbody>
 </table>
 
 <a href="#top">[back to top]</a>
 
+
 <!-- list all papers and notes -->
 <h2 id="papers">Papers</h2>
 
-<b><font size=4>4 papers (in chronological order).</font></b>
+<b><font size=4>6 papers (in chronological order).</font></b>
 
 <!-- Beginning of a paper -->
 <!-- <h4 id="template">
     [2020-12-16] Template
 </h4>
-<p>
-    <b>Paper: </b><a href="https://arxiv.org/pdf/2501.09732">arXiv 2015</a>
-</p>
 <p>
     <b>Authors:</b>
 </p>
@@ -195,6 +237,60 @@ Improve inference-time performance of visual generative models, inspired by prog
     </tr>
 </table>
 <p><a href="#top">[back to top]</a></p> -->
+<!-- End of a paper -->
+
+<!-- Beginning of a paper -->
+<h4 id="2025-01-23-flowrar">
+    [2025-01-23] Improving Video Generation with Human Feedback <i>(arXiv 2025)</i>
+</h4>
+<p>
+    <b>Authors:</b> Jie Liu, Gongye Liu, Jiajun Liang, Ziyang Yuan, Xiaokun Liu, Mingwu Zheng, Xiele Wu, Qiulin Wang, Wenyu Qin, Menghan Xia, Xintao Wang, Xiaohong Liu, Fei Yang, Pengfei Wan, Di Zhang, Kun Gai, Yujiu Yang, Wanli Ouyang
+</p>
+<p>
+    <b>Organizations:</b> CUHK, Tsinghua University, Kuaishou Technology, Shanghai Jiao Tong University, Shanghai AI Lab
+</p>
+<p>
+    <b>Summary:</b> A large-scale <u>human preference video dataset</u>; Adapt diffusion-based reinforcement learning to flow-based.
+</p>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+ 
+<!-- Beginning of a paper -->
+<h4 id="2025-01-23-cot">
+    [2025-01-23] Can We Generate Images with CoT? Let's Verify and Reinforce Image Generation Step by Step <i>(arXiv 2025)</i>
+</h4>
+<p>
+    <b>Authors:</b> Ziyu Guo, Renrui Zhang, Chengzhuo Tong, Zhizheng Zhao, Peng Gao, Hongsheng Li, Pheng-Ann Heng
+</p>
+<p>
+    <b>Organizations:</b> CUHK, Peking University, Shanghai AI Lab
+</p>
+<p>
+    <b>Summary:</b> <td>The first to apply <u>Chain-of-Thought</u> into image generation and combine it with reinforcement learning.
+</p>
+<ul>
+    <li>Test-time verification and DPO are effective, where Outcome Reward Model (ORM) and DPO performs better than Process Reward Model (PRM).</li>
+    <li>Verification and DPO are complementary.</li>
+    <li>Propose Potential Assessment Reward Model (PARM) to combine the advantages of ORM and PRM.</li>
+    <li>Self-correction is useful.</li>
+</ul>
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2025-01-23-cot-fig1.png' width=650>
+                <figcaption>ORM is coarse, PRM does not know when to make decision, PARM combines them.</figcaption>
+            </figure>
+        </td>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2025-01-23-cot-fig2.png' width=250>
+                <figcaption>Self-correction makes use of bad cases.</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+<p><a href="#top">[back to top]</a></p>
 <!-- End of a paper -->
 
 <!-- Beginning of a paper -->
