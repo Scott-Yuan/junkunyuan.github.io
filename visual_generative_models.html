@@ -61,6 +61,12 @@
             /* font-weight: bolder; */
             font-size: 15px;
         }
+
+        .modeltext {
+            color: #224bad;
+            /* font-weight: bolder; */
+            font-size: 15px;
+        }
     </style>
 </head>
 
@@ -68,7 +74,7 @@
 
 <h1 id="top">Visual Generative Models</h1>
 
-<b><font size=4>Organized by Junkun Yuan (yuanjk0921@outlook.com)</font></b>
+<b><font size=4>Curated by Junkun Yuan (yuanjk0921@outlook.com)</font></b>
 
 <br><br>
 Some interesting papers I've read on Visual Generative Models.
@@ -79,24 +85,27 @@ Some interesting papers I've read on Visual Generative Models.
     <li><a href="#foundation-model-and-algorithms">Foundation Models and Algorithms</a></li>
     <li><a href="#reinforcement-learning">Reinforcement Learning</a></li>
     <li><a href="#inference-time-improvement">Inference-Time Improvement</a></li>
+    <li><a href="#evaluation">Evaluation</a></li>
     <li><a href="#papers">Papers</a></li>
 </ul>
 
 <br>
 <a href="reading_papers.html">[back to main contents]</a>
 
+<br><br>
+Last updated on Feb. 11, 2025.
 
 
-<!-- Foundation Models and Algorithms -->
+<!-- Section: Foundation Models and Algorithms -->
 <h2 id="foundation-model-and-algorithms">Foundation Models and Algorithms</h2>
 
 Foundation models and algorithms on visual generative models.
 
 <table>
     <colgroup>
-        <col style="width: 14%;">
-        <col style="width: 43%;">
-        <col style="width: 43%;">
+        <col style="width: 16%;">
+        <col style="width: 42%;">
+        <col style="width: 42%;">
     </colgroup>
     <thead>
         <tr>
@@ -107,17 +116,17 @@ Foundation models and algorithms on visual generative models.
     </thead>
     <tbody>
         <tr>
-            <td><span class="datetext">2022-05-29</span><br><a href="#2022-05-29-cogvideo">CogVideo</a></td>
+            <td><span class="datetext">2022-05-29</span><br><a href="#2022-05-29-cogvideo" class="modeltext">CogVideo</a></td>
             <td><a href="https://arxiv.org/pdf/2205.15868"><span class="papertext">CogVideo: Large-scale Pretraining for Text-to-Video Generation via Transformers <i>(ICLR 2023)</i></span></a> <img src="https://img.shields.io/github/stars/THUDM/CogVideo.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></td>
             <td><span class="summarytext">An <u>open-sourced transformer-based text-to-video</u> generation model with 9B parameters.</span></td>
         </tr>
         <tr>
-            <td><span class="datetext">2021-12-20</span><br><a href="#2021-12-20-ldm"><b>LDM</b></a></td>
+            <td><span class="datetext">2021-12-20</span><br><a href="#2021-12-20-ldm" class="modeltext"><b>LDM</b></a></td>
             <td><a href="https://arxiv.org/pdf/2112.10752"><span class="papertext">High-Resolution Image Synthesis with Latent Diffusion Models <i>(CVPR 2022)</i></span></a> <img src="https://img.shields.io/github/stars/CompVis/latent-diffusion.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></td>
             <td><span class="summarytext">Generate high-quality images by applying diffusion models in the <u>compressed latent space of VAE</u>.</span></td>
         </tr>
         <tr>
-            <td><span class="datetext">2020-12-16</span><br><a href="#2020-12-16-ddpm"><b>DDPM</b></a></td>
+            <td><span class="datetext">2020-12-16</span><br><a href="#2020-12-16-ddpm" class="modeltext"><b>DDPM</b></a></td>
             <td><a href="https://arxiv.org/pdf/2006.11239"><span class="papertext">Denoising Diffusion Probabilistic Models <i>(NeurIPS 2020)</i></span></a> <img src="https://img.shields.io/github/stars/hojonathanho/diffusion.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></td>
             <td><span class="summarytext">Introduce the <u>DDPM</u> algorithm that iteratively denoises data from random noise.</span></td>
         </tr>
@@ -128,16 +137,16 @@ Foundation models and algorithms on visual generative models.
 
 
 
-<!-- Reinforcement Learning -->
+<!-- Section: Reinforcement Learning -->
 <h2 id="reinforcement-learning">Reinforcement Learning</h2>
 
 Post-training by employing reinforcement learning.
 
 <table>
     <colgroup>
-        <col style="width: 14%;">
-        <col style="width: 43%;">
-        <col style="width: 43%;">
+        <col style="width: 16%;">
+        <col style="width: 42%;">
+        <col style="width: 42%;">
     </colgroup>
     <thead>
         <tr>
@@ -148,14 +157,14 @@ Post-training by employing reinforcement learning.
     </thead>
     <tbody>
         <tr>
-            <td><span class="datetext">2025-01-23</span><br><a href="#2025-01-23-cot">PARM</a></td>
+            <td><span class="datetext">2025-01-23</span><br><a href="#2025-01-23-cot" class="modeltext">PARM</a></td>
             <td><a href="https://arxiv.org/pdf/2501.13926"><span class="papertext">Can We Generate Images with CoT? Let's Verify and Reinforce Image Generation Step by Step <i>(arXiv 2025)</i></span></a> <img src="https://img.shields.io/github/stars/ZiyuGuo99/Image-Generation-CoT.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></td>
             <td><span class="summarytext">The first to apply <u>Chain-of-Thought</u> into image generation and combine it with reinforcement learning.</span></td>
         </tr>
         <tr>
-            <td><span class="datetext">2025-01-23</span><br><a href="#2025-01-23-flowrar">Flow-RWR Flow-DPO</a></td>
+            <td><span class="datetext">2025-01-23</span><br><a href="#2025-01-23-flowrar" class="modeltext">Flow-RWR<br>Flow-DPO</a></td>
             <td><a href="https://arxiv.org/pdf/2501.13918"><span class="papertext">Improving Video Generation with Human Feedback <i>(arXiv 2025)</i></span></a></td>
-            <td><span class="summarytext">A large-scale <u>human preference video dataset</u>; Adapt diffusion-based reinforcement learning to flow-based.</span></td>
+            <td><span class="summarytext">A large-scale <u>human preference video dataset</u>; Adapt diffusion-based reinforcement learning to <u>flow-based</u>.</span></td>
         </tr>
     </tbody>
 </table>
@@ -164,16 +173,16 @@ Post-training by employing reinforcement learning.
 
 
 
-<!-- Inference-Time Improvement -->
+<!-- Section: Inference-Time Improvement -->
 <h2 id="inference-time-improvement">Inference-Time Improvement</h2>
 
 Improve inference-time visual generation performance, inspired by progress in large language models like <a href="https://openai.com/index/learning-to-reason-with-llms/">OpenAI o1</a> and <a href="https://arxiv.org/pdf/2501.12948">DeepSeek-R1</a>.
 
 <table>
     <colgroup>
-        <col style="width: 14%;">
-        <col style="width: 43%;">
-        <col style="width: 43%;">
+        <col style="width: 16%;">
+        <col style="width: 42%;">
+        <col style="width: 42%;">
     </colgroup>
     <thead>
         <tr>
@@ -184,12 +193,12 @@ Improve inference-time visual generation performance, inspired by progress in la
     </thead>
     <tbody>
         <tr>
-            <td><span class="datetext">2025-01-23</span><br><a href="#2025-01-23-cot">PARM</a></td>
+            <td><span class="datetext">2025-01-23</span><br><a href="#2025-01-23-cot" class="modeltext">PARM</a></td>
             <td><a href="https://arxiv.org/pdf/2501.13926"><span class="papertext">Can We Generate Images with CoT? Let's Verify and Reinforce Image Generation Step by Step <i>(arXiv 2025)</i></span></a> <img src="https://img.shields.io/github/stars/ZiyuGuo99/Image-Generation-CoT.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></td>
             <td><span class="summarytext">The first to apply <u>Chain-of-Thought</u> into image generation and combine it with reinforcement learning.</span></td>
         </tr>
         <tr>
-            <td><span class="datetext">2025-01-16</span><br><a href="#2025-01-16-scaling-analysis">Scaling Analysis</a></td>
+            <td><span class="datetext">2025-01-16</span><br><a href="#2025-01-16-scaling-analysis" class="modeltext">Scaling Analysis</a></td>
             <td><a href="https://arxiv.org/pdf/2501.09732"><span class="papertext">Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps <i>(arXiv 2025)</i></span></a></td>
             <td><span class="summarytext">Analysis on inference-time scaling of diffusion models with <u>verifiers</u> and <u>algorithms</u>, beyond denoising steps.</span></td>
         </tr>
@@ -199,10 +208,62 @@ Improve inference-time visual generation performance, inspired by progress in la
 <a href="#top">[back to top]</a>
 
 
-<!-- list all papers and notes -->
+
+<!-- Section: Evaluation -->
+<h2 id="evaluation">Evaluation</h2>
+
+Metrics and benchmarks for evaluating visual generation performance.
+
+<table>
+    <colgroup>
+        <col style="width: 16%;">
+        <col style="width: 42%;">
+        <col style="width: 42%;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Date & Model</th>
+            <th>Paper & Publication & Project</th>
+            <th>Summary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="datetext">2024-07-19</span><br><a href="#2024-07-19-t2vcompbench" class="modeltext"><b>T2V-CompBench</b></a></td>
+            <td><a href="https://arxiv.org/pdf/2407.14505"><span class="papertext">T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation <i>(arXiv 2024)</i></span></a> <img src="https://img.shields.io/github/stars/KaiyueSun98/T2V-CompBench.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></td>
+            <td><span class="summarytext">Propose <u>T2V-CompBench</u> as the first benchmark for <u>compositional text-to-video generation</u> with 1400 prompts, including <u>consistent attribute binding</u>, <u>dynamic attribute binding</u>, <u>sptial relationships</u>, <u>motion binding</u>, <u>action binding</u>, <u>object interations</u>, <u>generative numeracy</u>.</span></td>
+        </tr>
+        <tr>
+            <td><span class="datetext">2023-07-12</span><br><a href="#2023-07-12-t2icompbench" class="modeltext"><b>T2I-CompBench</b></a></td>
+            <td><a href="https://arxiv.org/pdf/2307.06350"><span class="papertext">T2I-CompBench: A Comprehensive Benchmark for Open-world Compositional Text-to-image Generation <i>(NeurIPS 2023)</i></span></a> <img src="https://img.shields.io/github/stars/Karine-Huang/T2I-CompBench.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></td>
+            <td><span class="summarytext">Propose <u>T2I-CompBench</u> consisting of 6000 prompts with <u>attribute binding</u>, <u>object relationship</u>, <u>complex compositions</u>.</span></td>
+        </tr>
+        <tr>
+            <td><span class="datetext">2021-04-18</span><br><a href="#2021-04-18-clipscore" class="modeltext"><b>CLIPScore</b></a></td>
+            <td><a href="https://arxiv.org/pdf/2104.08718"><span class="papertext">CLIPScore: A Reference-free Evaluation Metric for Image Captioning <i>(EMNLP 2021)</i></span></a></td>
+            <td><span class="summarytext">Propose <u>CLIPScore</u> as a reference-free metric for the image captioning task.</span></td>
+        </tr>
+        <tr>
+            <td><span class="datetext">2017-06-26</span><br><a href="#2017-06-26-fid" class="modeltext"><b>FID</b></a></td>
+            <td><a href="https://arxiv.org/pdf/1706.08500"><span class="papertext">GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium <i>(NeurIPS 2017)</i></span></a></td>
+            <td><span class="summarytext">Propose <u>Fréchet Inception Distance (FID)</u> that calculates <u>Fréchet distance</u> between Gaussian distributions of <u>real-world data</u> and <u>synthetic data</u>.</span></td>
+        </tr>
+        <tr>
+            <td><span class="datetext">2016-06-10</span><br><a href="#2016-06-10-inception-score" class="modeltext"><b>Inception Score</b></a></td>
+            <td><a href="https://arxiv.org/pdf/1606.03498"><span class="papertext">Improved Techniques for Training GANs <i>(NeurIPS 2016)</i></span></a> <img src="https://img.shields.io/github/stars/openai/improved-gan.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></td>
+            <td><span class="summarytext">Propose <u>Inception Score</u> which is the KL divergence between p(y|x) and p(y) to minimize the entropy across samples and maximize the entropy across classes.</span></td>
+        </tr>
+    </tbody>
+</table>
+
+<a href="#top">[back to top]</a>
+
+
+
+<!-- Section: Papers -->
 <h2 id="papers">Papers</h2>
 
-<b><font size=4>6 papers (in chronological order).</font></b>
+<b><font size=4>11 papers with reading notes (in chronological order).</font></b>
 
 <!-- Beginning of a paper -->
 <!-- <h4 id="template">
@@ -255,6 +316,7 @@ Improve inference-time visual generation performance, inspired by progress in la
 <p><a href="#top">[back to top]</a></p>
 <!-- End of a paper -->
  
+
 <!-- Beginning of a paper -->
 <h4 id="2025-01-23-cot">
     [2025-01-23] Can We Generate Images with CoT? Let's Verify and Reinforce Image Generation Step by Step <i>(arXiv 2025)</i>
@@ -292,6 +354,7 @@ Improve inference-time visual generation performance, inspired by progress in la
 </table>
 <p><a href="#top">[back to top]</a></p>
 <!-- End of a paper -->
+
 
 <!-- Beginning of a paper -->
 <h4 id="2025-01-16-scaling-analysis">
@@ -333,6 +396,82 @@ Improve inference-time visual generation performance, inspired by progress in la
 <p><a href="#top">[back to top]</a></p>
 <!-- End of a paper -->
 
+
+
+<!-- Beginning of a paper -->
+<h4 id="2024-07-19-t2vcompbench">
+    [2024-07-19] T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation <i>(arXiv 2024)</i>
+</h4>
+<p>
+    <b>Authors:</b> Kaiyue Sun, Kaiyi Huang, Xian Liu, Yue Wu, Zihan Xu, Zhenguo Li, Xihui Liu
+</p>
+<p>
+    <b>Organizations:</b> The University of Hong Kong, The Chinese University of Hong Kon, Huawei Noah's Ark Lab
+</p>
+<p>
+    <b>Summary:</b> Propose <u>T2V-CompBench</u> as the first benchmark for <u>compositional text-to-video generation</u> with 1400 prompts, including <u>consistent attribute binding</u>, <u>dynamic attribute binding</u>, <u>sptial relationships</u>, <u>motion binding</u>, <u>action binding</u>, <u>object interations</u>, <u>generative numeracy</u>.
+</p>
+<ul>
+    <li> Find nouns and verbs by identifying them using WordNet from Pika Discord channels, used to generate prompts by GPT-4.
+    <li> <u>Consistent attribute binding:</u> two objects, two attributes, and at least one active verb from color, shape, texture, and human-related attributes.
+    <li> <u>Dynamic attribute binding:</u> color and light change, shape and size change, texture change, combined change.
+    <li> <u>Spatial relationships:</u> two objects with spatial relationships like "on the left of".
+    <li> <u>Motion binding:</u> one or two objects with specified moving direction like "leftwards".
+    <li> <u>Action binding:</u> bind actions to corresponding objects.
+    <li> <u>Object interactions:</u> dynamic interactions like pysical interactions.
+    <li> <u>Generative numeracy:</u> a specific number of objects.
+    <li> <u>Video LLM-based metrics (Grid-LLaVa)</u> is used for evaluating consistent attribute binding, action binding, object interactions.
+    <li> <u>Image LLM-based metrics (LLaVa)</u> is used for evaluating dynamic attribute binding.
+    <li> <u>Grounding DINO</u> is used for evaluating spatial relationships and numeracy.
+    <li> <u>Grounding SAM + DOT</u> is used for evaluating motion binding.
+</ul>
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2024-07-19-t2vcompbench-fig1.png' width=900>
+                <figcaption>T2V-CompBench: categories (left), evaluation methods (middle), and benchmarking model performance (right).</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
+
+<!-- Beginning of a paper -->
+<h4 id="2023-07-12-t2icompbench">
+    [2023-07-12] T2I-CompBench: A Comprehensive Benchmark for Open-world Compositional Text-to-image Generation <i>(NeurIPS 2023)</i>
+</h4>
+<p>
+    <b>Authors:</b> Kaiyi Huang, Kaiyue Sun, Enze Xie, Zhenguo Li, Xihui Liu
+</p>
+<p>
+    <b>Organizations:</b> The University of Hong Kong, Huawei Noah's Ark Lab
+</p>
+<p>
+    <b>Summary:</b> Propose <u>T2I-CompBench</u> consisting of 6000 prompts with <u>attribute binding</u>, <u>object relationship</u>, <u>complex compositions</u>.
+</p>
+<ul>
+    <li> <u>Attribute binding prompts:</u> at least two objects with two attributes from color, shape, texture.
+    <li> <u>Object relationship prompts:</u> at least two objects with spatial relationship or non-spatial relationship.
+    <li> <u>Complex compositions prompts:</u> more than two objects or more than two sub-categories.
+    <li> Introduce Generative mOdel finetuning with Reward-driven Sample selection (GORS) that finetunes LoRA of SD2 with generated images which highly align with the compositional prompts.
+</ul>
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2023-07-12-t2icompbench-fig1.png' width=600>
+                <figcaption><li> Use <u>disentangled BLIP-VQA</u> to evaluate attribute binding, <u>UniDet-based mstric</u> to evaluate spatial relationship, <u>CLIPScore</u> to evaluate non-spatial relationship, <u>3-in-1 metric</u> (average score of the three metrics) to evaluate complex compositions.</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
+
 <!-- Beginning of a paper -->
 <h4 id="2022-05-29-cogvideo">
     [2022-05-29] CogVideo: Large-scale Pretraining for Text-to-Video Generation via Transformers <i>(ICLR 2023)</i>
@@ -358,6 +497,7 @@ Improve inference-time visual generation performance, inspired by progress in la
 </table>
 <p><a href="#top">[back to top]</a></p>
 <!-- End of a paper -->
+
 
 <!-- Beginning of a paper -->
 <h4 id="2021-12-20-ldm">
@@ -385,6 +525,42 @@ Improve inference-time visual generation performance, inspired by progress in la
 <p><a href="#top">[back to top]</a></p>
 <!-- End of a paper -->
  
+
+<!-- Beginning of a paper -->
+<h4 id="2021-04-18-clipscore">
+    [2021-04-18] CLIPScore: A Reference-free Evaluation Metric for Image Captioning <i>(EMNLP 2021)</i>
+</h4>
+<p>
+    <b>Authors:</b> Jack Hessel, Ari Holtzman, Maxwell Forbes, Ronan Le Bras, Yejin Choi
+</p>
+<p>
+    <b>Organizations:</b> Allen Institute for AI, University of Washington
+</p>
+<p>
+    <b>Summary:</b> Propose <u>CLIPScore</u> as a reference-free metric for the image captioning task.
+</p>
+<ul>
+    <li> CLIPScore calculates <u>the cosine similarity between a caption and an image, multiplying the result by 2.5</u>.
+    <li> CLIPScore is  <u>complementary to common metrics</u> (like BLEU-4, SPICE, and CIDEr).
+    <li> "A photo depicts" as a prompt to CLIP is sligtly better than the official "A photo of".
+    <li> CLIPScore is sensitive to adversarially constructed image captions.
+    <li> CLIPScore can reconstruct judgments on never-before-seen images.
+    <li> Propose a reference-augmented version of CLIPScore, called RefCLIPScore, which is a harmonic mean of CLIPScore and the maximum of cosine similarity between the caption and all the references.
+</ul>
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2021-04-18-clipscore-fig1.png' width=300>
+                <figcaption>CLIPScore frees from the shortcomings of n-gram matching that disfavors good captions with new words and favors captions with familiar words.</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
+
 <!-- Beginning of a paper -->
 <h4 id="2020-12-16-ddpm">
     [2020-12-16] Denoising Diffusion Probabilistic Models <i>(NeurIPS 2020)</i>
@@ -417,6 +593,43 @@ Improve inference-time visual generation performance, inspired by progress in la
 <p><a href="#top">[back to top]</a></p>
 <!-- End of a paper -->
 
-Last updated on Feb. 9, 2025.
+
+
+<!-- Beginning of a paper -->
+<h4 id="2017-06-26-fid">
+    [2017-06-26] GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium <i>(NeurIPS 2017)</i>
+</h4>
+<p>
+    <b>Authors:</b> Martin Heusel, Hubert Ramsauer, Thomas Unterthiner, Bernhard Nessler, Sepp Hochreiter
+</p>
+<p>
+    <b>Organizations:</b> Johannes Kepler University Linz
+</p>
+<p>
+    <b>Summary:</b> Propose <u>Fréchet Inception Distance (FID)</u> that calculates <u>Fréchet distance</u> between Gaussian distributions of <u>real-world data</u> and <u>synthetic data</u>.
+</p>
+
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
+
+
+<!-- Beginning of a paper -->
+<h4 id="2016-06-10-inception-score">
+    [2016-06-10] Improved Techniques for Training GANs <i>(NeurIPS 2016)</i>
+</h4>
+<p>
+    <b>Authors:</b> Tim Salimans, Ian Goodfellow, Wojciech Zaremba, Vicki Cheung, Alec Radford, Xi Chen
+</p>
+<p>
+    <b>Organizations:</b> OpenAI
+</p>
+<p>
+    <b>Summary:</b> Propose <u>Inception Score</u> which is the KL divergence between p(y|x) and p(y) to minimize the entropy across samples and maximize the entropy across classes.
+</p>
+</table>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
 </body>
 </html>
