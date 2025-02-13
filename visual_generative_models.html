@@ -86,14 +86,14 @@ Some interesting papers I've read on Visual Generative Models. Updating ...
     <li><a href="#reinforcement-learning">Reinforcement Learning</a></li>
     <li><a href="#inference-time-improvement">Inference-Time Improvement</a></li>
     <li><a href="#evaluation">Evaluation</a></li>
-    <li><a href="#papers">Papers with Simple Reading Notes (total: 13)</a></li>
+    <li><a href="#papers">Papers with Simple Reading Notes (total: 17)</a></li>
 </ul>
 
 <br>
 <a href="reading_papers.html">[back to main contents]</a>
 
 <br><br>
-Last updated on Feb. 12, 2025.
+Last updated on Feb. 13, 2025.
 
 
 <!-- Section: Foundation Models and Algorithms -->
@@ -104,8 +104,8 @@ Foundation models and algorithms on visual generative models.
 <table>
     <colgroup>
         <col style="width: 16%;">
-        <col style="width: 42%;">
-        <col style="width: 42%;">
+        <col style="width: 36%;">
+        <col style="width: 48%;">
     </colgroup>
     <thead>
         <tr>
@@ -115,29 +115,45 @@ Foundation models and algorithms on visual generative models.
         </tr>
     </thead>
     <tbody>
+        <!-- 2024-12-03-hunyuanvideo -->
+        <tr>
+            <td><span class="datetext">2024-12-03</span><br><a href="#2024-12-03-hunyuanvideo" class="modeltext"><b>HunyuanVideo</b></a></td>
+            <td>
+                <a href="https://arxiv.org/pdf/2412.03603"><span class="papertext">HunyuanVideo: A Systematic Framework For Large Video Generative Models <i>(arXiv 2024)</i></span></a> 
+                <a href="https://github.com/Tencent/HunyuanVideo/"><img src="https://img.shields.io/github/stars/Tencent/HunyuanVideo.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></a>
+            </td>
+            <td>
+                <span class="summarytext">Propose <u>HunyuanVideo</u> as an <b>open-sourced video generation model</b> with 13B parameters. </span>
+            </td>
+        </tr>
+        <!-- 2022-05-29-cogvideo -->
         <tr>
             <td><span class="datetext">2022-05-29</span><br><a href="#2022-05-29-cogvideo" class="modeltext">CogVideo</a></td>
             <td>
                 <a href="https://arxiv.org/pdf/2205.15868"><span class="papertext">CogVideo: Large-scale Pretraining for Text-to-Video Generation via Transformers <i>(ICLR 2023)</i></span></a> 
                 <a href="https://github.com/THUDM/CogVideo/"><img src="https://img.shields.io/github/stars/THUDM/CogVideo.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></a>
             </td>
-            <td><span class="summarytext">An <u>open-sourced transformer-based text-to-video</u> generation model with 9B parameters.</span></td>
+            <td>
+                <span class="summarytext">An <u>open-sourced</u> <b>transformer-based video generation model</b> (9B) that <b>auto-regressively</b> generates frame sequences and then performs frame interpolatation.</span>
+            </td>
         </tr>
+        <!-- 2021-12-20-ldm -->
         <tr>
             <td><span class="datetext">2021-12-20</span><br><a href="#2021-12-20-ldm" class="modeltext"><b>LDM</b></a></td>
             <td>
                 <a href="https://arxiv.org/pdf/2112.10752"><span class="papertext">High-Resolution Image Synthesis with Latent Diffusion Models <i>(CVPR 2022)</i></span></a> 
                 <a href="https://github.com/CompVis/latent-diffusion/"><img src="https://img.shields.io/github/stars/CompVis/latent-diffusion.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></a>
             </td>
-            <td><span class="summarytext">Generate high-quality images by applying diffusion models in the <u>compressed latent space of VAE</u>.</span></td>
+            <td><span class="summarytext">Efficiently generate high-quality <b>images</b>  by applying diffusion models in the <b>compressed latent space of VAE</b>.</span></td>
         </tr>
+        <!-- 2020-12-16-ddpm -->
         <tr>
             <td><span class="datetext">2020-12-16</span><br><a href="#2020-12-16-ddpm" class="modeltext"><b>DDPM</b></a></td>
             <td>
                 <a href="https://arxiv.org/pdf/2006.11239"><span class="papertext">Denoising Diffusion Probabilistic Models <i>(NeurIPS 2020)</i></span></a> 
                 <a href="https://github.com/hojonathanho/diffusion/"><img src="https://img.shields.io/github/stars/hojonathanho/diffusion.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></a>
             </td>
-            <td><span class="summarytext">Introduce the <u>DDPM</u> algorithm that iteratively denoises data from random noise.</span></td>
+            <td><span class="summarytext">Introduce the theoretical basis of <b>DDPM</b> algorithm that iteratively denoises data from random noise.</span></td>
         </tr>
     </tbody>
 </table>
@@ -154,8 +170,8 @@ Post-training by employing reinforcement learning.
 <table>
     <colgroup>
         <col style="width: 16%;">
-        <col style="width: 42%;">
-        <col style="width: 42%;">
+        <col style="width: 36%;">
+        <col style="width: 48%;">
     </colgroup>
     <thead>
         <tr>
@@ -165,20 +181,26 @@ Post-training by employing reinforcement learning.
         </tr>
     </thead>
     <tbody>
+        <!-- 2025-01-23-cot -->
         <tr>
             <td><span class="datetext">2025-01-23</span><br><a href="#2025-01-23-cot" class="modeltext">PARM</a></td>
             <td>
                 <a href="https://arxiv.org/pdf/2501.13926"><span class="papertext">Can We Generate Images with CoT? Let's Verify and Reinforce Image Generation Step by Step <i>(arXiv 2025)</i></span></a> 
                 <a href="https://github.com/ZiyuGuo99/Image-Generation-CoT/"><img src="https://img.shields.io/github/stars/ZiyuGuo99/Image-Generation-CoT.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></a>
             </td>
-            <td><span class="summarytext">The first to apply <u>Chain-of-Thought</u> into image generation and combine it with reinforcement learning.</span></td>
+            <td>
+                <span class="summarytext">Apply <b>Chain-of-Thought</b> into image generation and combine it with reinforcement learning to further improve performance.</span>
+            </td>
         </tr>
+        <!-- 2025-01-23-flowrar -->
         <tr>
             <td><span class="datetext">2025-01-23</span><br><a href="#2025-01-23-flowrar" class="modeltext">Flow-RWR<br>Flow-DPO</a></td>
             <td>
                 <a href="https://arxiv.org/pdf/2501.13918"><span class="papertext">Improving Video Generation with Human Feedback <i>(arXiv 2025)</i></span></a>
             </td>
-            <td><span class="summarytext">A large-scale <u>human preference video dataset</u>; Adapt diffusion-based reinforcement learning to <u>flow-based</u>.</span></td>
+            <td>
+                <span class="summarytext">Introduce a <u>human preference video dataset</u>; Adapt diffusion-based reinforcement learning to <b>flow-based</b> models.</span>
+            </td>
         </tr>
     </tbody>
 </table>
@@ -195,8 +217,8 @@ Improve inference-time visual generation performance, inspired by progress in la
 <table>
     <colgroup>
         <col style="width: 16%;">
-        <col style="width: 42%;">
-        <col style="width: 42%;">
+        <col style="width: 36%;">
+        <col style="width: 48%;">
     </colgroup>
     <thead>
         <tr>
@@ -206,20 +228,24 @@ Improve inference-time visual generation performance, inspired by progress in la
         </tr>
     </thead>
     <tbody>
+        <!-- 2025-01-23-cot -->
         <tr>
             <td><span class="datetext">2025-01-23</span><br><a href="#2025-01-23-cot" class="modeltext">PARM</a></td>
             <td>
                 <a href="https://arxiv.org/pdf/2501.13926"><span class="papertext">Can We Generate Images with CoT? Let's Verify and Reinforce Image Generation Step by Step <i>(arXiv 2025)</i></span></a> 
                 <a href="https://github.com/ZiyuGuo99/Image-Generation-CoT/"><img src="https://img.shields.io/github/stars/ZiyuGuo99/Image-Generation-CoT.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></a>
             </td>
-            <td><span class="summarytext">The first to apply <u>Chain-of-Thought</u> into image generation and combine it with reinforcement learning.</span></td>
+            <td><span class="summarytext">Apply <b>Chain-of-Thought</b> into image generation and combine it with reinforcement learning to further improve performance.</span></td>
         </tr>
+        <!-- 2025-01-16-scaling-analysis -->
         <tr>
             <td><span class="datetext">2025-01-16</span><br><a href="#2025-01-16-scaling-analysis" class="modeltext">Scaling Analysis</a></td>
             <td>
                 <a href="https://arxiv.org/pdf/2501.09732"><span class="papertext">Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps <i>(arXiv 2025)</i></span></a>
             </td>
-            <td><span class="summarytext">Analysis on inference-time scaling of diffusion models with <u>verifiers</u> and <u>algorithms</u>, beyond denoising steps.</span></td>
+            <td>
+                <span class="summarytext">Empirical analysis on inference-time scaling of diffusion models from the axes of <b>verifiers</b> and <b>algorithms</b>.</span>
+            </td>
         </tr>
     </tbody>
 </table>
@@ -236,8 +262,8 @@ Metrics and benchmarks for evaluating visual generation performance.
 <table>
     <colgroup>
         <col style="width: 16%;">
-        <col style="width: 42%;">
-        <col style="width: 42%;">
+        <col style="width: 36%;">
+        <col style="width: 48%;">
     </colgroup>
     <thead>
         <tr>
@@ -247,59 +273,96 @@ Metrics and benchmarks for evaluating visual generation performance.
         </tr>
     </thead>
     <tbody>
+        <!-- 2024-07-19-t2vcompbench -->
         <tr>
             <td><span class="datetext">2024-07-19</span><br><a href="#2024-07-19-t2vcompbench" class="modeltext"><b>T2V-CompBench</b></a></td>
             <td>
                 <a href="https://arxiv.org/pdf/2407.14505"><span class="papertext">T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation <i>(arXiv 2024)</i></span></a> 
                 <a href="https://github.com/KaiyueSun98/T2V-CompBench/"><img src="https://img.shields.io/github/stars/KaiyueSun98/T2V-CompBench.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></a>
             </td>
-            <a href="https://github.com/ZiyuGuo99/Image-Generation-CoT/"><td><span class="summarytext">Propose <u>T2V-CompBench</u> as the first benchmark for <u>compositional text-to-video generation</u> with 1400 prompts, including <u>consistent attribute binding</u>, <u>dynamic attribute binding</u>, <u>sptial relationships</u>, <u>motion binding</u>, <u>action binding</u>, <u>object interations</u>, <u>generative numeracy</u>.</span></td>
+            <a href="https://github.com/ZiyuGuo99/Image-Generation-CoT/"><td><span class="summarytext">Propose <u>T2V-CompBench</u> for <b>video generation evaluation</b>. It contains 1400 prompts and focuses on <u>compositional generation</u>, including consistent attribute binding, dynamic attribute binding, sptial relationships, motion binding, action binding, object interations, and generative numeracy.</span></td>
         </tr>
+        <!-- 2023-11-29-vbench -->
         <tr>
             <td><span class="datetext">2023-11-29</span><br><a href="#2023-11-29-vbench" class="modeltext"><b>VBench</b></a></td>
             <td>
                 <a href="https://arxiv.org/pdf/2311.17982"><span class="papertext">VBench: Comprehensive Benchmark Suite for Video Generative Models <i>(CVPR 2024)</i></span></a> 
                 <a href="https://github.com/Vchitect/VBench/"><img src="https://img.shields.io/github/stars/Vchitect/VBench.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></a>
             </td>
-            <td><span class="summarytext">Propose <u>VBench</u> for video generation evaluation. It contains <u>16 dimensions</u> from <u>video quality</u> and <u>video-condition consistency</u>. Its benchmark is well aligned with human preference.</span></td>
+            <td><span class="summarytext">Propose <u>VBench</u> for <b>video generation evaluation</b>. It contains 16 dimensions from the perspectives of video quality and video-condition semantic consistency.</span></td>
         </tr>
+        <!-- 2023-07-12-t2icompbench -->
         <tr>
             <td><span class="datetext">2023-07-12</span><br><a href="#2023-07-12-t2icompbench" class="modeltext"><b>T2I-CompBench</b></a></td>
             <td>
                 <a href="https://arxiv.org/pdf/2307.06350"><span class="papertext">T2I-CompBench: A Comprehensive Benchmark for Open-world Compositional Text-to-image Generation <i>(NeurIPS 2023)</i></span></a> 
                 <a href="https://github.com/Karine-Huang/T2I-CompBench/"><img src="https://img.shields.io/github/stars/Karine-Huang/T2I-CompBench.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></a>
             </td>
-            <td><span class="summarytext">Propose <u>T2I-CompBench</u> consisting of 6000 prompts with <u>attribute binding</u>, <u>object relationship</u>, <u>complex compositions</u>.</span></td>
+            <td><span class="summarytext">Propose <u>T2I-CompBench</u> for <b>image generation evaluation</b>. It is consist of 6000 prompts acorss attribute binding, object relationship, and complex compositions.</span></td>
         </tr>
+        <!-- 2023-06-15-hpsv2 -->
+        <tr>
+            <td><span class="datetext">2023-06-15</span><br><a href="#2023-06-15-hpsv2" class="modeltext"><b>HPS v2</b></a></td>
+            <td>
+                <a href="https://arxiv.org/pdf/2306.09341"><span class="papertext">Human Preference Score v2: A Solid Benchmark for Evaluating Human Preferences of Text-to-Image Synthesis <i>(arXiv 2023)</i></span></a> 
+                <a href="https://github.com/tgxs002/HPSv2/"><img src="https://img.shields.io/github/stars/tgxs002/HPSv2.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></a>
+            </td>
+            <td>
+                <span class="summarytext">Propose <u>Human Preferences Dataset (HPD v2)</u> that comprises 798K binary human preference choices on 433K pairs of generated image; Use HPD v2 to fine-tune CLIP to obtain <u>Human Preference Score v2 (HPS v2)</u> for <b>image generation evaluation</b>.
+            </td>
+        </tr>
+        <!-- 2023-04-12-imagereward -->
+        <tr>
+            <td><span class="datetext">2023-04-12</span><br><a href="#2023-04-12-imagereward" class="modeltext"><b>ImageReward</b></a></td>
+            <td>
+                <a href="https://arxiv.org/pdf/2304.05977"><span class="papertext">ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation <i>(NeurIPS 2023)</i></span></a> 
+                <a href="https://github.com/THUDM/ImageReward/"><img src="https://img.shields.io/github/stars/THUDM/ImageReward.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></a>
+            </td>
+            <td>
+                <span class="summarytext">Propose <u>ImageReward</u> for <b>image generation evaluation</b>. It is trained on 137K human preference image pairs. Use it to tune diffusion models by Reward Feedback Learning (ReFL).</span>
+            </td>
+        </tr>
+        <!-- 2023-03-25-hps -->
         <tr>
             <td><span class="datetext">2023-03-25</span><br><a href="#2023-03-25-hps" class="modeltext"><b>HPS</b></a></td>
             <td>
                 <a href="https://arxiv.org/pdf/2303.14420"><span class="papertext">Human Preference Score: Better Aligning Text-to-Image Models with Human Preference <i>(ICCV 2023)</i></span></a> 
                 <a href="https://github.com/tgxs002/align_sd/"><img src="https://img.shields.io/github/stars/tgxs002/align_sd.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></a>
             </td>
-            <td><span class="summarytext">Use 98K SD generated images from 25K prompts to fine-tune CLIP to obtain <u>human preference score (HPS)</u>.</span></td>
+            <td><span class="summarytext">Use annotated 98K SD generated images from 25K prompts to fine-tune CLIP to provide <u>human preference score (HPS)</u> for <b>image generation evaluation</b>.</span></td>
         </tr>
+        <!-- 2021-04-18-clipscore -->
         <tr>
             <td><span class="datetext">2021-04-18</span><br><a href="#2021-04-18-clipscore" class="modeltext"><b>CLIPScore</b></a></td>
             <td>
                 <a href="https://arxiv.org/pdf/2104.08718"><span class="papertext">CLIPScore: A Reference-free Evaluation Metric for Image Captioning <i>(EMNLP 2021)</i></span></a>
             </td>
-            <td><span class="summarytext">Propose <u>CLIPScore</u> as a reference-free metric for the image captioning task.</span></td>
+            <td><span class="summarytext">Propose <u>CLIPScore</u> for <b>image generation evaluation</b>. It is a reference-free metric mainly focusing on semantic alignment.</span></td>
         </tr>
+        <!-- 2019-05-04-fvd -->
+        <tr>
+            <td><span class="datetext">2019-05-04</span><br><a href="#2019-05-04-fvd" class="modeltext"><b>FVD</b></a></td>
+            <td>
+                <a href="https://openreview.net/pdf?id=rylgEULtdN"><span class="papertext">FVD: A new Metric for Video Generation <i>(ICLR workshop 2019)</i></span></a>
+            </td>
+            <td><span class="summarytext">Propose <u>Fréchet Video Distance (FVD)</u> for <b>video generation evaluation</b>. It extends FID to video data by replacing 2D InceptionNet with pre-trained Inflated 3D convnet. </span></td>
+        </tr>
+        <!-- 2017-06-26-fid -->
         <tr>
             <td><span class="datetext">2017-06-26</span><br><a href="#2017-06-26-fid" class="modeltext"><b>FID</b></a></td>
             <td>
                 <a href="https://arxiv.org/pdf/1706.08500"><span class="papertext">GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium <i>(NeurIPS 2017)</i></span></a>
             </td>
-            <td><span class="summarytext">Propose <u>Fréchet Inception Distance (FID)</u> that calculates <u>Fréchet distance</u> between Gaussian distributions of <u>real-world data</u> and <u>synthetic data</u>.</span></td>
+            <td><span class="summarytext">Propose <u>Fréchet Inception Distance (FID)</u> for <b>image generation evaluation</b>. It calculates <u>Fréchet distance</u> between Gaussian distributions of feature maps of real-world data and synthetic data.</span></td>
         </tr>
+        <!-- 2016-06-10-inception-score -->
         <tr>
             <td><span class="datetext">2016-06-10</span><br><a href="#2016-06-10-inception-score" class="modeltext"><b>Inception Score</b></a></td>
             <td>
                 <a href="https://arxiv.org/pdf/1606.03498"><span class="papertext">Improved Techniques for Training GANs <i>(NeurIPS 2016)</i></span></a> 
                 <a href="https://github.com/openai/improved-gan/"><img src="https://img.shields.io/github/stars/openai/improved-gan.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></a>
             </td>
-            <td><span class="summarytext">Propose <u>Inception Score</u> which is the KL divergence between p(y|x) and p(y) to minimize the entropy across samples and maximize the entropy across classes.</span></td>
+            <td><span class="summarytext">Propose <u>Inception Score</u> for <b>image generation evaluation</b>. It is the <u>KL divergence between p(y|x) and p(y)</u>, aiming to minimize the entropy across samples and maximize the entropy across classes.</span></td>
         </tr>
     </tbody>
 </table>
@@ -357,7 +420,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <b>Organizations:</b> CUHK, Tsinghua University, Kuaishou Technology, Shanghai Jiao Tong University, Shanghai AI Lab
 </p>
 <p>
-    <b>Summary:</b> A large-scale <u>human preference video dataset</u>; Adapt diffusion-based reinforcement learning to flow-based.
+    <b>Summary:</b> Introduce a <u>human preference video dataset</u>; Adapt diffusion-based reinforcement learning to <b>flow-based</b> models.
 </p>
 <p><a href="#top">[back to top]</a></p>
 <!-- End of a paper -->
@@ -374,7 +437,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <b>Organizations:</b> CUHK, Peking University, Shanghai AI Lab
 </p>
 <p>
-    <b>Summary:</b> <td>The first to apply <u>Chain-of-Thought</u> into image generation and combine it with reinforcement learning.
+    <b>Summary:</b> Apply <b>Chain-of-Thought</b> into image generation and combine it with reinforcement learning to further improve performance.
 </p>
 <ul>
     <li>Test-time verification and DPO are effective, where Outcome Reward Model (ORM) and DPO performs better than Process Reward Model (PRM).</li>
@@ -413,7 +476,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <b>Organizations:</b> NYU, MIT, Google
 </p>
 <p>
-    <b>Summary:</b> Analysis on inference-time scaling of diffusion models with <u>verifiers</u> and <u>algorithms</u>, beyond denoising steps.
+    <b>Summary:</b> Empirical analysis on inference-time scaling of diffusion models from the axes of <b>verifiers</b> and <b>algorithms</b>.
 </p>
 <ul>
     <li>Use some <u>verifiers</u> to provide <u>feedback</u>: FID, IS, CLIP, DINO; Aesthetic Score Predictor, CLIPScore, ImageReward, Ensemble.</li>
@@ -445,6 +508,24 @@ Metrics and benchmarks for evaluating visual generation performance.
 
 
 <!-- Beginning of a paper -->
+<h4 id="2024-12-03-hunyuanvideo">
+    [2024-12-03] HunyuanVideo: A Systematic Framework For Large Video Generative Models
+</h4>
+<p>
+    <b>Authors:</b> Hunyuan Foundation Model Team
+</p>
+<p>
+    <b>Organizations:</b> Tencent
+</p>
+<p>
+    <b>Summary:</b> Propose <u>HunyuanVideo</u> as an <b>open-sourced video generation model</b> with 13B parameters. 
+</p>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
+
+
+<!-- Beginning of a paper -->
 <h4 id="2024-07-19-t2vcompbench">
     [2024-07-19] T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation <i>(arXiv 2024)</i>
 </h4>
@@ -455,7 +536,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <b>Organizations:</b> The University of Hong Kong, The Chinese University of Hong Kon, Huawei Noah's Ark Lab
 </p>
 <p>
-    <b>Summary:</b> Propose <u>T2V-CompBench</u> as the first benchmark for <u>compositional text-to-video generation</u> with 1400 prompts, including <u>consistent attribute binding</u>, <u>dynamic attribute binding</u>, <u>sptial relationships</u>, <u>motion binding</u>, <u>action binding</u>, <u>object interations</u>, <u>generative numeracy</u>.
+    <b>Summary:</b> Propose <u>T2V-CompBench</u> for <b>video generation evaluation</b>. It contains 1400 prompts and focuses on <u>compositional generation</u>, including consistent attribute binding, dynamic attribute binding, sptial relationships, motion binding, action binding, object interations, and generative numeracy.
 </p>
 <ul>
     <li> Find nouns and verbs by identifying them using WordNet from Pika Discord channels, used to generate prompts by GPT-4.
@@ -497,7 +578,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <b>Organizations:</b> Nanyang Technological University, Shanghai Artificial Intelligence Laboratory, The Chinese University of Hong Kong, Nanjing University
 </p>
 <p>
-    <b>Summary:</b> Propose <u>VBench</u> for video generation evaluation. It contains <u>16 dimensions</u> from <u>video quality</u> and <u>video-condition consistency</u>. Its benchmark is well aligned with human preference.
+    <b>Summary:</b> Propose <u>VBench</u> for <b>video generation evaluation</b>. It contains 16 dimensions from the perspectives of video quality and video-condition semantic consistency.
 </p>
 <ul>
     <li> <u>Content Categories:</u> <u>animal</u>, <u>architecture</u>, <u>food</u>, <u>human</u>, <u>lifestyle</u>, <u>plant</u>, <u>scenary</u>, <u>vehicles</u>.
@@ -544,7 +625,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <b>Organizations:</b> The University of Hong Kong, Huawei Noah's Ark Lab
 </p>
 <p>
-    <b>Summary:</b> Propose <u>T2I-CompBench</u> consisting of 6000 prompts with <u>attribute binding</u>, <u>object relationship</u>, <u>complex compositions</u>.
+    <b>Summary:</b> Propose <u>T2I-CompBench</u> for <b>image generation evaluation</b>. It is consist of 6000 prompts acorss attribute binding, object relationship, and complex compositions.
 </p>
 <ul>
     <li> <u>Attribute binding prompts:</u> at least two objects with two attributes from color, shape, texture.
@@ -556,7 +637,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2023-07-12-t2icompbench-fig1.png' width=600>
+                <img src='figs_reading_papers/2023-07-12-t2icompbench-fig1.png' width=900>
                 <figcaption><li> Use <u>disentangled BLIP-VQA</u> to evaluate attribute binding, <u>UniDet-based mstric</u> to evaluate spatial relationship, <u>CLIPScore</u> to evaluate non-spatial relationship, <u>3-in-1 metric</u> (average score of the three metrics) to evaluate complex compositions.</figcaption>
             </figure>
         </td>
@@ -566,25 +647,57 @@ Metrics and benchmarks for evaluating visual generation performance.
 <!-- End of a paper -->
 
 
+
 <!-- Beginning of a paper -->
-<h4 id="2022-05-29-cogvideo">
-    [2022-05-29] CogVideo: Large-scale Pretraining for Text-to-Video Generation via Transformers <i>(ICLR 2023)</i>
+<h4 id="2023-06-15-hpsv2">
+    [2023-06-15] Human Preference Score v2: A Solid Benchmark for Evaluating Human Preferences of Text-to-Image Synthesis <i>(arXiv 2023)</i>
 </h4>
 <p>
-    <b>Authors:</b> Wenyi Hong, Ming Ding, Wendi Zheng, Xinghan Liu, Jie Tang
+    <b>Authors:</b> Xiaoshi Wu, Yiming Hao, Keqiang Sun, Yixiong Chen, Feng Zhu, Rui Zhao, Hongsheng Li
 </p>
 <p>
-    <b>Organizations:</b> Tsinghua University, BAAI
+    <b>Organizations:</b> CUHK, SenseTime Research, Shanghai Jiao Tong University, Centre for Perceptual and Interactive Intelligence
 </p>
 <p>
-    <b>Summary:</b> An <u>open-sourced transformer-based text-to-video</u> generation model with 9B parameters.
+    <b>Summary:</b> Propose <u>Human Preferences Dataset (HPD v2)</u> that comprises 798K binary human preference choices on 433K pairs of generated image; Use HPD v2 to fine-tune CLIP to obtain <u>Human Preference Score v2 (HPS v2)</u> for <b>image generation evaluation</b>.
 </p>
 <table>
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2022-05-29-cogvideo-fig1.png' width=400>
-                <figcaption>It is trained on CogView2. In stage 1, it generates frames sequentially. In stage 2, it recursively interpolates frames.</figcaption>
+                <img src='figs_reading_papers/2023-06-15-hpsv2-fig1.png' width=900>
+                <figcaption>Step 1: Clean prompts from COCO captions and DiffusionDB by ChatGPT; Step 2: Generate images using 9 models; Step 3: Rand and annotate each pair of images; Step 4: Train CLIP and obtain preference model for providing HPS v2 score.</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
+
+
+<!-- Beginning of a paper -->
+<h4 id="2023-04-12-imagereward">
+    [2023-04-12] ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation <i>(NeurIPS 2023)</i>
+</h4>
+<p>
+    <b>Authors:</b> Jiazheng Xu, Xiao Liu, Yuchen Wu, Yuxuan Tong, Qinkai Li, Ming Ding, Jie Tang, Yuxiao Dong
+</p>
+<p>
+    <b>Organizations:</b> Tsinghua University, Zhipu AI, Beijing University of Posts and Telecommunications
+</p>
+<p>
+    <b>Summary:</b> Propose <u>ImageReward</u> for <b>image generation evaluation</b>. It is trained on 137K human preference image pairs. Use it to tune diffusion models by Reward Feedback Learning (ReFL).
+</p>
+<ul>
+    <li>
+</ul>
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2023-04-12-imagereward-fig1.png' width=700>
+                <figcaption>Step 1: use DiffusionDB prompts to generate images; Step 2: Rate and rank images; Step 3: Train ImageReward using ranking data; Step 4: tune diffusion models using ImageReward; Step 5: provide scores to the generated images.</figcaption>
             </figure>
         </td>
     </tr>
@@ -605,7 +718,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <b>Organizations:</b> CUHK, SenseTime Research, Shanghai Jiao Tong University, Centre for Perceptual and Interactive Intelligence, Shanghai AI Lab
 </p>
 <p>
-    <b>Summary:</b> Use 98K SD generated images from 25K prompts to fine-tune CLIP to obtain <u>human preference score (HPS)</u>.
+    <b>Summary:</b> Use annotated 98K SD generated images from 25K prompts to fine-tune CLIP to provide <u>human preference score (HPS)</u> for <b>image generation evaluation</b>.
 </p>
 <ul>
     <li> Both IS and FID are not aligned well with human preference.
@@ -626,6 +739,35 @@ Metrics and benchmarks for evaluating visual generation performance.
 
 
 
+
+<!-- Beginning of a paper -->
+<h4 id="2022-05-29-cogvideo">
+    [2022-05-29] CogVideo: Large-scale Pretraining for Text-to-Video Generation via Transformers <i>(ICLR 2023)</i>
+</h4>
+<p>
+    <b>Authors:</b> Wenyi Hong, Ming Ding, Wendi Zheng, Xinghan Liu, Jie Tang
+</p>
+<p>
+    <b>Organizations:</b> Tsinghua University, BAAI
+</p>
+<p>
+    <b>Summary:</b> An <u>open-sourced</u> <b>transformer-based video generation model</b> (9B) that <b>auto-regressively</b> generates frame sequences and then performs frame interpolatation.
+</p>
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2022-05-29-cogvideo-fig1.png' width=500>
+                <figcaption>It is trained on CogView2. In stage 1, it generates frames sequentially. In stage 2, it recursively interpolates frames.</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
+
+
 <!-- Beginning of a paper -->
 <h4 id="2021-12-20-ldm">
     [2021-12-20] High-Resolution Image Synthesis with Latent Diffusion Models <i>(CVPR 2022)</i>
@@ -637,7 +779,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <b>Organizations:</b> Heidelberg University, Runway ML
 </p>
 <p>
-    <b>Summary:</b> Generate high-quality images by applying diffusion models in the <u>compressed latent space of VAE</u>.
+    <b>Summary:</b> Efficiently generate high-quality <b>images</b>  by applying diffusion models in the <b>compressed latent space of VAE</b>.
 </p>
 <table>
     <tr>
@@ -664,7 +806,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <b>Organizations:</b> Allen Institute for AI, University of Washington
 </p>
 <p>
-    <b>Summary:</b> Propose <u>CLIPScore</u> as a reference-free metric for the image captioning task.
+    <b>Summary:</b> Propose <u>CLIPScore</u> for <b>image generation evaluation</b>. It is a reference-free metric mainly focusing on semantic alignment.
 </p>
 <ul>
     <li> CLIPScore calculates <u>the cosine similarity between a caption and an image, multiplying the result by 2.5</u>.
@@ -678,7 +820,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2021-04-18-clipscore-fig1.png' width=300>
+                <img src='figs_reading_papers/2021-04-18-clipscore-fig1.png' width=400>
                 <figcaption>CLIPScore frees from the shortcomings of n-gram matching that disfavors good captions with new words and favors captions with familiar words.</figcaption>
             </figure>
         </td>
@@ -699,7 +841,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <b>Organizations:</b> UC Berkeley
 </p>
 <p>
-    <b>Summary:</b> Introduce the <u>DDPM</u> algorithm that iteratively denoises data from random noise.
+    <b>Summary:</b> Introduce the theoretical basis of <b>DDPM</b> algorithm that iteratively denoises data from random noise.
 </p>
 <table>
     <tr>
@@ -723,6 +865,25 @@ Metrics and benchmarks for evaluating visual generation performance.
 
 
 <!-- Beginning of a paper -->
+<h4 id="2019-05-04-fvd">
+    [2019-05-04] FVD: A new Metric for Video Generation <i>(ICLR workshop 2019)</i>
+</h4>
+<p>
+    <b>Authors:</b> Thomas Unterthiner, Sjoerd van Steenkiste, Karol Kurach, Raphaël Marinier, Marcin Michalski, Sylvain Gelly
+</p>
+<p>
+    <b>Organizations:</b> Johannes Kepler University, IDSIA, Google Brain
+</p>
+<p>
+    <b>Summary:</b> Propose <u>Fréchet Video Distance (FVD)</u> for <b>video generation evaluation</b>. It extends FID to video data by replacing 2D InceptionNet with pre-trained Inflated 3D convnet. 
+</p>
+
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
+
+
+<!-- Beginning of a paper -->
 <h4 id="2017-06-26-fid">
     [2017-06-26] GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium <i>(NeurIPS 2017)</i>
 </h4>
@@ -733,7 +894,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <b>Organizations:</b> Johannes Kepler University Linz
 </p>
 <p>
-    <b>Summary:</b> Propose <u>Fréchet Inception Distance (FID)</u> that calculates <u>Fréchet distance</u> between Gaussian distributions of <u>real-world data</u> and <u>synthetic data</u>.
+    <b>Summary:</b> Propose <u>Fréchet Inception Distance (FID)</u> for <b>image generation evaluation</b>. It calculates <u>Fréchet distance</u> between Gaussian distributions of feature maps of real-world data and synthetic data.
 </p>
 
 <p><a href="#top">[back to top]</a></p>
@@ -752,7 +913,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <b>Organizations:</b> OpenAI
 </p>
 <p>
-    <b>Summary:</b> Propose <u>Inception Score</u> which is the KL divergence between p(y|x) and p(y) to minimize the entropy across samples and maximize the entropy across classes.
+    <b>Summary:</b> Propose <u>Inception Score</u> for <b>image quality evaluation</b>. It is the <u>KL divergence between p(y|x) and p(y)</u>, aiming to minimize the entropy across samples and maximize the entropy across classes.
 </p>
 </table>
 <p><a href="#top">[back to top]</a></p>
