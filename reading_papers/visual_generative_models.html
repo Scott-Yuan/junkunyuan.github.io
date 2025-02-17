@@ -663,10 +663,15 @@ Improve inference-time visual generation performance, inspired by progress in la
 </p>
 <ul>
     <li>Use some <u>verifiers</u> to provide <u>feedback</u>: FID, IS, CLIP, DINO; Aesthetic Score Predictor, CLIPScore, ImageReward, Ensemble.</li>
-    <li>Use some <u>algorithms</u> to find <u>better noise</u>: <u>Random Search (the best performance)</u>, Zero-Order Search, Search Over Paths.</li>
+    <li>Use some <u>algorithms</u> to find <u>better noise</u>: <u>Random Search</u>, Zero-Order Search, Search Over Paths.</li>
+    <li><u>Random Search</u>: run using different initial random noise and select the best by verifier.</li>
+    <li><u>Zero-Order Search</u>: run under different random noise around a pivot noise and select the best by verifier, the best one is then served as a new pivot.</li>
+    <li><u>Search Over Paths</u>: run under different random noise to a specific step, sample noises for each noisy sample and simulate forward process, then perform denoise and select the best candiates using verifier, continue this process until finish denoising.</li>
+    <li>Random Search performs the best because it has larger search space and accelerates the convergence.</li>
+    <li>Scaling through search leads to substantial improvement across model sizes.</li>
     <li>No single verifier-algorithm configuration is universally optimal.</li>
     <li>Inference-time search further improves performance of the model which has already been fine-tuned.</li>
-    <li>Smaller search/iter ratio enables efficient convergence but lower final performance.</li>
+    <li>Fewer denoising steps but more searching iterations enables efficient convergence but lower final performance.</li>
     <li>With a fixed inference compute budget, <u>performing search on small models can outperform larger models without search</u>.</li>
 </ul>
 <table>
