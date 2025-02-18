@@ -92,14 +92,14 @@
             <li><a href="#evaluation">Evaluation</a></li>
         </ul>
     </li>
-    <li><a href="#papers">Papers & Reading Notes (total: 23)</a></li>
+    <li><a href="#papers">Papers & Reading Notes (total: 25)</a></li>
 </ul>
 
 <br>
 <a href="reading_papers.html">[back to main contents]</a>
 
 <br><br>
-Last updated on Feb. 16, 2025.
+Last updated on Feb. 18, 2025.
 
 
 <!-- Section: Foundation Models and Algorithms -->
@@ -169,12 +169,24 @@ Foundation models and algorithms on visual generative models.
             <td><span class="datetext">2024-12-03</span><br><a href="#2024-12-03-hunyuanvideo" class="modeltext"><b>HunyuanVideo</b></a></td>
             <td>
                 <a href="https://arxiv.org/pdf/2412.03603"><span class="papertext">
-                    HunyuanVideo: A Systematic Framework For Large Video Generative Models <i>(arXiv 2024)</i>
+                    Movie Gen: A Cast of Media Foundation Models <i>(arXiv 2024)</i>
                 </span></a> 
                 <a href="https://github.com/Tencent/HunyuanVideo/"><img src="https://img.shields.io/github/stars/Tencent/HunyuanVideo.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></a>
             </td>
             <td><span class="summarytext">
                 An <u>open-sourced</u> <b>video generation</b> model (13B) with the structure of <b>diffusion transformer</b>.
+            </span></td>
+        </tr>
+        <!-- 2024-10-17-MovieGen -->
+        <tr>
+            <td><span class="datetext">2024-10-17</span><br><a href="#2024-10-17-MovieGen" class="modeltext">MovieGen</a></td>
+            <td>
+                <a href="https://arxiv.org/pdf/2410.13720"><span class="papertext">
+                    Movie Gen: A Cast of Media Foundation Models <i>(arXiv 2024)</i>
+                </span></a>
+            </td>
+            <td><span class="summarytext">
+                A <b>diffusion transformer</b>-based model (30B) that generates 16s 1080p videos at 16 fps and synchronized audio.
             </span></td>
         </tr>
         <!-- 2022-12-19-DiT -->
@@ -259,6 +271,16 @@ Post-training by fine-tuning models or some modules like LoRA or ControlNet.
         </tr>
     </thead>
     <tbody>
+        <!-- 2024-11-27-Reliable-Seed -->
+        <tr>
+            <td><span class="datetext">2024-11-27</span><br><a href="#2024-11-27-Reliable-Seed" class="modeltext">Reliable Seed</a></td>
+            <td>
+                <a href="https://arxiv.org/pdf/2411.18810"><span class="papertext">Enhancing Compositional Text-to-Image Generation with Reliable Random Seeds <i>(ICLR 2025)</i></span></a> 
+            </td>
+            <td><span class="summarytext">
+                <b>Summary:</b> Some <b>reliable noises</b> result in more accurate compositional generation: <u>numeracy</u> and <u>position</u>, and use these generated data for fine-tuning further improves performance.
+            </span></td>
+        </tr>
         <!-- 2024-03-08-DPG-Bench -->
         <tr>
             <td><span class="datetext">2024-03-08</span><br><a href="#2024-03-08-DPG-Bench" class="modeltext">ELLA</a></td>
@@ -708,6 +730,48 @@ Improve inference-time visual generation performance, inspired by progress in la
 <p>
     <b>Summary:</b> An <u>open-sourced</u> <b>video generation</b> model (13B) with the structure of <b>diffusion transformer</b>.
 </p>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
+
+
+
+<!-- Beginning of a paper -->
+<h4 id="2024-10-17-MovieGen">
+    [2024-10-17] Movie Gen: A Cast of Media Foundation Models <i>(arXiv 2024)</i>
+</h4>
+<p>
+    <b>Authors:</b> Adam Polyak et al.
+</p>
+<p>
+    <b>Organizations:</b> Meta
+</p>
+<p>
+    <b>Summary:</b> A <b>diffusion transformer</b>-based model (30B) that generates 16s 1080p videos at 16 fps and synchronized audio.
+</p>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
+
+
+
+<!-- Beginning of a paper -->
+<h4 id="2024-11-27-Reliable-Seed">
+    [2024-11-27] Enhancing Compositional Text-to-Image Generation with Reliable Random Seeds <i>(ICLR 2025)</i>
+</h4>
+<p>
+    <b>Authors:</b> Shuangqi Li, Hieu Le, Jingyi Xu, Mathieu Salzmann
+</p>
+<p>
+    <b>Organizations:</b> EPFL, Stony Brook University
+</p>
+<p>
+    <b>Summary:</b> Some <b>reliable noises</b> result in more accurate compositional generation: <u>numeracy</u> and <u>position</u>, and use these generated data for fine-tuning further improves performance.
+</p>
+<ul>
+    <li> There is a strong correlation between initial seeds and object arrangement.
+    <li> Certain noise signals are more likely to result in accurate compositional generation: numeracy and position.
+</ul>
 <p><a href="#top">[back to top]</a></p>
 <!-- End of a paper -->
 
