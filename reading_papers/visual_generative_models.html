@@ -92,7 +92,7 @@
             <li><a href="#evaluation">Evaluation</a></li>
         </ul>
     </li>
-    <li><a href="#papers">Papers & Reading Notes (total: 25)</a></li>
+    <li><a href="#papers">Papers & Reading Notes (total: 26)</a></li>
 </ul>
 
 <br>
@@ -186,7 +186,20 @@ Foundation models and algorithms on visual generative models.
                 </span></a>
             </td>
             <td><span class="summarytext">
-                A <b>diffusion transformer</b>-based model (30B) that generates 16s 1080p videos at 16 fps and synchronized audio.
+                A <b>diffusion transformer</b>-based model (30B) for 16s / 1080p / 16 fps <b>video and synchronized audio generation</b>.
+            </span></td>
+        </tr>
+        <!-- 2024-07-16-DiT-MoE -->
+        <tr>
+            <td><span class="datetext">2024-07-16</span><br><a href="#2024-07-16-DiT-MoE" class="modeltext">DiT-MoE</a></td>
+            <td>
+                <a href="https://arxiv.org/pdf/2407.11633"><span class="papertext">
+                    Scaling Diffusion Transformers to 16 Billion Parameters <i>(arXiv 2024)</i>
+                </span></a> 
+                <a href="https://github.com/feizc/DiT-MoE/"><img src="https://img.shields.io/github/stars/feizc/DiT-MoE.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></a>
+            </td>
+            <td><span class="summarytext">
+                A <b>diffusion transformer</b> (16B) with <b>MoE</b> that inserts experts into DiT blocks for <b>image generation</b>.
             </span></td>
         </tr>
         <!-- 2022-12-19-DiT -->
@@ -580,41 +593,6 @@ Improve inference-time visual generation performance, inspired by progress in la
 <h2 id="papers">Papers & Reading Notes</h2>
 
 <!-- Beginning of a paper -->
-<!-- <h4 id="template">
-    [2020-12-16] Template
-</h4>
-<p>
-    <b>Authors:</b>
-</p>
-<p>
-    <b>Organizations:</b>
-</p>
-<p>
-    <b>Summary:</b> 
-</p>
-<ul>
-    <li>
-</ul>
-<table>
-    <tr>
-        <td>
-            <figure>
-                <img src='temp1.png' width=300>
-                <figcaption>caption1.</figcaption>
-            </figure>
-        </td>
-        <td>
-            <figure>
-                <img src='temp2.png' width=600>
-        <figcaption>caption2.</figcaption>
-            </figure>
-        </td>
-    </tr>
-</table>
-<p><a href="#top">[back to top]</a></p> -->
-<!-- End of a paper -->
-
-<!-- Beginning of a paper -->
 <h4 id="2025-01-23-flowrar">
     [2025-01-23] Improving Video Generation with Human Feedback <i>(arXiv 2025)</i>
 </h4>
@@ -747,7 +725,7 @@ Improve inference-time visual generation performance, inspired by progress in la
     <b>Organizations:</b> Meta
 </p>
 <p>
-    <b>Summary:</b> A <b>diffusion transformer</b>-based model (30B) that generates 16s 1080p videos at 16 fps and synchronized audio.
+    <b>Summary:</b> A <b>diffusion transformer</b>-based model (30B) for 16s / 1080p / 16 fps <b>video and synchronized audio generation</b>.
 </p>
 <p><a href="#top">[back to top]</a></p>
 <!-- End of a paper -->
@@ -810,6 +788,39 @@ Improve inference-time visual generation performance, inspired by progress in la
             <figure>
                 <img src='figs_reading_papers/2024-07-19-t2vcompbench-fig1.png' width=900>
                 <figcaption>T2V-CompBench: categories (left), evaluation methods (middle), and benchmarking model performance (right).</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
+
+
+<!-- Beginning of a paper -->
+<h4 id="2024-07-16-DiT-MoE">
+    [2024-07-16] Scaling Diffusion Transformers to 16 Billion Parameters <i>(arXiv 2024)</i>
+</h4>
+<p>
+    <b>Authors:</b> Zhengcong Fei, Mingyuan Fan, Changqian Yu, Debang Li, Junshi Huang
+</p>
+<p>
+    <b>Organizations:</b> Kunlun Inc.
+</p>
+<p>
+    <b>Summary:</b> A <b>diffusion transformer</b> (16B) with <b>MoE</b> that inserts experts into DiT blocks for <b>image generation</b>.
+</p>
+<ul>
+    <li> Incorporating shared expert routing accelerates training and improves performance, but the improvement is little when using more than one expert.
+    <li> Observe the scaling performance.
+    <li> Increasing experts reduces loss but introduces more loss spikes.
+</ul>
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2024-07-16-DiT-MoE-fig1.png' width=700>
+                <figcaption>DiT-MoE is built upon DiT and replaces MLP of Transformer block by sparsely activatd mixture of MLPs as experts.</figcaption>
             </figure>
         </td>
     </tr>
@@ -1344,6 +1355,41 @@ Improve inference-time visual generation performance, inspired by progress in la
 </p>
 </table>
 <p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
+<!-- Beginning of a paper -->
+<!-- <h4 id="template">
+    [2020-12-16] Template
+</h4>
+<p>
+    <b>Authors:</b>
+</p>
+<p>
+    <b>Organizations:</b>
+</p>
+<p>
+    <b>Summary:</b> 
+</p>
+<ul>
+    <li>
+</ul>
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src='temp1.png' width=300>
+                <figcaption>caption1.</figcaption>
+            </figure>
+        </td>
+        <td>
+            <figure>
+                <img src='temp2.png' width=600>
+        <figcaption>caption2.</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+<p><a href="#top">[back to top]</a></p> -->
 <!-- End of a paper -->
 
 </body>
