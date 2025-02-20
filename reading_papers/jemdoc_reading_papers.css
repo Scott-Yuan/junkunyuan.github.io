@@ -144,7 +144,7 @@ h1 {
     padding-bottom: 0.2em;
     line-height: 1.0;
     padding-top: 0.5em;
-    border-bottom: 1px solid #aaaaaa;
+    border-bottom: 1.5px solid #aaaaaa;
     font-family: "times";
 }
 
@@ -155,12 +155,12 @@ h2 {
     padding-bottom: 0.2em;
     line-height: 1.0;
     padding-top: 0.5em;
-    border-bottom: 1px solid #aaaaaa;
+    border-bottom: 1.5px solid #aaaaaa;
     font-family: "times";
 }
 
 h3 {
-    color: #426bbd;
+    color: #029b0d;
     margin-top: 0.7em;
     margin-bottom: 0.5em;
     padding-bottom: 0.2em;
@@ -196,7 +196,7 @@ h2 + h3 {
 }
 
 h3 {
-    font-size: 130%;
+    font-size: 140%;
     border-bottom: none;
 }
 

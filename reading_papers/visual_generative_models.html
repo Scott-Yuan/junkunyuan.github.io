@@ -25,6 +25,13 @@
         th {
             background-color: #e2e2e2;
         }
+
+        hr {
+            border: none; /* 去掉默认边框 */
+            height: 1px; /* 设置线的高度 */
+            background-color: #aaaaaa; /* 设置线的颜色 */
+            margin: 0; /* 去掉外边距 */
+        }
         
         .image-container {
             display: flex;
@@ -65,7 +72,7 @@
         }
 
         .notetext {
-            color: #129b1d;
+            color: #CC6600;
             font-size: 15px;
             /* font-weight: bold; */
         }
@@ -84,22 +91,22 @@
     <li>
         <a href="#summaries">Summaries</a>
         <ul>
-            <li><a href="#surveys-and-insights">Surveys and Insights</a></li>
-            <li><a href="#foundation-model-and-algorithms">Foundation Models and Algorithms</a></li>
+            <li><a href="#surveys-and-insights">Surveys & Insights</a></li>
+            <li><a href="#foundation-model-and-algorithms">Foundation Models & Algorithms</a></li>
             <li><a href="#finetuning">Fine-Tuning</a></li>
             <li><a href="#reinforcement-learning">Reinforcement Learning</a></li>
             <li><a href="#inference-time-improvement">Inference-Time Improvement</a></li>
             <li><a href="#evaluation">Evaluation</a></li>
         </ul>
     </li>
-    <li><a href="#papers">Papers & Reading Notes (total: 26)</a></li>
+    <li><a href="#papers">Papers & Reading Notes (total: 27)</a></li>
 </ul>
 
 <br>
 <a href="reading_papers.html">[back to main contents]</a>
 
 <br><br>
-Last updated on Feb. 18, 2025.
+Last updated on Feb. 20, 2025.
 
 
 <!-- Section: Foundation Models and Algorithms -->
@@ -107,7 +114,7 @@ Last updated on Feb. 18, 2025.
 
 
 <!-- Section: Foundation Models and Algorithms -->
-<h3 id="surveys-and-insights">Surveys and Insights</h3>
+<h3 id="surveys-and-insights">Surveys & Insights</h3>
 
 Surveys and interesting insights on visual generative models.
 
@@ -121,10 +128,22 @@ Surveys and interesting insights on visual generative models.
         <tr>
             <th>Date & Model</th>
             <th>Paper & Publication & Project</th>
-            <th>Summary: perspective</th>
+            <th>Summary: task, perspective</th>
         </tr>
     </thead>
     <tbody>
+        <!-- 2025-02-18-noise-unconditional-model -->
+        <tr>
+            <td><span class="datetext">2025-02-18</span><br><a href="#2025-02-18-noise-unconditional-model" class="modeltext"><b>noise-unconditional model</b></a></td>
+            <td>
+                <a href="https://arxiv.org/pdf/2502.13129"><span class="papertext">
+                    Is Noise Conditioning Necessary for Denoising Generative Models? <i>(arXiv 2025)</i>
+                </span></a>
+            </td>
+            <td><span class="summarytext">
+                Theoretical and empirical analysis on <b>noise-unconditional</b> denoising diffusion models for <b>image generation</b>.
+            </span></td>
+        </tr>
         <!-- 2022-08-25-Unified-Perspective -->
         <tr>
             <td><span class="datetext">2022-08-25</span><br><a href="#2022-08-25-Unified-Perspective" class="modeltext"><b>Unified Perspective</b></a></td>
@@ -141,12 +160,13 @@ Surveys and interesting insights on visual generative models.
 </table>
 
 <a href="#top">[back to top]</a>
-
+<br><br>
+<hr>
 
 
 
 <!-- Section: Foundation Models and Algorithms -->
-<h3 id="foundation-model-and-algorithms">Foundation Models and Algorithms</h3>
+<h3 id="foundation-model-and-algorithms">Foundation Models & Algorithms</h3>
 
 Foundation models and algorithms on visual generative models.
 
@@ -261,7 +281,8 @@ Foundation models and algorithms on visual generative models.
 </table>
 
 <a href="#top">[back to top]</a>
-
+<br><br>
+<hr>
 
 
 
@@ -309,7 +330,8 @@ Post-training by fine-tuning models or some modules like LoRA or ControlNet.
 </table>
 
 <a href="#top">[back to top]</a>
-
+<br><br>
+<hr>
 
 
 <!-- Section: Reinforcement Learning -->
@@ -382,7 +404,8 @@ Post-training by employing reinforcement learning.
 </table>
 
 <a href="#top">[back to top]</a>
-
+<br><br>
+<hr>
 
 
 <!-- Section: Inference-Time Improvement -->
@@ -431,13 +454,15 @@ Improve inference-time visual generation performance, inspired by progress in la
 </table>
 
 <a href="#top">[back to top]</a>
+<br><br>
+<hr>
 
 
 
 <!-- Section: Evaluation -->
 <h3 id="evaluation">Evaluation</h3>
 
-<u>Metrics and benchmarks for evaluating visual generation performance.</u>
+Metrics and benchmarks for evaluating visual generation performance.
 
 <table>
     <colgroup>
@@ -586,11 +611,31 @@ Improve inference-time visual generation performance, inspired by progress in la
 </table>
 
 <a href="#top">[back to top]</a>
-
+<br><br>
+<hr>
 
 
 <!-- Section: Papers -->
 <h2 id="papers">Papers & Reading Notes</h2>
+
+<!-- Beginning of a paper -->
+<h4 id="2025-02-18-noise-unconditional-model">
+    [2025-02-18] Is Noise Conditioning Necessary for Denoising Generative Models? <i>(arXiv 2025)</i>
+</h4>
+<p>
+    <b>Authors:</b> Qiao Sun, Zhicheng Jiang, Hanhong Zhao, Kaiming He
+</p>
+<p>
+    <b>Organizations:</b> MiT
+</p>
+<p>
+    <b>Summary:</b> Theoretical and empirical analysis on <b>noise-unconditional</b> denoising diffusion models for <b>image generation</b>.
+</p>
+<ul>
+    <li> Many denoising generative models perform robustly even in the absence of noise conditioning, flow-based ones can even produce improved results without noise conditioning.
+</ul>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
 
 <!-- Beginning of a paper -->
 <h4 id="2025-01-23-flowrar">
