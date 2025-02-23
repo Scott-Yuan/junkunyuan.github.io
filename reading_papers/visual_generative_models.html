@@ -10,6 +10,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <div id="layout-content" style="margin-top:25px"></div>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #adadad;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #e2e2e2;
+        }
+
+        hr {
+            border: none; /* 去掉默认边框 */
+            height: 1px; /* 设置线的高度 */
+            background-color: #aaaaaa; /* 设置线的颜色 */
+            margin: 0; /* 去掉外边距 */
+        }
+
+        figure {
+            margin: 0 10px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        figcaption {
+            font-size: 14px;
+            color: #CC6600;
+        }
+
+        .papertext {
+            color: #D93053;
+            font-size: 15px;
+        }
+
+        .summarytext {
+            color: #000000;
+            font-size: 15px;
+        }
+
+        .datetext {
+            color: #888888;
+            font-size: 15px;
+        }
+
+        .modeltext {
+            color: #224bad;
+            font-size: 15px;
+        }
+
+        .notetext {
+            color: #CC6600;
+            font-size: 15px;
+            /* font-weight: bold; */
+        }
+    </style>
 </head>
 
 <body>
@@ -1264,7 +1325,7 @@ Metrics and benchmarks for evaluating visual generation performance.
 <p>
     <b>Summary:</b> Denoising <b>diffusion</b> probabilistic models that iteratively denoises data from random noise for <b>image generation</b>.
 </p>
-<table>
+<!-- <table>
     <tr>
         <td>
             <figure>
@@ -1279,7 +1340,13 @@ Metrics and benchmarks for evaluating visual generation performance.
             </figure>
         </td>
     </tr>
-</table>
+</table> -->
+<div class="image-container">
+    <img src='figs/2020-12-16-ddpm-fig1.png' width=400>
+    <figcaption>Forward and reverse processes of DDPM.</figcaption>
+    <img src='figs/2020-12-16-ddpm-fig2.png' width=500>
+    <figcaption>Training and sampling algorithms of DDPM.</figcaption>
+</div>
 <p><a href="#top">[back to top]</a></p>
 <!-- End of a paper -->
 
