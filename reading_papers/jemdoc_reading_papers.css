@@ -1,5 +1,70 @@
 /* Default css file for jemdoc. */
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid #adadad;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #e2e2e2;
+}
+
+hr {
+    border: none; /* 去掉默认边框 */
+    height: 1px; /* 设置线的高度 */
+    background-color: #aaaaaa; /* 设置线的颜色 */
+    margin: 0; /* 去掉外边距 */
+}
+
+image-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+figure {
+    margin: 0 10px;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+figcaption {
+    font-size: 14px;
+    color: #CC6600;
+}
+
+papertext {
+    color: #D93053;
+    font-size: 15px;
+}
+
+summarytext {
+    color: #000000;
+    font-size: 15px;
+}
+
+datetext {
+    color: #888888;
+    font-size: 15px;
+}
+
+modeltext {
+    color: #224bad;
+    font-size: 15px;
+}
+
+notetext {
+    color: #CC6600;
+    font-size: 15px;
+    /* font-weight: bold; */
+}
+
 table#tlayout {
     border: none;
     border-collapse: separate;
