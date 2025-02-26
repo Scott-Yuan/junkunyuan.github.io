@@ -99,14 +99,14 @@
             <li><a href="#evaluation">Evaluation</a></li>
         </ul>
     </li>
-    <li><a href="#papers">Papers & Reading Notes (total: 27)</a></li>
+    <li><a href="#papers">Papers & Reading Notes (total: 29)</a></li>
 </ul>
 
 <br>
 <a href="reading_papers.html">[back to main contents]</a>
 
 <br><br>
-Last updated on Feb. 20, 2025.
+Last updated on Feb. 26, 2025.
 
 
 <!-- Section: Foundation Models and Algorithms -->
@@ -427,6 +427,16 @@ Improve inference-time visual generation performance, inspired by progress in la
         </tr>
     </thead>
     <tbody>
+        <!-- 2025-02-24-IGTR -->
+        <tr>
+            <td><span class="datetext">2025-02-24</span><br><a href="#2025-02-24-IGTR" class="modeltext">IGTR</a></td>
+            <td>
+                <a href="https://arxiv.org/pdf/2502.16965"><span class="papertext">Autoregressive Image Generation Guided by Chains of Thought <i>(arXiv 2025)</i></span></a> 
+            </td>
+            <td><span class="summarytext">
+                Insert reasoning prompts to improve <b>auto-regressive image generation</b> performance by <b>Chain-of-Thought</b>.
+            </span></td>
+        </tr>
         <!-- 2025-01-23-cot -->
         <tr>
             <td><span class="datetext">2025-01-23</span><br><a href="#2025-01-23-cot" class="modeltext">PARM</a></td>
@@ -440,7 +450,9 @@ Improve inference-time visual generation performance, inspired by progress in la
         </tr>
         <!-- 2025-01-16-scaling-analysis -->
         <tr>
-            <td><span class="datetext">2025-01-16</span><br><a href="#2025-01-16-scaling-analysis" class="modeltext">Scaling Analysis</a></td>
+            <td>
+                <span class="datetext">2025-01-16</span><br><a href="#2025-01-16-scaling-analysis" class="modeltext">Scaling Analysis</a>
+            </td>
             <td>
                 <a href="https://arxiv.org/pdf/2501.09732"><span class="papertext">Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps <i>(arXiv 2025)</i></span></a>
             </td>
@@ -449,6 +461,19 @@ Improve inference-time visual generation performance, inspired by progress in la
                     Analysis on inference-time scaling of diffusion models for <b>image generation</b> from the axes of <b>verifiers</b> and <b>algorithms</b>.
                 </span>
             </td>
+        </tr>
+        <!-- 2024-12-14-Z-Sampling -->
+        <tr>
+            <td>
+                <span class="datetext">2024-12-14</span><br><a href="#2024-12-14-Z-Sampling" class="modeltext">Z-Sampling</a>
+            </td>
+            <td>
+                <a href="https://arxiv.org/pdf/2412.10891"><span class="papertext">Zigzag Diffusion Sampling: Diffusion Models Can Self-Improve via Self-Reflection <i>(ICLR 2025)</i></span></a> 
+                <a href="https://github.com/xie-lab-ml/Zigzag-Diffusion-Sampling/"><img src="https://img.shields.io/github/stars/xie-lab-ml/Zigzag-Diffusion-Sampling.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></a>
+            </td>
+            <td><span class="summarytext">
+                Use the <u>guidance gap between denosing and inversion</u> and iteratively perform them for <b>image generation</b>.
+            </span></td>
         </tr>
     </tbody>
 </table>
@@ -619,6 +644,34 @@ Metrics and benchmarks for evaluating visual generation performance.
 <h2 id="papers">Papers & Reading Notes</h2>
 
 <!-- Beginning of a paper -->
+<h4 id="2025-02-24-IGTR">
+    [2025-02-24] Autoregressive Image Generation Guided by Chains of Thought <i>(arXiv 2025)</i>
+</h4>
+<p>
+    <b>Authors:</b> Miaomiao Cai, Guanjie Wang, Wei Li, Zhijun Tu, Hanting Chen, Shaohui Lin, Jie Hu
+</p>
+<p>
+    <b>Organizations:</b> University of Science and Technology of China, Huawei Noah's Ark Lab, East China Normal University
+</p>
+<p>
+    <b>Summary:</b> Insert reasoning prompts to improve <b>auto-regressive image generation</b> performance by <b>Chain-of-Thought</b>.
+</p>
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2025-02-24-IGTR-fig1.png' width=400>
+                <figcaption>Take an image in the same class as a <b>Class Reasoning Prompt</b> or indices from codebook of image tokenizer as a <b>Universal Reasoning Prompt</b>.</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
+
+
+<!-- Beginning of a paper -->
 <h4 id="2025-02-18-noise-unconditional-model">
     [2025-02-18] Is Noise Conditioning Necessary for Denoising Generative Models? <i>(arXiv 2025)</i>
 </h4>
@@ -740,6 +793,48 @@ Metrics and benchmarks for evaluating visual generation performance.
 
 
 
+
+<!-- Beginning of a paper -->
+<h4 id="2024-12-14-Z-Sampling">
+    [2024-12-14] Zigzag Diffusion Sampling: Diffusion Models Can Self-Improve via Self-Reflection <i>(ICLR 2025)</i>
+</h4>
+<p>
+    <b>Authors:</b> Lichen Bai, Shitong Shao, Zikai Zhou, Zipeng Qi, Zhiqiang Xu, Haoyi Xiong, Zeke Xie
+</p>
+<p>
+    <b>Organizations:</b> The Hong Kong University of Science and Technology (Guangzhou), Mohamed bin Zayed University of Artificial Intelligence, Baidu Inc
+</p>
+<p>
+    <b>Summary:</b> Use the <u>guidance gap between denosing and inversion</u> and iteratively perform them for <b>image generation</b>.
+</p>
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2024-12-14-Z-Sampling-fig1.png' width=230>
+                <figcaption>Iteratively denoising & inversion.</figcaption>
+            </figure>
+        </td>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2024-12-14-Z-Sampling-fig2.png' width=340>
+        <figcaption>Capture more semantics by denoising more times.</figcaption>
+            </figure>
+        </td>
+        <td>
+            <figure>
+                <img src='figs_reading_papers/2024-12-14-Z-Sampling-fig3.png' width=330>
+        <figcaption>More efficient & effective than standard sampling.</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
+
+
+
 <!-- Beginning of a paper -->
 <h4 id="2024-12-03-hunyuanvideo">
     [2024-12-03] HunyuanVideo: A Systematic Framework For Large Video Generative Models
@@ -752,25 +847,6 @@ Metrics and benchmarks for evaluating visual generation performance.
 </p>
 <p>
     <b>Summary:</b> An <u>open-sourced</u> <b>video generation</b> model (13B) with the structure of <b>diffusion transformer</b>.
-</p>
-<p><a href="#top">[back to top]</a></p>
-<!-- End of a paper -->
-
-
-
-
-<!-- Beginning of a paper -->
-<h4 id="2024-10-17-MovieGen">
-    [2024-10-17] Movie Gen: A Cast of Media Foundation Models <i>(arXiv 2024)</i>
-</h4>
-<p>
-    <b>Authors:</b> Adam Polyak et al.
-</p>
-<p>
-    <b>Organizations:</b> Meta
-</p>
-<p>
-    <b>Summary:</b> A <b>diffusion transformer</b>-based model (30B) for 16s / 1080p / 16 fps <b>video and synchronized audio generation</b>.
 </p>
 <p><a href="#top">[back to top]</a></p>
 <!-- End of a paper -->
@@ -797,6 +873,26 @@ Metrics and benchmarks for evaluating visual generation performance.
 </ul>
 <p><a href="#top">[back to top]</a></p>
 <!-- End of a paper -->
+
+
+
+
+<!-- Beginning of a paper -->
+<h4 id="2024-10-17-MovieGen">
+    [2024-10-17] Movie Gen: A Cast of Media Foundation Models <i>(arXiv 2024)</i>
+</h4>
+<p>
+    <b>Authors:</b> Adam Polyak et al.
+</p>
+<p>
+    <b>Organizations:</b> Meta
+</p>
+<p>
+    <b>Summary:</b> A <b>diffusion transformer</b>-based model (30B) for 16s / 1080p / 16 fps <b>video and synchronized audio generation</b>.
+</p>
+<p><a href="#top">[back to top]</a></p>
+<!-- End of a paper -->
+
 
 
 
