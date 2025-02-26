@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <div id="layout-content" style="margin-top:25px"></div>
-
     <style>
         table {
             width: 100%;
@@ -32,12 +31,7 @@
             background-color: #aaaaaa; /* 设置线的颜色 */
             margin: 0; /* 去掉外边距 */
         }
-        
-        .image-container {
-            display: flex;
-            justify-content: center;
-            margin: 20px;
-        }
+
         figure {
             margin: 0 10px;
             text-align: center;
@@ -50,7 +44,7 @@
             font-size: 14px;
             color: #CC6600;
         }
-        
+
         .papertext {
             color: #D93053;
             font-size: 15px;
@@ -265,7 +259,7 @@ Foundation models and algorithms on visual generative models.
         <tr>
             <td><span class="datetext">2020-12-16</span>
                 <br><a href="#2020-12-16-ddpm" class="modeltext"><b>DDPM</b></a>
-                <br><a href="https://github.com/junkunyuan/junkunyuan.github.io/blob/master/reading_papers/jupyters_reading_papers/visual_generative_models-ddpm.ipynb" class="notetext">(notes in jupyter)</a>
+                <br><a href="https://github.com/junkunyuan/junkunyuan.github.io/blob/master/reading_papers/jupyters/visual_generative_models-ddpm.ipynb" class="notetext">(notes in jupyter)</a>
             </td>
             <td>
                 <a href="https://arxiv.org/pdf/2006.11239"><span class="papertext">
@@ -549,13 +543,16 @@ Metrics and benchmarks for evaluating visual generation performance.
         </tr>
         <!-- 2023-07-12-t2icompbench -->
         <tr>
-            <td><span class="datetext">2023-07-12</span><br><a href="#2023-07-12-t2icompbench" class="modeltext"><b>T2I-CompBench</b></a></td>
+            <td>
+                <span class="datetext">2023-07-12</span><br><a href="#2023-07-12-t2icompbench" class="modeltext"><b>T2I-CompBench</b></a>
+                <br><a href="https://github.com/junkunyuan/junkunyuan.github.io/blob/master/reading_papers/jupyters/visual_generative_models-evaluation_benchmarks_metrics.ipynb" class="notetext">(notes in jupyter)</a>
+            </td>
             <td>
                 <a href="https://arxiv.org/pdf/2307.06350"><span class="papertext">T2I-CompBench: A Comprehensive Benchmark for Open-world Compositional Text-to-image Generation <i>(NeurIPS 2023)</i></span></a> 
                 <a href="https://github.com/Karine-Huang/T2I-CompBench/"><img src="https://img.shields.io/github/stars/Karine-Huang/T2I-CompBench.svg?style=social&label=Star" alt="Star" style="vertical-align: middle;" /></a>
             </td>
             <td><span class="summarytext">
-                Use 6000 prompts to evaluate <b>image generation</b> on <b>compositional generation</b>, including attribute binding, object relationship, and complex compositions.
+                Use 6000 prompts to train and evaluate <b>image generation</b> on <b>compositional generation</b>, including attribute binding, object relationship, and complex compositions.
             </span></td>
         </tr>
         <!-- 2023-06-15-hpsv2 -->
@@ -730,13 +727,13 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2025-01-23-cot-fig1.png' width=650>
+                <img src='figs/2025-01-23-cot-fig1.png' width=650>
                 <figcaption>ORM is coarse, PRM does not know when to make decision, PARM combines them.</figcaption>
             </figure>
         </td>
         <td>
             <figure>
-                <img src='figs_reading_papers/2025-01-23-cot-fig2.png' width=250>
+                <img src='figs/2025-01-23-cot-fig2.png' width=250>
                 <figcaption>Self-correction makes use of bad cases.</figcaption>
             </figure>
         </td>
@@ -776,13 +773,13 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2025-01-16-scaling-analysis fig1.png' width=400>
+                <img src='figs/2025-01-16-scaling-analysis fig1.png' width=400>
                 <figcaption>Scale with search is more effective than with denoising steps.</figcaption>
             </figure>
         </td>
         <td>
             <figure>
-                <img src='figs_reading_papers/2025-01-16-scaling-analysis fig2.png' width=500>
+                <img src='figs/2025-01-16-scaling-analysis fig2.png' width=500>
         <figcaption>Random Search performs the best because it converges fastest.</figcaption>
             </figure>
         </td>
@@ -927,7 +924,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2024-07-19-t2vcompbench-fig1.png' width=900>
+                <img src='figs/2024-07-19-t2vcompbench-fig1.png' width=900>
                 <figcaption>T2V-CompBench: categories (left), evaluation methods (middle), and benchmarking model performance (right).</figcaption>
             </figure>
         </td>
@@ -960,7 +957,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2024-07-16-DiT-MoE-fig1.png' width=700>
+                <img src='figs/2024-07-16-DiT-MoE-fig1.png' width=700>
                 <figcaption>DiT-MoE is built upon DiT and replaces MLP of Transformer block by sparsely activatd mixture of MLPs as experts.</figcaption>
             </figure>
         </td>
@@ -988,7 +985,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2024-03-08-DPG-Bench-fig1.png' width=800>
+                <img src='figs/2024-03-08-DPG-Bench-fig1.png' width=800>
             </figure>
         </td>
     </tr>
@@ -1018,7 +1015,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2023-12-19-InstructVideo-fig1.png' width=700>
+                <img src='figs/2023-12-19-InstructVideo-fig1.png' width=700>
                 <figcaption>It takes reward fine-tuning as an <u>editing task</u> to accelerate training. The reward model is HPS v2. TAR assigns larger weight to central frames.</figcaption>
             </figure>
         </td>
@@ -1065,7 +1062,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2023-11-29-vbench-fig1.png' width=900>
+                <img src='figs/2023-11-29-vbench-fig1.png' width=900>
                 <figcaption>caption1.</figcaption>
             </figure>
         </td>
@@ -1094,7 +1091,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2023-10-17-GenEval-fig1.png' width=700>
+                <img src='figs/2023-10-17-GenEval-fig1.png' width=700>
                 <figcaption>GenEval detects objects using Mask2Former detector and evaluates attributes of them.</figcaption>
             </figure>
         </td>
@@ -1102,7 +1099,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2023-10-17-GenEval-fig2.png' width=600>
+                <img src='figs/2023-10-17-GenEval-fig2.png' width=600>
                 <figcaption>Specific evaluation perspectives of GenEval.</figcaption>
             </figure>
         </td>
@@ -1117,6 +1114,7 @@ Metrics and benchmarks for evaluating visual generation performance.
 <h4 id="2023-07-12-t2icompbench">
     [2023-07-12] T2I-CompBench: A Comprehensive Benchmark for Open-world Compositional Text-to-image Generation <i>(NeurIPS 2023)</i>
 </h4>
+<p><a href="https://github.com/junkunyuan/junkunyuan.github.io/blob/master/reading_papers/jupyters/visual_generative_models-evaluation_benchmarks_metrics.ipynb" class="notetext">(notes in jupyter)</a></p>
 <p>
     <b>Authors:</b> Kaiyi Huang, Kaiyue Sun, Enze Xie, Zhenguo Li, Xihui Liu
 </p>
@@ -1124,7 +1122,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <b>Organizations:</b> The University of Hong Kong, Huawei Noah's Ark Lab
 </p>
 <p>
-    <b>Summary:</b> Use 6000 prompts to evaluate <b>image generation</b> on <b>compositional generation</b>, including attribute binding, object relationship, and complex compositions.
+    <b>Summary:</b> Use 6000 prompts to train and evaluate <b>image generation</b> on <b>compositional generation</b>, including attribute binding, object relationship, and complex compositions.
 </p>
 <ul>
     <li> <u>Attribute binding prompts:</u> at least two objects with two attributes from color, shape, texture.
@@ -1136,7 +1134,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2023-07-12-t2icompbench-fig1.png' width=900>
+                <img src='figs/2023-07-12-t2icompbench-fig1.png' width=900>
                 <figcaption><li> Use <u>disentangled BLIP-VQA</u> to evaluate attribute binding, <u>UniDet-based mstric</u> to evaluate spatial relationship, <u>CLIPScore</u> to evaluate non-spatial relationship, <u>3-in-1 metric</u> (average score of the three metrics) to evaluate complex compositions.</figcaption>
             </figure>
         </td>
@@ -1164,7 +1162,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2023-06-15-hpsv2-fig1.png' width=900>
+                <img src='figs/2023-06-15-hpsv2-fig1.png' width=900>
                 <figcaption>Step 1: Clean prompts from COCO captions and DiffusionDB by ChatGPT; Step 2: Generate images using 9 models; Step 3: Rand and annotate each pair of images; Step 4: Train CLIP and obtain preference model for providing HPS v2 score.</figcaption>
             </figure>
         </td>
@@ -1195,7 +1193,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2023-04-12-imagereward-fig1.png' width=700>
+                <img src='figs/2023-04-12-imagereward-fig1.png' width=700>
                 <figcaption>Step 1: use DiffusionDB prompts to generate images; Step 2: Rate and rank images; Step 3: Train ImageReward using ranking data; Step 4: tune diffusion models using ImageReward; Step 5: provide scores to the generated images.</figcaption>
             </figure>
         </td>
@@ -1227,7 +1225,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2023-03-25-hps-fig1.png' width=900>
+                <img src='figs/2023-03-25-hps-fig1.png' width=900>
                 <figcaption>Train human preference classifier: similar to CLIP except for the sample with the highest preference is taken as the positive; append a special token to the prompts of worse images and train SD LoRA; remove the special token during inference.</figcaption>
             </figure>
         </td>
@@ -1261,7 +1259,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2022-12-19-DiT-fig1.png' width=800>
+                <img src='figs/2022-12-19-DiT-fig1.png' width=800>
                 <figcaption>Use <u>adaLN-Zero</u> structure to inject timestep and prompt is better than cross-attention or in-context.</figcaption>
             </figure>
         </td>
@@ -1290,7 +1288,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2022-12-19-promptist-fig1.png' width=600>
+                <img src='figs/2022-12-19-promptist-fig1.png' width=600>
                 <figcaption>Step 1: fine-tune a language model (LM) to optimize prompts; Step 2: further fine-tune LM with PPO, where aesthetic and relevance are the reward.</figcaption>
             </figure>
         </td>
@@ -1336,7 +1334,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2022-05-29-cogvideo-fig1.png' width=500>
+                <img src='figs/2022-05-29-cogvideo-fig1.png' width=500>
                 <figcaption>It is trained on CogView2. In stage 1, it generates frames sequentially. In stage 2, it recursively interpolates frames.</figcaption>
             </figure>
         </td>
@@ -1364,7 +1362,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2021-12-20-ldm-fig1.png' width=400>
+                <img src='figs/2021-12-20-ldm-fig1.png' width=400>
                 <figcaption>LDM performs the diffusion process in the latent space of VAE.</figcaption>
             </figure>
         </td>
@@ -1399,7 +1397,7 @@ Metrics and benchmarks for evaluating visual generation performance.
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2021-04-18-clipscore-fig1.png' width=400>
+                <img src='figs/2021-04-18-clipscore-fig1.png' width=400>
                 <figcaption>CLIPScore frees from the shortcomings of n-gram matching that disfavors good captions with new words and favors captions with familiar words.</figcaption>
             </figure>
         </td>
@@ -1413,6 +1411,7 @@ Metrics and benchmarks for evaluating visual generation performance.
 <h4 id="2020-12-16-ddpm">
     [2020-12-16] Denoising Diffusion Probabilistic Models <i>(NeurIPS 2020)</i>
 </h4>
+<p><a href="https://github.com/junkunyuan/junkunyuan.github.io/blob/master/reading_papers/jupyters/visual_generative_models-ddpm.ipynb" class="notetext">(notes in jupyter)</a></p>
 <p>
     <b>Authors:</b> Jonathan Ho, Ajay Jain, Pieter Abbeel
 </p>
@@ -1422,22 +1421,28 @@ Metrics and benchmarks for evaluating visual generation performance.
 <p>
     <b>Summary:</b> Denoising <b>diffusion</b> probabilistic models that iteratively denoises data from random noise for <b>image generation</b>.
 </p>
-<table>
+<!-- <table>
     <tr>
         <td>
             <figure>
-                <img src='figs_reading_papers/2020-12-16-ddpm-fig1.png' width=400>
+                <img src='figs/2020-12-16-ddpm-fig1.png' width=400>
                 <figcaption>Forward and reverse processes of DDPM.</figcaption>
             </figure>
         </td>
         <td>
             <figure>
-                <img src='figs_reading_papers/2020-12-16-ddpm-fig2.png' width=500>
+                <img src='figs/2020-12-16-ddpm-fig2.png' width=500>
         <figcaption>Training and sampling algorithms of DDPM.</figcaption>
             </figure>
         </td>
     </tr>
-</table>
+</table> -->
+<div class="image-container">
+    <img src='figs/2020-12-16-ddpm-fig1.png' width=400>
+    <figcaption>Forward and reverse processes of DDPM.</figcaption>
+    <img src='figs/2020-12-16-ddpm-fig2.png' width=500>
+    <figcaption>Training and sampling algorithms of DDPM.</figcaption>
+</div>
 <p><a href="#top">[back to top]</a></p>
 <!-- End of a paper -->
 
